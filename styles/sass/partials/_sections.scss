@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+.whoIsWillow,
+.journey,
+footer {
+    background-color: $white-shade;
+}
+.favouriteBucket,
+.yellowHouse,
+.threeGallery {
+    background-color: white;
+}

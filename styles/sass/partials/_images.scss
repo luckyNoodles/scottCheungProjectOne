@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+.image1Mat {
+    background-color: white;
+    width: 900px;
+    height: 50px;
+}
+.image2Mat,
+.image3Mat,
+.image4Mat {
+    background-color: $green-grey;
+}

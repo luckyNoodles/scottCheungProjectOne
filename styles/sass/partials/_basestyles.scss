@@ -1,1 +1,10 @@
-@use "variables" as *;
+@use "variables";
+
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
