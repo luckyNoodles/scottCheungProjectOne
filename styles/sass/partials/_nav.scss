@@ -1,2 +1,9 @@
 @use "variables" as *;
 
+.navFlexContainer {
+    display: flex;
+    justify-content: center;
+    li {
+        margin: 10px 15px;
+    }
+}

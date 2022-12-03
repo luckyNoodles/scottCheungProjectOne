@@ -248,6 +248,7 @@ button {
   font-weight: normal;
   letter-spacing: 1px;
   color: #1f1f1f;
+  text-transform: uppercase;
 }
 
 nav,
@@ -303,6 +304,43 @@ header {
   background-color: #345231;
 }
 
+.headingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerImageContainer {
+  width: 450px;
+  height: 600px;
+}
+.headerImageContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image1Mat {
+  background-color: white;
+  width: 900px;
+  height: 50px;
+}
+
+.navFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navFlexContainer li {
+  margin: 10px 15px;
+}
+
 .whoIsWillow,
 .journey,
 footer {
@@ -315,14 +353,10 @@ footer {
   background-color: white;
 }
 
-.image1Mat {
-  background-color: white;
-  width: 900px;
-  height: 50px;
-}
-
 .image2Mat,
 .image3Mat,
 .image4Mat {
   background-color: #709b6b;
+  width: 400px;
+  height: 500px;
 }
