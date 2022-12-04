@@ -21,7 +21,12 @@ footer {
 }
 /* Section yellow House */
 .yellowHouse {
-    background-image: url(assets/home-image-5.jpg);
+    background-image: url("../assets/home-image-5.jpg");
+    // background-color: aqua;
+    height: 33vh;
+    width: 100vw;
+    object-fit:none;
+    background-repeat: no-repeat;
 }
 
 /* Section three picture gallery*/
