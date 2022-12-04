@@ -409,7 +409,7 @@ footer {
 
 /* favourite things and Bucket List*/
 .favouriteBucket {
-  height: 90vh;
+  height: 66vh;
 }
 
 .favouriteBucket,
@@ -421,10 +421,12 @@ footer {
   display: flex;
 }
 
-.thingList {
+.thingsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image2Container,
@@ -435,30 +437,31 @@ footer {
   height: 50%;
 }
 
+.image2Mat,
+.image3Mat {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+}
+
 .image2Mat {
   background-color: #709b6b;
-  width: 700px;
-  height: 400px;
-  z-index: 0;
-  position: absolute;
   top: -20px;
   left: -160px;
 }
 
 .image3Mat {
   background-color: #345231;
-  width: 700px;
-  height: 400px;
-  z-index: 0;
-  position: absolute;
-  top: -500px;
-  right: 0px;
+  top: -360px;
+  right: -160px;
 }
 
 .bridgeImageContainer {
   position: relative;
 }
 .bridgeImageContainer img {
+  position: absolute;
   z-index: 1;
 }
 
@@ -466,6 +469,7 @@ footer {
   position: relative;
 }
 .lillyImageContainer img {
+  position: absolute;
   z-index: 1;
 }
 

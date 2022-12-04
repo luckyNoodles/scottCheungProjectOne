@@ -17,7 +17,7 @@ footer {
 }
 /* favourite things and Bucket List*/
 .favouriteBucket {
-    height: 90vh;
+    height: 66vh;
 }
 .favouriteBucket,
 .yellowHouse,
@@ -25,9 +25,9 @@ footer {
     background-color: white;
     display: flex;
 }
-.thingList {
+.thingsList {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .image2Container,
 .image3Container,
@@ -36,35 +36,35 @@ footer {
     width: 50%;
     height:50%;
 }
-
-
+.image2Mat,
+.image3Mat {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+    
+}
 .image2Mat {
     background-color: $green-grey;
-    width: 700px;
-    height: 400px;
-    z-index: 0;
-    position: absolute;
     top: -20px;
     left: -160px;
 }
 .image3Mat {
     background-color: $pine;
-    width: 700px;
-    height: 400px;
-    z-index: 0;
-    position: absolute;
-    top: -500px;
-    right: 0px;
+    top: -360px;
+    right: -160px;
 }
 .bridgeImageContainer {
     position: relative;
     img {
+        position: absolute;
         z-index: 1;
     }
 }
 .lillyImageContainer {
     position: relative;
     img {
+        position: absolute;
         z-index: 1;
     } 
 }
