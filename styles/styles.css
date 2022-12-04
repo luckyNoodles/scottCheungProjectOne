@@ -341,12 +341,14 @@ header {
   margin: 10px 15px;
 }
 
+/* Section Who Is Willow */
 .whoIsWillow,
 .journey,
 footer {
   background-color: #f6f6f6;
 }
 
+/* Section Who Is Willow */
 .favouriteBucket,
 .yellowHouse,
 .threeGallery {
@@ -360,3 +362,6 @@ footer {
   width: 400px;
   height: 500px;
 }
+
+/* Section yellow House */
+/* Section three picture gallery*/
