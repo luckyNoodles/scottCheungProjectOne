@@ -3,11 +3,13 @@
 .navFlexContainer {
     display: flex;
     justify-content: center;
+
     li {
         margin: 20px 20px;
         a:hover {
             color: $accent;
         }
+
         h2 {
             font-size: 1.8rem;
             color: $white-shade;

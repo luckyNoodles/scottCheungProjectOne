@@ -396,4 +396,8 @@ footer {
 }
 
 /* Section yellow House */
+.yellowHouse {
+  background-image: url(assets/home-image-5.jpg);
+}
+
 /* Section three picture gallery*/
