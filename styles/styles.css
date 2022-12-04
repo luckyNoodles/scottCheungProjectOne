@@ -301,9 +301,17 @@ li {
   list-style: none;
 }
 
+button {
+  background-color: #e4a436;
+}
+
+.matContainer {
+  position: relative;
+}
+
 header {
   background-color: #345231;
-  height: 46vh;
+  height: 47vh;
   margin: -20px;
 }
 
@@ -374,25 +382,99 @@ header {
 }
 
 /* Section Who Is Willow */
-.whoIsWillow,
+.whoSection,
 .journey,
 footer {
   background-color: #f6f6f6;
+  position: relative;
 }
 
 /* Section Who Is Willow */
+.whoIsWillow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 33vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* favourite things and Bucket List*/
+.favouriteBucket {
+  height: 90vh;
+}
+
 .favouriteBucket,
 .yellowHouse,
 .threeGallery {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.image2Mat,
-.image3Mat,
+.thingList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image2Container,
+.image3Container,
+.favouriteThings,
+.bucketList {
+  width: 50%;
+  height: 50%;
+}
+
+.image2Mat {
+  background-color: #709b6b;
+  width: 700px;
+  height: 400px;
+  z-index: 0;
+  position: absolute;
+  top: -20px;
+  left: -160px;
+}
+
+.image3Mat {
+  background-color: #345231;
+  width: 700px;
+  height: 400px;
+  z-index: 0;
+  position: absolute;
+  top: -500px;
+  right: 0px;
+}
+
+.bridgeImageContainer {
+  position: relative;
+}
+.bridgeImageContainer img {
+  z-index: 1;
+}
+
+.lillyImageContainer {
+  position: relative;
+}
+.lillyImageContainer img {
+  z-index: 1;
+}
+
+/* journey section*/
 .image4Mat {
   background-color: #709b6b;
-  width: 400px;
-  height: 500px;
+  width: 700px;
+  height: 400px;
+  z-index: 0;
 }
 
 /* Section yellow House */

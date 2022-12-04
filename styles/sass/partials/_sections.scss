@@ -1,23 +1,79 @@
 @use "variables" as *;
 
 /* Section Who Is Willow */
-.whoIsWillow,
+.whoSection,
 .journey,
 footer {
     background-color: $white-shade;
+    position: relative;
 }
 /* Section Who Is Willow */
+.whoIsWillow {
+    display: flex;
+    flex-direction: column;
+    height: 33vh;
+    justify-content: center;
+    align-items: center;
+}
+/* favourite things and Bucket List*/
+.favouriteBucket {
+    height: 90vh;
+}
 .favouriteBucket,
 .yellowHouse,
 .threeGallery {
     background-color: white;
+    display: flex;
 }
-.image2Mat,
-.image3Mat,
+.thingList {
+    display: flex;
+    // flex-wrap: wrap;
+}
+.image2Container,
+.image3Container,
+.favouriteThings,
+.bucketList{
+    width: 50%;
+    height:50%;
+}
+
+
+.image2Mat {
+    background-color: $green-grey;
+    width: 700px;
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+    top: -20px;
+    left: -160px;
+}
+.image3Mat {
+    background-color: $pine;
+    width: 700px;
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+    top: -500px;
+    right: 0px;
+}
+.bridgeImageContainer {
+    position: relative;
+    img {
+        z-index: 1;
+    }
+}
+.lillyImageContainer {
+    position: relative;
+    img {
+        z-index: 1;
+    } 
+}
+/* journey section*/
 .image4Mat {
     background-color: $green-grey;
-    width: 400px;
-    height: 500px;
+    width: 700px;
+    height: 400px;
+    z-index: 0;
 }
 /* Section yellow House */
 .yellowHouse {
