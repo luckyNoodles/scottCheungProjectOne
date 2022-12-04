@@ -257,8 +257,9 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 7rem;
   color: #f6f6f6;
+  padding-left: 100px;
 }
 
 h2 {
@@ -302,31 +303,54 @@ li {
 
 header {
   background-color: #345231;
+  height: 46vh;
+  margin: -20px;
 }
 
 .headingContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 650px;
+}
+
+.circleContainer {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 235px;
+  left: 50px;
+}
+.circleContainer img {
+  width: 123px;
 }
 
 .headerImageContainer {
-  width: 450px;
-  height: 600px;
+  width: 500px;
+  position: absolute;
+  right: 28px;
+  top: 30px;
+  z-index: 1;
 }
 .headerImageContainer img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .image1Mat {
   background-color: white;
-  width: 900px;
-  height: 50px;
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  z-index: 0;
 }
 
 .navFlexContainer {
@@ -338,7 +362,15 @@ header {
           justify-content: center;
 }
 .navFlexContainer li {
-  margin: 10px 15px;
+  margin: 20px 20px;
+}
+.navFlexContainer li a:hover {
+  color: #e4a436;
+}
+.navFlexContainer li h2 {
+  font-size: 1.8rem;
+  color: #f6f6f6;
+  margin: 0px 15px;
 }
 
 .whoIsWillow,
