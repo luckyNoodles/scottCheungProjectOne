@@ -4,6 +4,14 @@
     display: flex;
     justify-content: center;
     li {
-        margin: 10px 15px;
+        margin: 20px 20px;
+        a:hover {
+            color: $accent;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: $white-shade;
+            margin: 0px 15px;
+        }
     }
 }
