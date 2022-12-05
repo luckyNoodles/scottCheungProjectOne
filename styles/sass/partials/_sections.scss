@@ -11,13 +11,13 @@ footer {
 .whoIsWillow {
     display: flex;
     flex-direction: column;
-    height: 33vh;
+    height: 450px;
     justify-content: center;
     align-items: center;
 }
 /* favourite things and Bucket List*/
 .favouriteBucket {
-    height: 53vh;
+    height: 800px;
 }
 .favouriteBucket,
 .yellowHouse,
@@ -85,7 +85,7 @@ footer {
 }
 /* journey section*/
 .journey {
-    height: 33vh;
+    height: 500px;
     z-index: 0;
 }
 .journeyContainer {
@@ -118,8 +118,8 @@ footer {
     background-image: url("../assets/home-image-5.jpg");
     background-color: $white-shade;
     border: 0px;
-    height: 33vh;
-    width: 100vw;
+    height: 400px;
+    width: 100%;
     object-fit:cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -127,8 +127,9 @@ footer {
 /* Section three picture gallery */
 .threeImages {
     display: flex;
-    justify-content: space-between;
-    margin: 75px 0px;
+    justify-content:space-between;
+    height: 400px;
+    margin: 75px 0px 75px 0px;
     img{
         width: 380px;
         height: 380px;
@@ -138,7 +139,9 @@ footer {
 .footerNav {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0px;
+    height: 600px;
+    padding: 50px 0px;
+    margin: 0px;
     li {
         display: flex;
         width: 50%;

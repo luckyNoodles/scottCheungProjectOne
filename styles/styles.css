@@ -428,7 +428,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 33vh;
+  height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -439,7 +439,7 @@ footer {
 
 /* favourite things and Bucket List*/
 .favouriteBucket {
-  height: 53vh;
+  height: 800px;
 }
 
 .favouriteBucket,
@@ -524,7 +524,7 @@ footer {
 
 /* journey section*/
 .journey {
-  height: 33vh;
+  height: 500px;
   z-index: 0;
 }
 
@@ -568,8 +568,8 @@ footer {
   background-image: url("../assets/home-image-5.jpg");
   background-color: #f6f6f6;
   border: 0px;
-  height: 33vh;
-  width: 100vw;
+  height: 400px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center center;
@@ -584,7 +584,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 75px 0px;
+  height: 400px;
+  margin: 75px 0px 75px 0px;
 }
 .threeImages img {
   width: 380px;
@@ -598,7 +599,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 100px 0px;
+  height: 600px;
+  padding: 50px 0px;
+  margin: 0px;
 }
 .footerNav li {
   display: -webkit-box;
