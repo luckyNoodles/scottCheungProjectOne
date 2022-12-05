@@ -41,7 +41,7 @@ footer {
     width: 800px;
     height: 400px;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 .image2Mat {
     background-color: $green-grey;
@@ -68,7 +68,7 @@ footer {
         position: absolute;
         top: 80px;
         right: 20px;
-        z-index: 1;
+        z-index: 2;
     } 
 }
 .favouriteThings {
@@ -86,7 +86,7 @@ footer {
 /* journey section*/
 .journey {
     height: 33vh;
-    z-index: -1;
+    z-index: 0;
 }
 .journeyContainer {
     display: flex;
@@ -116,11 +116,57 @@ footer {
 /* Section yellow House */
 .yellowHouse {
     background-image: url("../assets/home-image-5.jpg");
-    // background-color: aqua;
+    background-color: $white-shade;
+    border: 0px;
     height: 33vh;
     width: 100vw;
-    object-fit:none;
+    object-fit:cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-
-/* Section three picture gallery*/
+/* Section three picture gallery */
+.threeImages {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px 0px;
+    img{
+        width: 380px;
+        height: 380px;
+    }
+}
+/* Footer Section */
+.footerNav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    li {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        .footerText {
+            display: flex;
+            flex-direction: column;
+            h3 {
+                margin: 10px 0px 5px 20px;
+                transition: font-size .2s .2s;
+            }
+            h3:hover,
+            h3:focus {
+                font-size: 1.9rem;
+            }
+            p {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.copyrite {
+    background-color: $black;
+    p {
+        color: $white-shade;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}

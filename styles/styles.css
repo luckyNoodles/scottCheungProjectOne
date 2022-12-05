@@ -306,13 +306,38 @@ button {
   padding: 10px 20px;
 }
 
+button:hover,
+button:focus {
+  border: 3px solid #345231;
+}
+
 .matContainer {
   position: relative;
 }
 
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 145px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e4a436;
+}
+.icon img {
+  height: 25px;
+  width: 25px;
+}
+
 header {
   background-color: #345231;
-  height: 47vh;
+  height: 850px;
   margin: -20px;
 }
 
@@ -342,11 +367,12 @@ header {
 }
 
 .headerImageContainer {
-  width: 500px;
+  width: 40%;
+  height: 550px;
   position: absolute;
   right: 55px;
   top: 30px;
-  z-index: 1;
+  z-index: 2;
 }
 .headerImageContainer img {
   width: 100%;
@@ -354,12 +380,12 @@ header {
 
 .image1Mat {
   background-color: white;
-  width: 500px;
-  height: 700px;
+  width: 40%;
+  height: 740px;
   position: absolute;
   right: 35px;
   top: 50px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .navFlexContainer {
@@ -380,6 +406,9 @@ header {
   font-size: 1.8rem;
   color: #f6f6f6;
   margin: 0px 15px;
+}
+.navFlexContainer li h2:hover {
+  color: #e4a436;
 }
 
 /* Section Who Is Willow */
@@ -443,7 +472,7 @@ footer {
   width: 800px;
   height: 400px;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 .image2Mat {
@@ -475,7 +504,7 @@ footer {
   position: absolute;
   top: 80px;
   right: 20px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .favouriteThings {
@@ -496,7 +525,7 @@ footer {
 /* journey section*/
 .journey {
   height: 33vh;
-  z-index: -1;
+  z-index: 0;
 }
 
 .journeyContainer {
@@ -537,11 +566,76 @@ footer {
 /* Section yellow House */
 .yellowHouse {
   background-image: url("../assets/home-image-5.jpg");
+  background-color: #f6f6f6;
+  border: 0px;
   height: 33vh;
   width: 100vw;
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* Section three picture gallery*/
+/* Section three picture gallery */
+.threeImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 75px 0px;
+}
+.threeImages img {
+  width: 380px;
+  height: 380px;
+}
+
+/* Footer Section */
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0px;
+}
+.footerNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.footerNav li .footerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footerNav li .footerText h3 {
+  margin: 10px 0px 5px 20px;
+  -webkit-transition: font-size 0.2s 0.2s;
+  transition: font-size 0.2s 0.2s;
+}
+.footerNav li .footerText h3:hover,
+.footerNav li .footerText h3:focus {
+  font-size: 1.9rem;
+}
+.footerNav li .footerText p {
+  margin-left: 20px;
+}
+
+.copyrite {
+  background-color: #1f1f1f;
+}
+.copyrite p {
+  color: #f6f6f6;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 0px;
+}
