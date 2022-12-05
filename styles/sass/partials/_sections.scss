@@ -17,7 +17,7 @@ footer {
 }
 /* favourite things and Bucket List*/
 .favouriteBucket {
-    height: 66vh;
+    height: 53vh;
 }
 .favouriteBucket,
 .yellowHouse,
@@ -42,7 +42,6 @@ footer {
     height: 400px;
     position: absolute;
     z-index: 0;
-    
 }
 .image2Mat {
     background-color: $green-grey;
@@ -51,13 +50,15 @@ footer {
 }
 .image3Mat {
     background-color: $pine;
-    top: -360px;
+    top: -250px;
     right: -160px;
 }
 .bridgeImageContainer {
     position: relative;
     img {
         position: absolute;
+        top: -40px;
+        left: -20px;
         z-index: 1;
     }
 }
@@ -65,15 +66,52 @@ footer {
     position: relative;
     img {
         position: absolute;
+        top: 80px;
+        right: 20px;
         z-index: 1;
     } 
 }
+.favouriteThings {
+    padding: 70px 10px 5px 90px;
+}
+.bucketList {
+    padding-right: 130px;
+    padding-top: 50px;
+    text-align: right;
+    button{
+    justify-content: right;
+    }
+    
+}
 /* journey section*/
+.journey {
+    height: 33vh;
+    z-index: -1;
+}
+.journeyContainer {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.journeyImageContainer img {
+    width: 260px;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+}
 .image4Mat {
     background-color: $green-grey;
-    width: 700px;
-    height: 400px;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
     z-index: 0;
+}
+.journeyText {
+    width: 75%;
+    padding: 100px 0px 40px 80px;
+    justify-content: flex-end;
 }
 /* Section yellow House */
 .yellowHouse {
