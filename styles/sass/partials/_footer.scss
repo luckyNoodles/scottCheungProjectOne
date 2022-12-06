@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.footerNav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    padding: 50px 0px;
+    margin: 0px;
+
+    li {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        position: relative;
+
+        .footerText {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                margin: 10px 0px 5px 20px;
+                transition: font-size .2s .2s;
+            }
+
+            h3:hover,
+            h3:focus {
+                font-size: 1.9rem;
+            }
+
+            p {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $accent;
+
+    img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+.copyrite {
+    background-color: $black;
+
+    p {
+        color: $white-shade;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}
