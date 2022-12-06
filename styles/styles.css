@@ -259,7 +259,6 @@ body {
 h1 {
   font-size: 7rem;
   color: #f6f6f6;
-  padding-left: 115px;
 }
 
 h2 {
@@ -317,8 +316,11 @@ button:focus {
 
 header {
   background-color: #345231;
-  height: 850px;
   margin: -20px;
+}
+
+.indexHeader {
+  height: 850px;
 }
 
 .headingContainer {
@@ -371,6 +373,35 @@ header {
   z-index: 1;
 }
 
+/* Blog Header Styles */
+.blogHeaderBody {
+  background-image: url(../assets/blog-image-1.jpg);
+  height: 400px;
+  border: 0px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.blogHeaderBody h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: #345231;
+}
+
 .navFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,6 +409,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10px 0px 10px 0px;
 }
 .navFlexContainer li {
   margin: 20px 20px;

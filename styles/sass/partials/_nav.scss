@@ -1,8 +1,13 @@
 @use "variables" as *;
 
+nav {
+    background-color: $pine;
+}
+
 .navFlexContainer {
     display: flex;
     justify-content: center;
+    margin: 10px 0px 10px 0px;
 
     li {
         margin: 20px 20px;
