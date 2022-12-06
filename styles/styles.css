@@ -379,10 +379,7 @@ header {
   height: 400px;
   width: 100%;
   margin-bottom: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,8 +582,7 @@ footer {
   border: 0px;
   height: 400px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -729,6 +725,7 @@ aside {
 .blogForm #commentBox {
   width: 850px;
   margin: 20px;
+  padding: 20px;
   height: 200px;
   border: 0px;
   text-align: start;
