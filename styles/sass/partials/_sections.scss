@@ -135,3 +135,86 @@ footer {
         height: 380px;
     }
 }
+/* ----------------Blog Sections---------------*/
+main {
+    background-color: $white-shade;
+}
+.blogContainer {
+    height: auto;
+    margin: 0px auto;
+    padding-top: 100px;
+    display: flex;
+}
+aside {
+    width: 30%;
+}
+.blogMain {
+    width: 70%;
+    margin:  0px;
+}
+.aboutAuthor,
+.recentPosts,
+.myDestinations,
+.post1,
+.post2 {
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    img {
+        justify-content: center;
+    }
+    li {
+        list-style-type: disc;
+        a{
+            color: $black;
+        }
+    }
+    h3 {
+        margin-top: 0px;
+    }
+}
+.aboutAuthor img {
+    width: 280px;   
+}
+.post1,
+.post2 {
+    flex-direction: row;
+    .imagePost {
+        width: 15%;
+        margin-top: 15px;
+    }
+    article {
+        width: 85%; 
+    }
+}
+.myDestinations,
+.post2 {
+    border-bottom: 5px solid $green-grey;
+}
+.blogForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    #name,
+    #email {
+        width: 410px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 0px;
+        border: 0px;
+    }
+    #commentBox {
+        width: 850px;
+        margin: 20px;
+        height: 200px;
+        border: 0px;
+        text-align: start;
+    }
+    button {
+        width: 850px;
+    }
+}
