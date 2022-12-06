@@ -380,6 +380,8 @@ header {
   width: 100%;
   margin-bottom: 20px;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,6 +608,7 @@ footer {
 /* ----------------Blog Sections---------------*/
 main {
   background-color: #f6f6f6;
+  margin-bottom: -20px;
 }
 
 .blogContainer {
@@ -702,36 +705,56 @@ aside {
 }
 
 .blogForm {
+  height: 700px;
+}
+.blogForm .nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.blogForm #name,
-.blogForm #email {
-  width: 410px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   height: 70px;
-  padding: 20px;
-  margin: 10px 0px;
-  border: 0px;
 }
-.blogForm #commentBox {
-  width: 850px;
-  margin: 20px;
+.blogForm .nameEmail .nameInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogForm .nameEmail .nameInput input {
+  width: 95%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+  margin: 5px 25px;
+}
+.blogForm .commentInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogForm .commentInput #commentBox {
+  height: 400px;
+  width: 95%;
   padding: 20px;
-  height: 200px;
-  border: 0px;
-  text-align: start;
 }
 .blogForm button {
-  width: 850px;
+  margin: 25px;
+  width: 95%;
+}
+
+footer {
+  background-color: #1f1f1f;
 }
 
 .footerNav {
@@ -794,9 +817,6 @@ aside {
   width: 25px;
 }
 
-.copyrite {
-  background-color: #1f1f1f;
-}
 .copyrite p {
   color: #f6f6f6;
   padding: 5px;

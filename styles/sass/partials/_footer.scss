@@ -1,5 +1,8 @@
 @use "variables" as *;
 
+footer {
+    background-color: $black;
+}
 .footerNav {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +52,7 @@
 }
 
 .copyrite {
-    background-color: $black;
+
 
     p {
         color: $white-shade;
