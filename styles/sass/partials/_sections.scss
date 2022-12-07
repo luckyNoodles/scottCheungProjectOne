@@ -81,7 +81,6 @@ footer {
     button{
     justify-content: right;
     }
-    
 }
 /* journey section*/
 .journey {
@@ -196,20 +195,14 @@ aside {
     border-bottom: 5px solid $green-grey;
 }
 .blogForm {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
     height: 700px;
-    
     input,
     #commentBox {
         width: 95%;
         justify-content: center;
         padding: 0px 40px;
         border: 0px;
-        
     }
-
     .nameEmail {
         display: flex;
         justify-content:space-between;
@@ -225,7 +218,6 @@ aside {
                height: 80px;
             }
         }
-        
     }
     .commentInput {
         display: flex;
@@ -234,12 +226,53 @@ aside {
             height: 400px;
             padding: 40px 40px;
         }
-       
     }
-
     button {
         margin: 25px;
         width: 95%;
     }
-
+}
+/* ----------------Contact Sections---------------*/
+.contactBody {
+    background-color: $white-shade;
+    margin: 0px;
+}
+.bodyContainer {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    .contactInfo {
+        width: 33%;
+    }
+    .form {
+        width: 66%;
+    }
+}
+.contactInfo {
+    background-color: white;
+    height: 400px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.socialContainer {
+    display: flex;
+    justify-content: left;
+    padding: 0px;
+    li {
+        margin: 10px;
+    }
+    img {
+    width: 40px;
+    height: 40px;
+    }
+}
+.contactEmail {
+    color: $black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 35px;
+}
+.contactAddressBox {
+    padding: 5px 25px;
+    line-height: .8rem;
 }

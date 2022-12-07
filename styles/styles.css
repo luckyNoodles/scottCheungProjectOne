@@ -373,9 +373,17 @@ header {
   z-index: 1;
 }
 
-/* Blog Header Styles */
+/* Blog and Contact Header Styles */
 .blogHeaderBody {
   background-image: url(../assets/blog-image-1.jpg);
+}
+
+.contactHeaderBody {
+  background-image: url(../assets/contact-image-1.jpg);
+}
+
+.blogHeaderBody,
+.contactHeaderBody {
   height: 400px;
   width: 100%;
   margin-bottom: 20px;
@@ -392,7 +400,8 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.blogHeaderBody h1 {
+.blogHeaderBody h1,
+.contactHeaderBody h1 {
   font-size: 4.3rem;
   margin-bottom: 15px;
 }
@@ -757,7 +766,64 @@ aside {
   width: 95%;
 }
 
-footer {
+/* ----------------Contact Sections---------------*/
+.contactBody {
+  background-color: #f6f6f6;
+  margin: 0px;
+}
+
+.bodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bodyContainer .contactInfo {
+  width: 33%;
+}
+.bodyContainer .form {
+  width: 66%;
+}
+
+.contactInfo {
+  background-color: white;
+  height: 400px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0px;
+}
+.socialContainer li {
+  margin: 10px;
+}
+.socialContainer img {
+  width: 40px;
+  height: 40px;
+}
+
+.contactEmail {
+  color: #1f1f1f;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.contactAddressBox {
+  padding: 5px 25px;
+  line-height: 0.8rem;
+}
+
+.copyrite {
   background-color: #1f1f1f;
 }
 

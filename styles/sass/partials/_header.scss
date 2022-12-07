@@ -27,7 +27,6 @@ header {
     img {
         width: 123px;
     }
-
 }
 .headerImageContainer {
     width: 500px;
@@ -36,13 +35,10 @@ header {
     right: 0px;
     top: 75px;
     z-index: 2;
-
     img {
         width: 100%;
-        // object-fit: cover;
     }
 }
-
 .image1Mat {
     background-color: white;
     width: 500px;
@@ -52,10 +48,16 @@ header {
     top: 90px;
     z-index: 1;
 }
-/* Blog Header Styles */
+/* Blog and Contact Header Styles */
+
 .blogHeaderBody {
     background-image: url(../assets/blog-image-1.jpg);
-    // background-color: $green-grey;
+}
+.contactHeaderBody {
+    background-image: url(../assets/contact-image-1.jpg);
+}
+.blogHeaderBody,
+.contactHeaderBody {
     height: 400px;
     width: 100%;
     margin-bottom: 20px;
@@ -68,7 +70,5 @@ header {
     h1 {
         font-size: 4.3rem;
         margin-bottom: 15px;
-        
     }
-
 }
