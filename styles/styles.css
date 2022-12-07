@@ -393,7 +393,7 @@ header {
           align-items: flex-end;
 }
 .blogHeaderBody h1 {
-  font-size: 4rem;
+  font-size: 4.3rem;
   margin-bottom: 15px;
 }
 
@@ -679,7 +679,7 @@ aside {
 }
 
 .aboutAuthor img {
-  width: 280px;
+  width: 350px;
 }
 
 .post1,
@@ -707,6 +707,15 @@ aside {
 .blogForm {
   height: 700px;
 }
+.blogForm input,
+.blogForm #commentBox {
+  width: 95%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 40px;
+  border: 0px;
+}
 .blogForm .nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,26 +723,22 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 70px;
+  width: 98%;
+  height: 80px;
+  margin: 30px 10px;
 }
 .blogForm .nameEmail .nameInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 95%;
   height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .blogForm .nameEmail .nameInput input {
-  width: 95%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px 20px;
-  margin: 5px 25px;
+  height: 80px;
 }
 .blogForm .commentInput {
   display: -webkit-box;
@@ -745,8 +750,7 @@ aside {
 }
 .blogForm .commentInput #commentBox {
   height: 400px;
-  width: 95%;
-  padding: 20px;
+  padding: 40px 40px;
 }
 .blogForm button {
   margin: 25px;
