@@ -25,3 +25,35 @@ nav {
         }
     }
 }
+.hiddenToggle {
+    display: none;
+}
+/* Media Query 320px */
+@media (max-width: 320px) {
+
+.navFlexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 150px;
+    line-height: 5px;
+    padding: 0px;
+    position: relative;
+    top: 15px;
+    right: 130px;
+
+        li {
+            
+            h2 {
+            font-size: 1rem;
+            margin: 0px;
+        }
+    }
+       
+}
+
+
+
+
+
+} /* Media Query End */
