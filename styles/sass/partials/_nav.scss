@@ -25,12 +25,25 @@ nav {
         }
     }
 }
-.hiddenToggle {
-    display: none;
-}
 /* Media Query 320px */
+nav {
+    margin-top: 20PX;
+    position: relative;
+}
 @media (max-width: 320px) {
 
+// Hide the toggle button
+#expandNav {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    opacity: .1;
+}
+.material-symbols-outlined {
+    z-index: 10;
+    margin-top: 10px;
+}
+//Hide menu list
 .navFlexContainer {
     display: flex;
     flex-direction: column;
@@ -38,21 +51,26 @@ nav {
     width: 150px;
     line-height: 5px;
     padding: 0px;
-    position: relative;
-    top: 15px;
-    right: 130px;
-
-        li {
-            
+    visibility:collapse;
+        li {   
             h2 {
             font-size: 1rem;
             margin: 0px;
         }
-    }
-       
+    }  
 }
 
+//Style the button
+// #hamburger {
+    
+// }
 
+// show nav
+#expandNav:checked + .navFlexContainer {
+    visibility: visible;
+}
+
+//style the button when the checkbox is checked
 
 
 
