@@ -26,13 +26,13 @@ nav {
     }
 }
 /* Media Query 320px */
+
+@media (max-width: 320px) {
 nav {
     margin-top: 20PX;
     position: relative;
-}
-@media (max-width: 320px) {
-
-// Hide the toggle button
+    }
+    // Hide the toggle button
 #expandNav {
     position: absolute;
     top: 15px;
@@ -43,7 +43,7 @@ nav {
     z-index: 10;
     margin-top: 10px;
 }
-//Hide menu list
+    //Hide menu list
 .navFlexContainer {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,9 @@ nav {
     width: 150px;
     line-height: 5px;
     padding: 0px;
-    visibility:collapse;
+    position: absolute;
+    transform: translateX(-125px);
+    transition: transform 0.5s ease-in-out;
         li {   
             h2 {
             font-size: 1rem;
@@ -59,19 +61,12 @@ nav {
         }
     }  
 }
-
-//Style the button
-// #hamburger {
-    
-// }
-
-// show nav
+    // show nav
 #expandNav:checked + .navFlexContainer {
-    visibility: visible;
+    // visibility: visible;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
 }
-
-//style the button when the checkbox is checked
-
 
 
 } /* Media Query End */

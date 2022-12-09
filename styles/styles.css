@@ -475,12 +475,11 @@ nav {
 }
 
 /* Media Query 320px */
-nav {
-  margin-top: 20PX;
-  position: relative;
-}
-
 @media (max-width: 320px) {
+  nav {
+    margin-top: 20PX;
+    position: relative;
+  }
   #expandNav {
     position: absolute;
     top: 15px;
@@ -505,14 +504,25 @@ nav {
     width: 150px;
     line-height: 5px;
     padding: 0px;
-    visibility: collapse;
+    position: absolute;
+    -webkit-transform: translateX(-125px);
+            transform: translateX(-125px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .navFlexContainer li h2 {
     font-size: 1rem;
     margin: 0px;
   }
   #expandNav:checked + .navFlexContainer {
-    visibility: visible;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 } /* Media Query End */
 /* Section Who Is Willow */
