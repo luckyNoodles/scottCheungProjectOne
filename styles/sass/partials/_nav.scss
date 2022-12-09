@@ -35,24 +35,30 @@ nav {
     // Hide the toggle button
 #expandNav {
     position: absolute;
-    top: 15px;
-    left: 5px;
-    opacity: .1;
+    top: 10px;
+    left: -3px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
 }
 .material-symbols-outlined {
+    // position: absolute;
+    left: -5px;
+    top: 0px;
     z-index: 10;
     margin-top: 10px;
 }
     //Hide menu list
 .navFlexContainer {
+    // background-color: $green-grey;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    width: 150px;
+    width: 112px;
     line-height: 5px;
     padding: 0px;
     position: absolute;
-    transform: translateX(-125px);
+    transform: translateX(-130px);
     transition: transform 0.5s ease-in-out;
         li {   
             h2 {
@@ -64,7 +70,7 @@ nav {
     // show nav
 #expandNav:checked + .navFlexContainer {
     // visibility: visible;
-    transform: translateX(0px);
+    transform: translateX(-25px);
     transition: transform 0.5s ease-in-out;
 }
 

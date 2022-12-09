@@ -85,26 +85,25 @@ header {
         height: 50px;
 
         h1 {
-            font-size: 2rem;
-            padding-left: 115px;
+            font-size: 2.4rem;
+            padding-left: 85px;
         }
     }
 .headerImageContainer {
     width: 160px;
+    height: 224px;
     position: absolute;
-    right: -5px;
-    top: 100px;
+    right: 20px;
+    top: 90px;
     z-index: 2;
-
     img {
         width: 100%;
     }
 }
 .circleContainer {
-    width: 122px;
-    height: 116px;
-    top: -10px;
-    left: 95px;
+    width: 55px;
+    top: -15px;
+    left: 60px;
     img {
         width: 55px;
     }
@@ -114,10 +113,11 @@ header {
     width: 155px;
     height: 215px;
     position: absolute;
-    right: -12px;
-    top: 115px;
+    right: 10px;
+    top: 100px;
     z-index: 1;
 }
+/* Blog section */
 
 
 }

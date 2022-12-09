@@ -279,6 +279,67 @@ aside {
 
 /* Media Query 320px */
 @media (max-width: 320px) {
-
+.wrapper {
+    width: 80%;
+}    
+/* Section Who Is Willow */
+    .whoIsWillow {
+        height: 750px;
+        h2 {
+            font-size: 1.4rem;
+            margin: 10px auto;;
+        }
+        p {
+            margin: 15px auto;
+        }
+    }
     
+}
+/* Favourites list section */
+.favouriteBucket {
+    height: auto;
+}
+.image2Mat,
+.image3Mat {
+    display: none;
+
+}
+.image2Container,
+.image3Container,
+.favouriteThings,
+.bucketList {
+    width: 320px;
+}
+.lillyImageContainer {
+    position: relative;
+    background-color: $green-grey;
+
+    img {
+        position: static;
+        width: 250px;
+    }
+}
+.bridgeImageContainer {
+    width: 320px;
+
+    img {
+        position: static;
+        width: 320px;
+    }
+}
+.image2Container {
+    order: 1;
+}
+.image3Container {
+    order: 3;
+}
+.favouriteThings {
+    padding: 0px;
+    margin-bottom: 30px;
+    order: 2;
+}
+.bucketList {
+    padding:0px;
+    text-align: left;
+    order: 4;
 }
