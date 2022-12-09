@@ -74,37 +74,48 @@ header {
 }
 /* Media Query 320px */
 @media (max-width: 320px) {
-
+.indexHeader {
+    height: 360px;
+}
 .headingContainer {
         display: flex;
         justify-content: left;
         align-items: center;
         position: relative;
-        height: 325px;
+        height: 50px;
 
         h1 {
-            padding-left: 130px;
+            font-size: 2rem;
+            padding-left: 115px;
         }
     }
 .headerImageContainer {
-    width: 250px;
-    height: 3500px;
+    width: 160px;
     position: absolute;
-    right: 0px;
-    top: 75px;
+    right: -5px;
+    top: 100px;
     z-index: 2;
 
     img {
         width: 100%;
     }
 }
+.circleContainer {
+    width: 122px;
+    height: 116px;
+    top: -10px;
+    left: 95px;
+    img {
+        width: 55px;
+    }
+}
 .image1Mat {
     background-color: white;
-    width: 250px;
-    height: 350px;
+    width: 155px;
+    height: 215px;
     position: absolute;
-    right: -20px;
-    top: 90px;
+    right: -12px;
+    top: 115px;
     z-index: 1;
 }
 
