@@ -200,7 +200,6 @@ aside {
     #commentBox {
         width: 95%;
         justify-content: center;
-        padding: 0px 40px;
         border: 0px;
     }
     .nameEmail {
@@ -215,23 +214,25 @@ aside {
             height: 60px;
             justify-content: center;
             input {
-               height: 80px;
+                height: 80px;
             }
         }
     }
-    .commentInput {
-        display: flex;
-        justify-content: center;
-        #commentBox {
-            height: 400px;
-            padding: 40px 40px;
-        }
-    }
+   
     button {
         margin: 25px;
         width: 95%;
     }
 }
+ .commentInput {
+     display: flex;
+     justify-content: center;
+
+     #commentBox {
+         height: 400px;
+         padding: 40px 0px;
+     }
+ }
 /* ----------------Contact Sections---------------*/
 .contactBody {
     background-color: $white-shade;
@@ -414,9 +415,93 @@ aside {
       }
 
   }
-  
-
+/* Blog Sections */
+.blogContainer {
+    flex-direction: column;
+    padding-top: 30px;
+    
 }
+.blogHeaderBody {
+    margin-bottom: 25px;
+    height: 300px;
+    align-items: center;
+    line-height: 3rem;
+    h1 {
+        font-size: 2.4rem;
+        text-align: right;
+        }
+}
+.aside {
+    width: 100%;
+}
+.aboutAuthor {
+    // width: 250px;
+    padding: 0px;
+    margin: 0px;
+    img {
+        width: 250px;
+    }
+    h4 {
+        margin: 10px;
+    }
+}
+.recentPosts {
+    padding: 10px;
+    margin: 20px 0px;
+    h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+.blogMain {
+    width: 100%;
+    .myDestinations {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+    h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .post1,
+    .post2 {
+        flex-direction: column;
+        padding: 10px;
+            margin: 20px 0px;
+    }       
+}
+.blogForm {
+    height: auto;
+    .nameEmail {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+        .nameInput {
+            margin: 20px 0px;
+            width: 100%;
+            input {
+                width: 100%;
+                padding-left: 10px;
+            }
+        }  
+    }
+    button {
+        margin: 20px 0px;
+        width: 100%;
+    }
+ }
+.commentInput {
+ 
+
+    #commentBox {
+        height: 300px;
+        padding: 20px 10px;
+    }
+}
+
+ }
+
 
     
 
