@@ -947,116 +947,121 @@ aside {
   .whoIsWillow p {
     margin: 15px auto;
   }
-}
-/* MEDIA QUERY Favourites list section */
-.favouriteBucket {
-  height: auto;
-}
-
-.image2Mat,
+  /* MEDIA QUERY Favourites list section */
+  .favouriteBucket {
+    height: auto;
+  }
+  .image2Mat,
 .image3Mat,
 .image4Mat {
-  display: none;
-}
-
-.image2Container,
+    display: none;
+  }
+  .image2Container,
 .image3Container,
 .favouriteThings,
 .bucketList {
-  width: 320px;
+    width: 320px;
+  }
+  .bridgeImageContainer {
+    position: relative;
+    top: -15px;
+    left: -33px;
+    width: 320px;
+    height: 170px;
+  }
+  .bridgeImageContainer img {
+    position: static;
+    width: 320px;
+    z-index: 10;
+  }
+  .lillyImageContainer {
+    position: relative;
+    top: -10px;
+    left: -33px;
+    width: 350px;
+    height: 170px;
+    z-index: 1;
+  }
+  .lillyImageContainer img {
+    position: static;
+    width: 320px;
+    z-index: 10;
+  }
+  .image2Container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .image3Container {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .favouriteThings {
+    padding: 0px;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .bucketList {
+    padding: 0px;
+    text-align: left;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* MEDIA QUERY Journey Section */
+  .journey {
+    height: auto;
+  }
+  .journeyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0px;
+  }
+  .image4Container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .journeyImageContainer img {
+    position: static;
+    width: 100%;
+  }
+  .journeyText {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .journeyText p {
+    width: 100%;
+  }
+  .yellowHouse {
+    height: 220px;
+    background-size: 220%;
+  }
+  .threeImages {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .threeImages li {
+    margin-bottom: 50px;
+  }
+  .threeImages li img {
+    width: 250px;
+    height: auto;
+  }
 }
-
-.bridgeImageContainer {
-  position: relative;
-  top: -15px;
-  left: -33px;
-  width: 320px;
-  height: 170px;
-}
-.bridgeImageContainer img {
-  position: static;
-  width: 320px;
-  z-index: 10;
-}
-
-.lillyImageContainer {
-  position: relative;
-  top: -10px;
-  left: -33px;
-  width: 350px;
-  height: 170px;
-  z-index: 1;
-}
-.lillyImageContainer img {
-  position: static;
-  width: 320px;
-  z-index: 10;
-}
-
-.image2Container {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.image3Container {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.favouriteThings {
-  padding: 0px;
-  margin-bottom: 30px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.bucketList {
-  padding: 0px;
-  text-align: left;
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-}
-
-/* MEDIA QUERY Journey Section */
-.journey {
-  height: auto;
-}
-
-.journeyContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 50px 0px;
-}
-
-.image4Container {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.journeyImageContainer img {
-  position: static;
-  width: 100%;
-}
-
-.journeyText {
-  width: 100%;
-  height: auto;
-  padding: 0px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-.journeyText p {
-  width: 100%;
-}
-
 .copyrite {
   background-color: #1f1f1f;
 }
@@ -1129,3 +1134,18 @@ aside {
 }
 
 /* Media Query 320px */
+@media (max-width: 320px) {
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .footerNav li {
+    width: auto;
+  }
+  .icon {
+    display: none;
+  }
+}

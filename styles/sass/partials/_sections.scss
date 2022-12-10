@@ -293,89 +293,130 @@ aside {
             margin: 15px auto;
         }
     }
+  /* MEDIA QUERY Favourites list section */
+  .favouriteBucket {
+      height: auto;
+  }
+
+  .image2Mat,
+  .image3Mat,
+  .image4Mat {
+      display: none;
+  }
+
+  .image2Container,
+  .image3Container,
+  .favouriteThings,
+  .bucketList {
+      width: 320px;
+  }
+
+  .bridgeImageContainer {
+      position: relative;
+      top: -15px;
+      left: -33px;
+      width: 320px;
+      height: 170px;
+
+      // background-color: $green-grey;
+      img {
+          position: static;
+          width: 320px;
+          z-index: 10;
+      }
+  }
+
+  .lillyImageContainer {
+      position: relative;
+      top: -10px;
+      left: -33px;
+      width: 350px;
+      height: 170px;
+      // background-color: $pine;
+      z-index: 1;
+
+      img {
+          position: static;
+          width: 320px;
+          z-index: 10;
+      }
+  }
+
+  .image2Container {
+      order: 1;
+  }
+
+  .image3Container {
+      order: 3;
+  }
+
+  .favouriteThings {
+      padding: 0px;
+      margin-bottom: 30px;
+      order: 2;
+  }
+
+  .bucketList {
+      padding: 0px;
+      text-align: left;
+      order: 4;
+  }
+
+  /* MEDIA QUERY Journey Section */
+  .journey {
+      height: auto;
+  }
+
+  .journeyContainer {
+      flex-direction: column;
+      margin: 50px 0px;
+  }
+
+  .image4Container {
+      order: 1;
+  }
+
+  .journeyImageContainer {
+      img {
+          position: static;
+          width: 100%;
+      }
+  }
+
+  .journeyText {
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      order: 2;
+
+      p {
+          width: 100%;
+      }
+  }
+
+  .yellowHouse {
+      height: 220px;
+      background-size: 220%;
+  }
+
+  .threeImages {
+      height: auto;
+      flex-direction: column;
+      padding: 0px;
+
+      li {
+          margin-bottom: 50px;
+
+          img {
+              width: 250px;
+              height: auto;
+          }
+      }
+
+  }
+  
+
+}
+
     
-}
-/* MEDIA QUERY Favourites list section */
-.favouriteBucket {
-    height: auto;
-}
-.image2Mat,
-.image3Mat,
-.image4Mat {
-   display: none;
-}
-.image2Container,
-.image3Container,
-.favouriteThings,
-.bucketList {
-    width: 320px;
-}
-.bridgeImageContainer {
-    position: relative;
-    top: -15px;
-    left: -33px;
-    width: 320px;
-    height: 170px;
-    // background-color: $green-grey;
-    img {
-        position: static;
-        width: 320px;
-        z-index: 10;
-    }
-}
-.lillyImageContainer {
-    position: relative;
-    top: -10px;
-    left: -33px;
-    width: 350px;
-    height: 170px;
-    // background-color: $pine;
-    z-index: 1;
-    img {
-        position: static;
-        width: 320px;
-        z-index: 10;
-    }
-}
-.image2Container {
-    order: 1;
-}
-.image3Container {
-    order: 3;
-}
-.favouriteThings {
-    padding: 0px;
-    margin-bottom: 30px;
-    order: 2;
-}
-.bucketList {
-    padding:0px;
-    text-align: left;
-    order: 4;
-}
-/* MEDIA QUERY Journey Section */
-.journey {
-    height: auto;
-}
-.journeyContainer {
-    flex-direction: column;
-    margin: 50px 0px;
-}
-.image4Container {
-    order: 1;
-}
-.journeyImageContainer {
-    img {
-        position: static;
-        width: 100%;
-    }
-}
-.journeyText {
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    order: 2;
-    p{
-        width: 100%;
-    }
-}
+

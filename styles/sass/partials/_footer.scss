@@ -55,5 +55,17 @@
 }
 /* Media Query 320px */
 @media (max-width: 320px) {
-    
+.footerNav {
+        flex-direction: column;
+        height: auto;
+        li {
+            width: auto;
+        }
+        
+    }
+.icon {
+    display: none;
+}
+
+
 }
