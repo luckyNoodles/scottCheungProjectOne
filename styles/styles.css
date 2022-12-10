@@ -931,12 +931,12 @@ aside {
   line-height: 0.8rem;
 }
 
-/* Media Query 320px */
+/* ------------- Media Query 320px ----------------------------*/
 @media (max-width: 320px) {
   .wrapper {
     width: 80%;
   }
-  /* Section Who Is Willow */
+  /* MEDIA QUERY Section Who Is Willow */
   .whoIsWillow {
     height: 750px;
   }
@@ -948,13 +948,14 @@ aside {
     margin: 15px auto;
   }
 }
-/* Favourites list section */
+/* MEDIA QUERY Favourites list section */
 .favouriteBucket {
   height: auto;
 }
 
 .image2Mat,
-.image3Mat {
+.image3Mat,
+.image4Mat {
   display: none;
 }
 
@@ -965,21 +966,31 @@ aside {
   width: 320px;
 }
 
-.lillyImageContainer {
-  position: relative;
-  background-color: #709b6b;
-}
-.lillyImageContainer img {
-  position: static;
-  width: 250px;
-}
-
 .bridgeImageContainer {
+  position: relative;
+  top: -15px;
+  left: -33px;
   width: 320px;
+  height: 170px;
 }
 .bridgeImageContainer img {
   position: static;
   width: 320px;
+  z-index: 10;
+}
+
+.lillyImageContainer {
+  position: relative;
+  top: -10px;
+  left: -33px;
+  width: 350px;
+  height: 170px;
+  z-index: 1;
+}
+.lillyImageContainer img {
+  position: static;
+  width: 320px;
+  z-index: 10;
 }
 
 .image2Container {
@@ -1008,6 +1019,42 @@ aside {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
+}
+
+/* MEDIA QUERY Journey Section */
+.journey {
+  height: auto;
+}
+
+.journeyContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0px;
+}
+
+.image4Container {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.journeyImageContainer img {
+  position: static;
+  width: 100%;
+}
+
+.journeyText {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.journeyText p {
+  width: 100%;
 }
 
 .copyrite {
