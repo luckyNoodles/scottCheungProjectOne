@@ -3,7 +3,9 @@
 nav {
     background-color: $pine;
 }
-
+#expandNav {
+    visibility: hidden;
+}
 .navFlexContainer {
     display: flex;
     justify-content: center;
@@ -34,6 +36,7 @@ nav {
     }
     // Hide the toggle button
 #expandNav {
+    visibility: visible;
     position: absolute;
     top: 10px;
     left: -3px;

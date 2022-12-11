@@ -194,6 +194,10 @@ aside {
 .post2 {
     border-bottom: 5px solid $green-grey;
 }
+.expand,
+.expandText {
+   visibility: hidden;
+}
 .blogForm {
     height: 700px;
     input,
@@ -215,10 +219,10 @@ aside {
             justify-content: center;
             input {
                 height: 80px;
+                padding-left: 20px;
             }
         }
     }
-   
     button {
         margin: 25px;
         width: 95%;
@@ -230,7 +234,7 @@ aside {
 
      #commentBox {
          height: 400px;
-         padding: 40px 0px;
+         padding: 40px 20px;
      }
  }
 /* ----------------Contact Sections---------------*/
@@ -419,18 +423,8 @@ aside {
 .blogContainer {
     flex-direction: column;
     padding-top: 30px;
-    
 }
-.blogHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    align-items: center;
-    line-height: 3rem;
-    h1 {
-        font-size: 2.4rem;
-        text-align: right;
-        }
-}
+
 .aside {
     width: 100%;
 }
@@ -439,10 +433,13 @@ aside {
     padding: 0px;
     margin: 0px;
     img {
-        width: 250px;
+        width: 255px;
     }
     h4 {
         margin: 10px;
+    }
+    p {
+        padding: 10px;
     }
 }
 .recentPosts {
@@ -470,6 +467,29 @@ aside {
             margin: 20px 0px;
     }       
 }
+.myDestinations {
+    flex-direction: column;
+    .myTravels {
+        height: 600px;
+        overflow: hidden;
+    }
+    .expand {
+        visibility: visible;
+        width: 20px;
+        opacity: 0;
+    }
+    .expandText {
+        visibility: visible;
+        width: 100%;
+        background-color: $accent;
+        text-align: center;
+    }
+}
+
+.expand:checked + .myTravels {
+    height: auto;
+}
+
 .blogForm {
     height: auto;
     .nameEmail {
@@ -492,16 +512,31 @@ aside {
     }
  }
 .commentInput {
- 
-
     #commentBox {
         height: 300px;
+        width: 100%;
         padding: 20px 10px;
     }
 }
+/*---Contact Me Page---*/
+.bodyContainer {
+    flex-direction: column;
+    margin: 50px 0px;
+    .contactInfo {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        height: auto;
+        // order: 2;
+    }
+    .form {
+        width: 100%;
+        // order: 1;
+    }
+}
 
- }
+/*--------End of Media Query--------*/
 
-
+}
     
 

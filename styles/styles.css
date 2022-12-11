@@ -315,6 +315,11 @@ button:focus {
 }
 
 /* Media Query 320px */
+@media (max-width: 320px) {
+  button {
+    width: 100%;
+  }
+}
 header {
   background-color: #345231;
   margin: -20px;
@@ -458,9 +463,27 @@ header {
     z-index: 1;
   }
   /* Blog section */
+  .blogHeaderBody,
+.contactHeaderBody {
+    margin-bottom: 25px;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 3rem;
+  }
+  .blogHeaderBody h1,
+.contactHeaderBody h1 {
+    font-size: 2.4rem;
+    text-align: right;
+  }
 }
 nav {
   background-color: #345231;
+}
+
+#expandNav {
+  visibility: hidden;
 }
 
 .navFlexContainer {
@@ -494,6 +517,7 @@ nav {
     position: relative;
   }
   #expandNav {
+    visibility: visible;
     position: absolute;
     top: 10px;
     left: -3px;
@@ -821,6 +845,11 @@ aside {
   border-bottom: 5px solid #709b6b;
 }
 
+.expand,
+.expandText {
+  visibility: hidden;
+}
+
 .blogForm {
   height: 700px;
 }
@@ -855,6 +884,7 @@ aside {
 }
 .blogForm .nameEmail .nameInput input {
   height: 80px;
+  padding-left: 20px;
 }
 .blogForm button {
   margin: 25px;
@@ -871,7 +901,7 @@ aside {
 }
 .commentInput #commentBox {
   height: 400px;
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 
 /* ----------------Contact Sections---------------*/
@@ -1069,18 +1099,6 @@ aside {
             flex-direction: column;
     padding-top: 30px;
   }
-  .blogHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 3rem;
-  }
-  .blogHeaderBody h1 {
-    font-size: 2.4rem;
-    text-align: right;
-  }
   .aside {
     width: 100%;
   }
@@ -1089,10 +1107,13 @@ aside {
     margin: 0px;
   }
   .aboutAuthor img {
-    width: 250px;
+    width: 255px;
   }
   .aboutAuthor h4 {
     margin: 10px;
+  }
+  .aboutAuthor p {
+    padding: 10px;
   }
   .recentPosts {
     padding: 10px;
@@ -1122,6 +1143,30 @@ aside {
     padding: 10px;
     margin: 20px 0px;
   }
+  .myDestinations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myDestinations .myTravels {
+    height: 600px;
+    overflow: hidden;
+  }
+  .myDestinations .expand {
+    visibility: visible;
+    width: 20px;
+    opacity: 0;
+  }
+  .myDestinations .expandText {
+    visibility: visible;
+    width: 100%;
+    background-color: #e4a436;
+    text-align: center;
+  }
+  .expand:checked + .myTravels {
+    height: auto;
+  }
   .blogForm {
     height: auto;
   }
@@ -1148,8 +1193,27 @@ aside {
   }
   .commentInput #commentBox {
     height: 300px;
+    width: 100%;
     padding: 20px 10px;
   }
+  /*---Contact Me Page---*/
+  .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0px;
+  }
+  .bodyContainer .contactInfo {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+  }
+  .bodyContainer .form {
+    width: 100%;
+  }
+  /*--------End of Media Query--------*/
 }
 .copyrite {
   background-color: #1f1f1f;
