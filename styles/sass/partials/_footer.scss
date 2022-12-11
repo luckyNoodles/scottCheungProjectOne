@@ -17,7 +17,6 @@
         .footerText {
             display: flex;
             flex-direction: column;
-
             h3 {
                 margin: 10px 0px 5px 20px;
                 transition: font-size .2s .2s;
@@ -36,13 +35,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 145px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
     border-radius: 50%;
     background-color: $accent;
     img {
         height: 24px;
         width: 24px;
+        margin-top: 10px;
     }
 }
 .copyrite { 
@@ -52,20 +52,4 @@
         text-align: center;
         margin-bottom: 0px;
     }
-}
-/* Media Query 320px */
-@media (max-width: 320px) {
-.footerNav {
-        flex-direction: column;
-        height: auto;
-        li {
-            width: auto;
-        }
-        
-    }
-.icon {
-    display: none;
-}
-
-
 }

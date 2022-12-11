@@ -49,7 +49,6 @@ header {
     z-index: 1;
 }
 /* Blog and Contact Header Styles */
-
 .blogHeaderBody {
     background-image: url(../assets/blog-image-1.jpg);
 }
@@ -71,64 +70,4 @@ header {
         font-size: 4.3rem;
         margin-bottom: 15px;
     }
-}
-/* Media Query 320px */
-@media (max-width: 320px) {
-.indexHeader {
-    height: 360px;
-}
-.headingContainer {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        position: relative;
-        height: 50px;
-
-        h1 {
-            font-size: 2.4rem;
-            padding-left: 85px;
-        }
-    }
-.headerImageContainer {
-    width: 160px;
-    height: 224px;
-    position: absolute;
-    right: 20px;
-    top: 90px;
-    z-index: 2;
-    img {
-        width: 100%;
-    }
-}
-.circleContainer {
-    width: 55px;
-    top: -15px;
-    left: 60px;
-    img {
-        width: 55px;
-    }
-}
-.image1Mat {
-    background-color: white;
-    width: 155px;
-    height: 215px;
-    position: absolute;
-    right: 10px;
-    top: 100px;
-    z-index: 1;
-}
-/* Blog section */
-.blogHeaderBody,
-.contactHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    align-items: center;
-    line-height: 3rem;
-
-    h1 {
-        font-size: 2.4rem;
-        text-align: right;
-    }
-}
-
 }

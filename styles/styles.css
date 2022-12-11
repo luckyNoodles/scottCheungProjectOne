@@ -314,12 +314,6 @@ button:focus {
   position: relative;
 }
 
-/* Media Query 320px */
-@media (max-width: 320px) {
-  button {
-    width: 100%;
-  }
-}
 header {
   background-color: #345231;
   margin: -20px;
@@ -412,72 +406,6 @@ header {
   margin-bottom: 15px;
 }
 
-/* Media Query 320px */
-@media (max-width: 320px) {
-  .indexHeader {
-    height: 360px;
-  }
-  .headingContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    height: 50px;
-  }
-  .headingContainer h1 {
-    font-size: 2.4rem;
-    padding-left: 85px;
-  }
-  .headerImageContainer {
-    width: 160px;
-    height: 224px;
-    position: absolute;
-    right: 20px;
-    top: 90px;
-    z-index: 2;
-  }
-  .headerImageContainer img {
-    width: 100%;
-  }
-  .circleContainer {
-    width: 55px;
-    top: -15px;
-    left: 60px;
-  }
-  .circleContainer img {
-    width: 55px;
-  }
-  .image1Mat {
-    background-color: white;
-    width: 155px;
-    height: 215px;
-    position: absolute;
-    right: 10px;
-    top: 100px;
-    z-index: 1;
-  }
-  /* Blog section */
-  .blogHeaderBody,
-.contactHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 3rem;
-  }
-  .blogHeaderBody h1,
-.contactHeaderBody h1 {
-    font-size: 2.4rem;
-    text-align: right;
-  }
-}
 nav {
   background-color: #345231;
 }
@@ -510,62 +438,6 @@ nav {
   color: #e4a436;
 }
 
-/* Media Query 320px */
-@media (max-width: 320px) {
-  nav {
-    margin-top: 20PX;
-    position: relative;
-  }
-  #expandNav {
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    opacity: 0;
-    width: 30px;
-    height: 30px;
-  }
-  .material-symbols-outlined {
-    left: -5px;
-    top: 0px;
-    z-index: 10;
-    margin-top: 10px;
-  }
-  .navFlexContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 112px;
-    line-height: 5px;
-    padding: 0px;
-    position: absolute;
-    -webkit-transform: translateX(-130px);
-            transform: translateX(-130px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-  .navFlexContainer li h2 {
-    font-size: 1rem;
-    margin: 0px;
-  }
-  #expandNav:checked + .navFlexContainer {
-    -webkit-transform: translateX(-25px);
-            transform: translateX(-25px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-} /* Media Query End */
 /* Section Who Is Willow */
 .whoSection,
 .journey,
@@ -740,13 +612,14 @@ footer {
           justify-content: space-between;
   height: 400px;
   margin: 75px 0px 75px 0px;
+  padding: 0px;
 }
 .threeImages img {
   width: 380px;
   height: 380px;
 }
 
-/* ----------------Blog Sections---------------*/
+/* ---Blog Sections---*/
 main {
   background-color: #f6f6f6;
   margin-bottom: -20px;
@@ -820,7 +693,7 @@ aside {
 }
 
 .aboutAuthor img {
-  width: 350px;
+  width: 280px;
 }
 
 .post1,
@@ -961,12 +834,202 @@ aside {
   line-height: 0.8rem;
 }
 
-/* ------------- Media Query 320px ----------------------------*/
+.copyrite {
+  background-color: #1f1f1f;
+}
+
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 600px;
+  padding: 50px 0px;
+  margin: 0px;
+}
+.footerNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.footerNav li .footerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footerNav li .footerText h3 {
+  margin: 10px 0px 5px 20px;
+  -webkit-transition: font-size 0.2s 0.2s;
+  transition: font-size 0.2s 0.2s;
+}
+.footerNav li .footerText h3:hover,
+.footerNav li .footerText h3:focus {
+  font-size: 1.9rem;
+}
+.footerNav li .footerText p {
+  margin-left: 20px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e4a436;
+}
+.icon img {
+  height: 24px;
+  width: 24px;
+  margin-top: 10px;
+}
+
+.copyrite p {
+  color: #f6f6f6;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/*---media query for 320px width mobile device */
 @media (max-width: 320px) {
+  button {
+    width: 100%;
+  }
+  .indexHeader {
+    height: 360px;
+  }
+  .headingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    height: 50px;
+  }
+  .headingContainer h1 {
+    font-size: 2.4rem;
+    padding-left: 85px;
+  }
+  .headerImageContainer {
+    width: 160px;
+    height: 224px;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    z-index: 2;
+  }
+  .headerImageContainer img {
+    width: 100%;
+  }
+  .circleContainer {
+    width: 55px;
+    top: -15px;
+    left: 60px;
+  }
+  .circleContainer img {
+    width: 55px;
+  }
+  .image1Mat {
+    background-color: white;
+    width: 155px;
+    height: 215px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 1;
+  }
+  /* Blog section */
+  .blogHeaderBody,
+.contactHeaderBody {
+    margin-bottom: 25px;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 3rem;
+  }
+  .blogHeaderBody h1,
+.contactHeaderBody h1 {
+    font-size: 2.4rem;
+    text-align: right;
+  }
+  nav {
+    margin-top: 20PX;
+    position: relative;
+  }
+  #expandNav {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .material-symbols-outlined {
+    left: -5px;
+    top: 0px;
+    z-index: 10;
+    margin-top: 10px;
+  }
+  .navFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 112px;
+    line-height: 5px;
+    padding: 0px;
+    position: absolute;
+    -webkit-transform: translateX(-130px);
+            transform: translateX(-130px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .navFlexContainer li h2 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  #expandNav:checked + .navFlexContainer {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
   .wrapper {
     width: 80%;
   }
-  /* MEDIA QUERY Section Who Is Willow */
   .whoIsWillow {
     height: 750px;
   }
@@ -977,7 +1040,6 @@ aside {
   .whoIsWillow p {
     margin: 15px auto;
   }
-  /* MEDIA QUERY Favourites list section */
   .favouriteBucket {
     height: auto;
   }
@@ -1128,7 +1190,7 @@ aside {
   }
   .blogMain .myDestinations {
     padding: 10px;
-    margin: 20px 0px;
+    margin: 0px;
   }
   .blogMain h3 {
     font-size: 1.1rem;
@@ -1213,81 +1275,6 @@ aside {
   .bodyContainer .form {
     width: 100%;
   }
-  /*--------End of Media Query--------*/
-}
-.copyrite {
-  background-color: #1f1f1f;
-}
-
-.footerNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 600px;
-  padding: 50px 0px;
-  margin: 0px;
-}
-.footerNav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  height: 50%;
-  position: relative;
-}
-.footerNav li .footerText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.footerNav li .footerText h3 {
-  margin: 10px 0px 5px 20px;
-  -webkit-transition: font-size 0.2s 0.2s;
-  transition: font-size 0.2s 0.2s;
-}
-.footerNav li .footerText h3:hover,
-.footerNav li .footerText h3:focus {
-  font-size: 1.9rem;
-}
-.footerNav li .footerText p {
-  margin-left: 20px;
-}
-
-.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 145px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #e4a436;
-}
-.icon img {
-  height: 24px;
-  width: 24px;
-}
-
-.copyrite p {
-  color: #f6f6f6;
-  padding: 5px;
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-/* Media Query 320px */
-@media (max-width: 320px) {
   .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
