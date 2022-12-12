@@ -1059,25 +1059,25 @@ aside {
     position: relative;
     top: -15px;
     left: -33px;
-    width: 320px;
+    width: 290px;
     height: 170px;
   }
   .bridgeImageContainer img {
     position: static;
-    width: 320px;
+    width: 290px;
     z-index: 10;
   }
   .lillyImageContainer {
     position: relative;
     top: -10px;
     left: -33px;
-    width: 350px;
+    width: 290px;
     height: 170px;
     z-index: 1;
   }
   .lillyImageContainer img {
     position: static;
-    width: 320px;
+    width: 290px;
     z-index: 10;
   }
   .image2Container {
