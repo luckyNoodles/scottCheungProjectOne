@@ -907,6 +907,390 @@ aside {
 }
 
 /*---media query for 320px width mobile device */
+@media (max-width: 390px) {
+  button {
+    width: 100%;
+  }
+  .indexHeader {
+    height: 360px;
+  }
+  .headingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    height: 50px;
+  }
+  .headingContainer h1 {
+    font-size: 2.4rem;
+    padding-left: 120px;
+  }
+  .headerImageContainer {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    z-index: 2;
+  }
+  .headerImageContainer img {
+    width: 100%;
+  }
+  .circleContainer {
+    width: 55px;
+    top: -15px;
+    left: 90px;
+  }
+  .circleContainer img {
+    width: 55px;
+  }
+  .image1Mat {
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 1;
+  }
+  /* Blog section */
+  .blogHeaderBody,
+.contactHeaderBody {
+    margin-bottom: 25px;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 3rem;
+  }
+  .blogHeaderBody h1,
+.contactHeaderBody h1 {
+    font-size: 2.4rem;
+    text-align: right;
+  }
+  nav {
+    margin-top: 20PX;
+    position: relative;
+  }
+  #expandNav {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .material-symbols-outlined {
+    left: -5px;
+    top: 0px;
+    z-index: 10;
+    margin-top: 10px;
+  }
+  .navFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 112px;
+    line-height: 5px;
+    padding: 0px;
+    position: absolute;
+    -webkit-transform: translateX(-140px);
+            transform: translateX(-140px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .navFlexContainer li h2 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  #expandNav:checked + .navFlexContainer {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .whoIsWillow {
+    height: 650px;
+    margin-top: 50px;
+  }
+  .whoIsWillow h2 {
+    font-size: 1.4rem;
+    margin: 10px auto;
+  }
+  .whoIsWillow p {
+    margin: 15px auto;
+  }
+  .favouriteBucket {
+    height: auto;
+    padding: 20px;
+  }
+  .image2Mat,
+.image3Mat,
+.image4Mat {
+    display: none;
+  }
+  .image2Container,
+.image3Container,
+.favouriteThings,
+.bucketList {
+    width: 320px;
+  }
+  .bridgeImageContainer {
+    position: relative;
+    top: -15px;
+    left: -33px;
+    width: 290px;
+    height: 170px;
+  }
+  .bridgeImageContainer img {
+    position: static;
+    width: 345px;
+    z-index: 10;
+  }
+  .lillyImageContainer {
+    position: relative;
+    top: -10px;
+    left: -33px;
+    width: 290px;
+    height: 170px;
+    z-index: 1;
+  }
+  .lillyImageContainer img {
+    position: static;
+    width: 345px;
+    z-index: 10;
+  }
+  .image2Container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .image3Container {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .favouriteThings {
+    padding: 0px;
+    margin: 50px auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .bucketList {
+    padding: 0px;
+    text-align: left;
+    margin: 30px auto;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* MEDIA QUERY Journey Section */
+  .journey {
+    height: auto;
+  }
+  .journeyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0px;
+  }
+  .image4Container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .journeyImageContainer img {
+    position: static;
+    width: 100%;
+  }
+  .journeyText {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .journeyText p {
+    width: 100%;
+  }
+  .yellowHouse {
+    height: 220px;
+    background-size: 220%;
+  }
+  .threeImages {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .threeImages li {
+    margin-bottom: 50px;
+  }
+  .threeImages li img {
+    width: 300px;
+    height: auto;
+  }
+  /* Blog Sections */
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .aside {
+    width: 100%;
+  }
+  .aboutAuthor {
+    padding: 0px;
+    margin: 0px;
+  }
+  .aboutAuthor img {
+    width: 100%;
+  }
+  .aboutAuthor h4 {
+    margin: 10px;
+  }
+  .aboutAuthor p {
+    padding: 10px;
+  }
+  .recentPosts {
+    padding: 10px;
+    margin: 20px 0px;
+  }
+  .recentPosts h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .blogMain {
+    width: 100%;
+  }
+  .blogMain .myDestinations {
+    padding: 10px;
+    margin: 0px;
+  }
+  .blogMain h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .blogMain .post1,
+.blogMain .post2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    margin: 20px 0px;
+  }
+  .myDestinations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myDestinations .myTravels {
+    height: 600px;
+    overflow: hidden;
+  }
+  .myDestinations .expand {
+    visibility: visible;
+    width: 20px;
+    opacity: 0;
+  }
+  .myDestinations .expandText {
+    visibility: visible;
+    width: 100%;
+    background-color: #e4a436;
+    text-align: center;
+  }
+  .expand:checked + .myTravels {
+    height: auto;
+  }
+  .blogForm {
+    height: auto;
+  }
+  .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+  }
+  .blogForm .nameEmail .nameInput {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .blogForm .nameEmail .nameInput input {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .blogForm button {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .commentInput #commentBox {
+    height: 300px;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  /*---Contact Me Page---*/
+  .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0px;
+  }
+  .bodyContainer .contactInfo {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+  }
+  .bodyContainer .form {
+    width: 100%;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .footerNav li {
+    width: auto;
+  }
+  .icon {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   button {
     width: 100%;
