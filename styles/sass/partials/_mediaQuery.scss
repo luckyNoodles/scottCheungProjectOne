@@ -114,6 +114,7 @@
     }
     .favouriteBucket {
         height: auto;
+        padding: 20px;
     }
     .image2Mat,
     .image3Mat,
@@ -222,7 +223,7 @@
         padding: 0px;
         margin: 0px;
         img {
-            width: 255px;
+            width: 100%;
         }
         h4 {
             margin: 10px;
@@ -274,7 +275,7 @@
             text-align: center;
         }
     }
-    .expand:checked+.myTravels {
+    .expand:checked + .myTravels {
         height: auto;
     }
     .blogForm {

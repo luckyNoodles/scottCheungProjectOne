@@ -693,7 +693,7 @@ aside {
 }
 
 .aboutAuthor img {
-  width: 280px;
+  width: 100%;
 }
 
 .post1,
@@ -831,7 +831,7 @@ aside {
 
 .contactAddressBox {
   padding: 5px 25px;
-  line-height: 0.8rem;
+  line-height: 1.5rem;
 }
 
 .copyrite {
@@ -1042,6 +1042,7 @@ aside {
   }
   .favouriteBucket {
     height: auto;
+    padding: 20px;
   }
   .image2Mat,
 .image3Mat,
@@ -1169,7 +1170,7 @@ aside {
     margin: 0px;
   }
   .aboutAuthor img {
-    width: 255px;
+    width: 100%;
   }
   .aboutAuthor h4 {
     margin: 10px;
