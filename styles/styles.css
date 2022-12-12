@@ -908,6 +908,9 @@ aside {
 
 /*---media query for 320px width mobile device */
 @media (max-width: 390px) {
+  h1 {
+    font-size: 2.1rem;
+  }
   button {
     width: 100%;
   }
@@ -970,7 +973,7 @@ aside {
   }
   .blogHeaderBody h1,
 .contactHeaderBody h1 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     text-align: right;
   }
   nav {
@@ -1105,7 +1108,6 @@ aside {
         -ms-flex-order: 4;
             order: 4;
   }
-  /* MEDIA QUERY Journey Section */
   .journey {
     height: auto;
   }
@@ -1174,10 +1176,11 @@ aside {
     width: 100%;
   }
   .aboutAuthor h4 {
-    margin: 10px;
+    margin: 30px 10px 5px 10px;
   }
   .aboutAuthor p {
     padding: 10px;
+    margin: 0px;
   }
   .recentPosts {
     padding: 10px;
@@ -1274,6 +1277,11 @@ aside {
     margin: 0px;
     height: auto;
   }
+  .bodyContainer .socialContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .bodyContainer .form {
     width: 100%;
   }
@@ -1291,6 +1299,7 @@ aside {
     display: none;
   }
 }
+/*----- Media Query 320px -----*/
 @media (max-width: 320px) {
   button {
     width: 100%;
