@@ -291,7 +291,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1600px;
+  max-width: 1440px;
   width: 80%;
   margin: 0 auto;
 }
@@ -320,7 +320,7 @@ header {
 }
 
 .indexHeader {
-  height: 850px;
+  height: 750px;
 }
 
 .headingContainer {
@@ -352,11 +352,10 @@ header {
 }
 
 .headerImageContainer {
-  width: 500px;
-  height: 700px;
+  width: 400px;
   position: absolute;
   right: 0px;
-  top: 75px;
+  top: 90px;
   z-index: 2;
 }
 .headerImageContainer img {
@@ -365,11 +364,11 @@ header {
 
 .image1Mat {
   background-color: white;
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 565px;
   position: absolute;
   right: -20px;
-  top: 90px;
+  top: 110px;
   z-index: 1;
 }
 
@@ -408,10 +407,6 @@ header {
 
 nav {
   background-color: #345231;
-}
-
-#expandNav {
-  visibility: hidden;
 }
 
 .navFlexContainer {
@@ -496,7 +491,7 @@ footer {
 
 .image2Mat,
 .image3Mat {
-  width: 800px;
+  width: 760px;
   height: 400px;
   position: absolute;
   z-index: 1;
@@ -510,8 +505,8 @@ footer {
 
 .image3Mat {
   background-color: #345231;
-  top: -250px;
-  right: -160px;
+  top: -340px;
+  right: -225px;
 }
 
 .bridgeImageContainer {
@@ -529,8 +524,8 @@ footer {
 }
 .lillyImageContainer img {
   position: absolute;
-  top: 80px;
-  right: 20px;
+  top: 20px;
+  right: -80px;
   z-index: 2;
 }
 
@@ -615,8 +610,7 @@ footer {
   padding: 0px;
 }
 .threeImages img {
-  width: 380px;
-  height: 380px;
+  width: 350px;
 }
 
 /* ---Blog Sections---*/
@@ -638,7 +632,8 @@ aside {
   width: 30%;
 }
 
-.blogMain {
+.blogMain,
+.blogForm {
   width: 70%;
   margin: 0px;
 }
@@ -694,6 +689,16 @@ aside {
 
 .aboutAuthor img {
   width: 100%;
+}
+
+.rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .post1,
@@ -915,7 +920,7 @@ aside {
     width: 100%;
   }
   .indexHeader {
-    height: 360px;
+    height: 380px;
   }
   .headingContainer {
     display: -webkit-box;
@@ -924,10 +929,6 @@ aside {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
     height: 50px;
   }
   .headingContainer h1 {
@@ -936,16 +937,12 @@ aside {
   }
   .headerImageContainer {
     width: 200px;
-    position: absolute;
     right: 20px;
-    top: 90px;
-    z-index: 2;
   }
   .headerImageContainer img {
     width: 100%;
   }
   .circleContainer {
-    width: 55px;
     top: -15px;
     left: 90px;
   }
@@ -953,13 +950,10 @@ aside {
     width: 55px;
   }
   .image1Mat {
-    background-color: white;
     width: 200px;
     height: 280px;
-    position: absolute;
     right: 10px;
     top: 100px;
-    z-index: 1;
   }
   /* Blog section */
   .blogHeaderBody,
@@ -980,19 +974,7 @@ aside {
     margin-top: 20PX;
     position: relative;
   }
-  #expandNav {
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    opacity: 0;
-    width: 30px;
-    height: 30px;
-  }
   .material-symbols-outlined {
-    left: -5px;
-    top: 0px;
-    z-index: 10;
     margin-top: 10px;
   }
   .navFlexContainer {
@@ -1021,20 +1003,13 @@ aside {
     font-size: 1rem;
     margin: 0px;
   }
-  #expandNav:checked + .navFlexContainer {
+  .mobileNav {
     -webkit-transform: translateX(-25px);
             transform: translateX(-25px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-  .wrapper {
-    width: 80%;
   }
   .whoIsWillow {
     height: 650px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .whoIsWillow h2 {
     font-size: 1.4rem;
@@ -1140,7 +1115,6 @@ aside {
   }
   .yellowHouse {
     height: 220px;
-    background-size: 220%;
   }
   .threeImages {
     height: auto;
@@ -1236,6 +1210,7 @@ aside {
     height: auto;
   }
   .blogForm {
+    width: 100%;
     height: auto;
   }
   .blogForm .nameEmail {
@@ -1330,7 +1305,7 @@ aside {
     height: 224px;
     position: absolute;
     right: 20px;
-    top: 90px;
+    top: 110px;
     z-index: 2;
   }
   .headerImageContainer img {
@@ -1350,7 +1325,7 @@ aside {
     height: 215px;
     position: absolute;
     right: 10px;
-    top: 100px;
+    top: 120px;
     z-index: 1;
   }
   /* Blog section */
@@ -1371,15 +1346,6 @@ aside {
   nav {
     margin-top: 20PX;
     position: relative;
-  }
-  #expandNav {
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    opacity: 0;
-    width: 30px;
-    height: 30px;
   }
   .material-symbols-outlined {
     left: -5px;
@@ -1413,19 +1379,16 @@ aside {
     font-size: 1rem;
     margin: 0px;
   }
-  #expandNav:checked + .navFlexContainer {
+  .mobileNav {
     -webkit-transform: translateX(-25px);
             transform: translateX(-25px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .wrapper {
     width: 80%;
   }
   .whoIsWillow {
     height: 750px;
+    margin-top: 20px;
   }
   .whoIsWillow h2 {
     font-size: 1.4rem;

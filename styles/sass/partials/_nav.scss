@@ -3,23 +3,25 @@
 nav {
     background-color: $pine;
 }
-#expandNav {
-    visibility: hidden;
-}
+
 .navFlexContainer {
     display: flex;
     justify-content: center;
     margin: 10px 0px 10px 0px;
+
     li {
         margin: 20px 20px;
+
         a:hover {
             color: $accent;
         }
+
         h2 {
             font-size: 1.8rem;
             color: $white-shade;
             margin: 0px 15px;
         }
+
         h2:hover {
             color: $accent;
         }

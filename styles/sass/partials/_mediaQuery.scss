@@ -5,51 +5,51 @@
     h1 {
         font-size: 2.1rem;
     }
+
     button {
-            width: 100%;
-        }
-    .indexHeader {
-        height: 360px;
+        width: 100%;
     }
+
+    .indexHeader {
+        height: 380px;
+    }
+
     .headingContainer {
         display: flex;
         justify-content: left;
-        align-items: center;
-        position: relative;
         height: 50px;
+
         h1 {
             font-size: 2.4rem;
             padding-left: 120px;
         }
     }
+
     .headerImageContainer {
         width: 200px;
-        // height: 224px;
-        position: absolute;
         right: 20px;
-        top: 90px;
-        z-index: 2;
+
         img {
             width: 100%;
         }
     }
+
     .circleContainer {
-        width: 55px;
         top: -15px;
         left: 90px;
+
         img {
             width: 55px;
         }
     }
+
     .image1Mat {
-        background-color: white;
         width: 200px;
         height: 280px;
-        position: absolute;
         right: 10px;
         top: 100px;
-        z-index: 1;
     }
+
     /* Blog section */
     .blogHeaderBody,
     .contactHeaderBody {
@@ -57,30 +57,22 @@
         height: 300px;
         align-items: center;
         line-height: 3rem;
+
         h1 {
             font-size: 2.1rem;
             text-align: right;
         }
     }
+
     nav {
         margin-top: 20PX;
         position: relative;
     }
-    #expandNav {
-        visibility: visible;
-        position: absolute;
-        top: 10px;
-        left: -3px;
-        opacity: 0;
-        width: 30px;
-        height: 30px;
-    }
+
     .material-symbols-outlined {
-        left: -5px;
-        top: 0px;
-        z-index: 10;
         margin-top: 10px;
     }
+
     .navFlexContainer {
         display: flex;
         flex-direction: column;
@@ -91,6 +83,7 @@
         position: absolute;
         transform: translateX(-140px);
         transition: transform 0.5s ease-in-out;
+
         li {
             h2 {
                 font-size: 1rem;
@@ -98,16 +91,15 @@
             }
         }
     }
-    #expandNav:checked+.navFlexContainer {
+
+    .mobileNav {
         transform: translateX(-25px);
-        transition: transform 0.5s ease-in-out;
     }
-    .wrapper {
-        width: 80%;
-    }
+
     .whoIsWillow {
         height: 650px;
-        margin-top: 50px;
+        margin-top: 20px;
+
         h2 {
             font-size: 1.4rem;
             margin: 10px auto;
@@ -117,33 +109,39 @@
             margin: 15px auto;
         }
     }
+
     .favouriteBucket {
         height: auto;
         padding: 20px;
     }
+
     .image2Mat,
     .image3Mat,
     .image4Mat {
         display: none;
     }
+
     .image2Container,
     .image3Container,
     .favouriteThings,
     .bucketList {
         width: 320px;
     }
+
     .bridgeImageContainer {
         position: relative;
         top: -15px;
         left: -33px;
         width: 290px;
         height: 170px;
+
         img {
             position: static;
             width: 345px;
             z-index: 10;
         }
     }
+
     .lillyImageContainer {
         position: relative;
         top: -10px;
@@ -151,112 +149,137 @@
         width: 290px;
         height: 170px;
         z-index: 1;
+
         img {
             position: static;
             width: 345px;
             z-index: 10;
         }
     }
+
     .image2Container {
         order: 1;
     }
+
     .image3Container {
         order: 3;
     }
+
     .favouriteThings {
         padding: 0px;
         margin: 50px auto;
         order: 2;
     }
+
     .bucketList {
         padding: 0px;
         text-align: left;
         margin: 30px auto;
         order: 4;
     }
+
     .journey {
         height: auto;
     }
+
     .journeyContainer {
         flex-direction: column;
         margin: 50px 0px;
     }
+
     .image4Container {
         order: 1;
     }
+
     .journeyImageContainer {
         img {
             position: static;
             width: 100%;
         }
     }
+
     .journeyText {
         width: 100%;
         height: auto;
         padding: 0px;
         order: 2;
+
         p {
             width: 100%;
         }
     }
+
     .yellowHouse {
         height: 220px;
-        background-size: 220%;
     }
+
     .threeImages {
         height: auto;
         flex-direction: column;
         padding: 0px;
         margin: 50px 0px 20px 0px;
+
         li {
             margin-bottom: 50px;
+
             img {
                 width: 300px;
                 height: auto;
             }
         }
     }
+
     /* Blog Sections */
     .blogContainer {
         flex-direction: column;
         padding-top: 30px;
     }
+
     .aside {
         width: 100%;
     }
+
     .aboutAuthor {
-        // width: 250px;
         padding: 0px;
         margin: 0px;
+
         img {
             width: 100%;
         }
+
         h4 {
             margin: 30px 10px 5px 10px;
         }
+
         p {
             padding: 10px;
             margin: 0px;
         }
     }
+
     .recentPosts {
         padding: 10px;
         margin: 20px 0px;
+
         h3 {
             font-size: 1.1rem;
             text-align: center;
         }
     }
+
     .blogMain {
         width: 100%;
+
         .myDestinations {
             padding: 10px;
             margin: 0px;
         }
+
         h3 {
             font-size: 1.1rem;
             text-align: center;
         }
+
         .post1,
         .post2 {
             flex-direction: column;
@@ -264,17 +287,21 @@
             margin: 20px 0px;
         }
     }
+
     .myDestinations {
         flex-direction: column;
+
         .myTravels {
             height: 600px;
             overflow: hidden;
-        }  
+        }
+
         .expand {
             visibility: visible;
             width: 20px;
             opacity: 0;
-        } 
+        }
+
         .expandText {
             visibility: visible;
             width: 100%;
@@ -282,30 +309,38 @@
             text-align: center;
         }
     }
+
     .expand:checked+.myTravels {
         height: auto;
     }
+
     .blogForm {
+        width: 100%;
         height: auto;
+
         .nameEmail {
             flex-direction: column;
             width: 100%;
             height: auto;
             margin: 20px 0px;
+
             .nameInput {
                 margin: 20px 0px;
                 width: 100%;
+
                 input {
                     width: 100%;
                     padding-left: 10px;
                 }
             }
         }
+
         button {
             margin: 20px 0px;
             width: 100%;
         }
     }
+
     .commentInput {
         #commentBox {
             height: 300px;
@@ -313,24 +348,29 @@
             padding: 20px 10px;
         }
     }
-/*---Contact Me Page---*/
+
+    /*---Contact Me Page---*/
     .bodyContainer {
         flex-direction: column;
         margin: 50px 0px;
+
         .contactInfo {
             width: 100%;
             padding: 0px;
             margin: 0px;
             height: auto;
         }
+
         .socialContainer {
             justify-content: space-evenly;
         }
+
         .form {
             width: 100%;
             // order: 1;
         }
     }
+
     .footerNav {
         flex-direction: column;
         height: auto;
@@ -339,6 +379,7 @@
             width: auto;
         }
     }
+
     .icon {
         display: none;
     }
@@ -347,50 +388,59 @@
 /*----- Media Query 320px -----*/
 @media (max-width: 320px) {
     button {
-            width: 100%;
-        }
+        width: 100%;
+    }
+
     .indexHeader {
         height: 360px;
     }
+
     .headingContainer {
         display: flex;
         justify-content: left;
         align-items: center;
         position: relative;
         height: 50px;
+
         h1 {
             font-size: 2.4rem;
             padding-left: 85px;
         }
     }
+
     .headerImageContainer {
         width: 160px;
         height: 224px;
         position: absolute;
         right: 20px;
-        top: 90px;
+        top: 110px;
         z-index: 2;
+
         img {
             width: 100%;
         }
     }
+
     .circleContainer {
         width: 55px;
         top: -15px;
         left: 60px;
+
         img {
             width: 55px;
         }
     }
+
     .image1Mat {
         background-color: white;
         width: 155px;
         height: 215px;
         position: absolute;
         right: 10px;
-        top: 100px;
+        top: 120px;
         z-index: 1;
     }
+
     /* Blog section */
     .blogHeaderBody,
     .contactHeaderBody {
@@ -398,30 +448,25 @@
         height: 300px;
         align-items: center;
         line-height: 3rem;
+
         h1 {
             font-size: 2.4rem;
             text-align: right;
         }
     }
+
     nav {
         margin-top: 20PX;
         position: relative;
     }
-    #expandNav {
-        visibility: visible;
-        position: absolute;
-        top: 10px;
-        left: -3px;
-        opacity: 0;
-        width: 30px;
-        height: 30px;
-    }
+
     .material-symbols-outlined {
         left: -5px;
         top: 0px;
         z-index: 10;
         margin-top: 10px;
     }
+
     .navFlexContainer {
         display: flex;
         flex-direction: column;
@@ -432,6 +477,7 @@
         position: absolute;
         transform: translateX(-130px);
         transition: transform 0.5s ease-in-out;
+
         li {
             h2 {
                 font-size: 1rem;
@@ -439,50 +485,61 @@
             }
         }
     }
-    #expandNav:checked+.navFlexContainer {
+
+    .mobileNav {
         transform: translateX(-25px);
-        transition: transform 0.5s ease-in-out;
     }
+
     .wrapper {
         width: 80%;
     }
+
     .whoIsWillow {
         height: 750px;
+        margin-top: 20px;
+
         h2 {
             font-size: 1.4rem;
             margin: 10px auto;
         }
+
         p {
             margin: 15px auto;
         }
     }
+
     .favouriteBucket {
         height: auto;
         padding: 20px;
     }
+
     .image2Mat,
     .image3Mat,
     .image4Mat {
         display: none;
     }
+
     .image2Container,
     .image3Container,
     .favouriteThings,
     .bucketList {
         width: 320px;
     }
+
     .bridgeImageContainer {
         position: relative;
         top: -15px;
         left: -33px;
         width: 290px;
         height: 170px;
+
         img {
             position: static;
             width: 290px;
             z-index: 10;
         }
     }
+
     .lillyImageContainer {
         position: relative;
         top: -10px;
@@ -490,110 +547,136 @@
         width: 290px;
         height: 170px;
         z-index: 1;
+
         img {
             position: static;
             width: 290px;
             z-index: 10;
         }
     }
+
     .image2Container {
         order: 1;
     }
+
     .image3Container {
         order: 3;
     }
+
     .favouriteThings {
         padding: 0px;
         margin-bottom: 30px;
         order: 2;
     }
+
     .bucketList {
         padding: 0px;
         text-align: left;
         order: 4;
     }
+
     /* MEDIA QUERY Journey Section */
     .journey {
         height: auto;
     }
+
     .journeyContainer {
         flex-direction: column;
         margin: 50px 0px;
     }
+
     .image4Container {
         order: 1;
     }
+
     .journeyImageContainer {
         img {
             position: static;
             width: 100%;
         }
     }
+
     .journeyText {
         width: 100%;
         height: auto;
         padding: 0px;
         order: 2;
+
         p {
             width: 100%;
         }
     }
+
     .yellowHouse {
         height: 220px;
         background-size: 220%;
     }
+
     .threeImages {
         height: auto;
         flex-direction: column;
         padding: 0px;
+
         li {
             margin-bottom: 50px;
+
             img {
                 width: 250px;
                 height: auto;
             }
         }
     }
+
     /* Blog Sections */
     .blogContainer {
         flex-direction: column;
         padding-top: 30px;
     }
+
     .aside {
         width: 100%;
     }
+
     .aboutAuthor {
-        // width: 250px;
         padding: 0px;
         margin: 0px;
+
         img {
             width: 100%;
         }
+
         h4 {
             margin: 10px;
         }
+
         p {
             padding: 10px;
         }
     }
+
     .recentPosts {
         padding: 10px;
         margin: 20px 0px;
+
         h3 {
             font-size: 1.1rem;
             text-align: center;
         }
     }
+
     .blogMain {
         width: 100%;
+
         .myDestinations {
             padding: 10px;
             margin: 0px;
         }
+
         h3 {
             font-size: 1.1rem;
             text-align: center;
         }
+
         .post1,
         .post2 {
             flex-direction: column;
@@ -601,17 +684,21 @@
             margin: 20px 0px;
         }
     }
+
     .myDestinations {
         flex-direction: column;
+
         .myTravels {
             height: 600px;
             overflow: hidden;
         }
+
         .expand {
             visibility: visible;
             width: 20px;
             opacity: 0;
         }
+
         .expandText {
             visibility: visible;
             width: 100%;
@@ -619,30 +706,37 @@
             text-align: center;
         }
     }
-    .expand:checked + .myTravels {
+
+    .expand:checked+.myTravels {
         height: auto;
     }
+
     .blogForm {
         height: auto;
+
         .nameEmail {
             flex-direction: column;
             width: 100%;
             height: auto;
             margin: 20px 0px;
+
             .nameInput {
                 margin: 20px 0px;
                 width: 100%;
+
                 input {
                     width: 100%;
                     padding-left: 10px;
                 }
             }
         }
+
         button {
             margin: 20px 0px;
             width: 100%;
         }
     }
+
     .commentInput {
         #commentBox {
             height: 300px;
@@ -650,10 +744,12 @@
             padding: 20px 10px;
         }
     }
+
     /*---Contact Me Page---*/
     .bodyContainer {
         flex-direction: column;
         margin: 50px 0px;
+
         .contactInfo {
             width: 100%;
             padding: 0px;
@@ -661,18 +757,22 @@
             height: auto;
             // order: 2;
         }
+
         .form {
             width: 100%;
             // order: 1;
         }
     }
+
     .footerNav {
         flex-direction: column;
         height: auto;
+
         li {
             width: auto;
         }
     }
+
     .icon {
         display: none;
     }

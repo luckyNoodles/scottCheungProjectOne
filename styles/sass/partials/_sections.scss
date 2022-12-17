@@ -7,6 +7,7 @@ footer {
     background-color: $white-shade;
     position: relative;
 }
+
 /* Section Who Is Willow */
 .whoIsWillow {
     display: flex;
@@ -15,46 +16,55 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 /* favourite things and Bucket List*/
 .favouriteBucket {
     height: 800px;
 }
+
 .favouriteBucket,
 .yellowHouse,
 .threeGallery {
     background-color: white;
     display: flex;
 }
+
 .thingsList {
     display: flex;
     flex-wrap: wrap;
 }
+
 .image2Container,
 .image3Container,
 .favouriteThings,
-.bucketList{
+.bucketList {
     width: 50%;
-    height:50%;
+    height: 50%;
 }
+
 .image2Mat,
 .image3Mat {
-    width: 800px;
+    width: 760px;
     height: 400px;
     position: absolute;
     z-index: 1;
 }
+
 .image2Mat {
     background-color: $green-grey;
     top: -20px;
     left: -160px;
 }
+
 .image3Mat {
     background-color: $pine;
-    top: -250px;
-    right: -160px;
+    top: -340px;
+    right: -225px;
 }
+
 .bridgeImageContainer {
     position: relative;
+
     img {
         position: absolute;
         top: -40px;
@@ -62,42 +72,51 @@ footer {
         z-index: 1;
     }
 }
+
 .lillyImageContainer {
     position: relative;
+
     img {
         position: absolute;
-        top: 80px;
-        right: 20px;
+        top: 20px;
+        right: -80px;
         z-index: 2;
-    } 
+    }
 }
+
 .favouriteThings {
     padding: 70px 10px 5px 90px;
 }
+
 .bucketList {
     padding-right: 130px;
     padding-top: 50px;
     text-align: right;
-    button{
-    justify-content: right;
+
+    button {
+        justify-content: right;
     }
 }
+
 /* journey section*/
 .journey {
     height: 500px;
     z-index: 0;
 }
+
 .journeyContainer {
     display: flex;
     position: relative;
     justify-content: flex-end;
 }
+
 .journeyImageContainer img {
     width: 260px;
     position: absolute;
     top: 130px;
     left: 0px;
 }
+
 .image4Mat {
     background-color: $green-grey;
     width: 260px;
@@ -107,11 +126,13 @@ footer {
     left: 20px;
     z-index: 0;
 }
+
 .journeyText {
     width: 75%;
     padding: 100px 0px 40px 80px;
     justify-content: flex-end;
 }
+
 /* Section yellow House */
 .yellowHouse {
     background-image: url("../assets/home-image-5.jpg");
@@ -123,36 +144,43 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 /* Section three picture gallery */
 .threeImages {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     height: 400px;
     margin: 75px 0px 75px 0px;
     padding: 0px;
-    img{
-        width: 380px;
-        height: 380px;
+
+    img {
+        width: 350px;
     }
 }
+
 /* ---Blog Sections---*/
 main {
     background-color: $white-shade;
     margin-bottom: -20px;
 }
+
 .blogContainer {
     height: auto;
     margin: 0px auto;
     padding-top: 100px;
     display: flex;
 }
+
 aside {
     width: 30%;
 }
-.blogMain {
+
+.blogMain,
+.blogForm {
     width: 70%;
-    margin:  0px;
+    margin: 0px;
 }
+
 .aboutAuthor,
 .recentPosts,
 .myDestinations,
@@ -164,122 +192,153 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
     img {
         justify-content: center;
     }
+
     li {
         list-style-type: disc;
-        a{
+
+        a {
             color: $black;
         }
     }
+
     h3 {
         margin-top: 0px;
     }
 }
+
 .aboutAuthor img {
-    width: 100%;   
+    width: 100%;
 }
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+}
+
 .post1,
 .post2 {
     flex-direction: row;
+
     .imagePost {
         width: 15%;
         margin-top: 15px;
     }
+
     article {
-        width: 85%; 
+        width: 85%;
     }
 }
+
 .myDestinations,
 .post2 {
     border-bottom: 5px solid $green-grey;
 }
+
 .expand,
 .expandText {
-   visibility: hidden;
+    visibility: hidden;
 }
+
 .blogForm {
     height: 700px;
+
     input,
     #commentBox {
         width: 95%;
         justify-content: center;
         border: 0px;
     }
+
     .nameEmail {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         width: 98%;
         height: 80px;
         margin: 30px 10px;
+
         .nameInput {
             display: flex;
             width: 95%;
             height: 60px;
             justify-content: center;
+
             input {
                 height: 80px;
                 padding-left: 20px;
             }
         }
     }
+
     button {
         margin: 25px;
         width: 95%;
     }
 }
- .commentInput {
-     display: flex;
-     justify-content: center;
 
-     #commentBox {
-         height: 400px;
-         padding: 40px 20px;
-     }
- }
+.commentInput {
+    display: flex;
+    justify-content: center;
+
+    #commentBox {
+        height: 400px;
+        padding: 40px 20px;
+    }
+}
+
 /* ----------------Contact Sections---------------*/
 .contactBody {
     background-color: $white-shade;
     margin: 0px;
 }
+
 .bodyContainer {
     display: flex;
     margin-top: 100px;
     justify-content: space-around;
+
     .contactInfo {
         width: 33%;
     }
+
     .form {
         width: 66%;
     }
 }
+
 .contactInfo {
     background-color: white;
     height: 400px;
     padding: 30px;
     margin-top: 30px;
 }
+
 .socialContainer {
     display: flex;
     justify-content: left;
     padding: 0px;
+
     li {
         margin: 10px;
     }
+
     img {
-    width: 40px;
-    height: 40px;
+        width: 40px;
+        height: 40px;
     }
 }
+
 .contactEmail {
     color: $black;
     font-weight: bold;
     display: block;
     margin-bottom: 35px;
 }
+
 .contactAddressBox {
     padding: 5px 25px;
     line-height: 1.5rem;
 }
-
