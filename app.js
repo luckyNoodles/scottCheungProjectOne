@@ -23,11 +23,11 @@ const comment = document.querySelector('.blogForm');
 
         //insert new post content with html
         newPost.insertAdjacentHTML( 'beforeend',`<article class="post1">
-                                <div class="imagePost">
-                                    <span class="material-icons-outlined">person</span>
+                                <div class="imageUserPost">
+                                    <img src="./assets/user-solid.svg" alt="icon of a picture">
                                 </div>
                                 <article>
-                                    <p>${new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})} by ${nameInput} 
+                                    <p>${new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})} by ${nameInput} 
                                     <br>
                                     <br>
                                     ${commentInput}</p>

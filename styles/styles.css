@@ -634,7 +634,7 @@ aside {
 
 .blogMain,
 .blogForm {
-  width: 70%;
+  width: 100%;
   margin: 0px;
 }
 
@@ -712,6 +712,11 @@ aside {
 .post2 .imagePost {
   width: 15%;
   margin-top: 15px;
+}
+.post1 .imageUserPost,
+.post2 .imageUserPost {
+  width: 15%;
+  padding: 25px;
 }
 .post1 article,
 .post2 article {
