@@ -3,777 +3,766 @@
 
 @media (max-width: 390px) {
     h1 {
-        font-size: 2.1rem;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .indexHeader {
-        height: 380px;
-    }
-
-    .headingContainer {
-        display: flex;
-        justify-content: left;
-        height: 50px;
-
-        h1 {
-            font-size: 2.4rem;
-            padding-left: 120px;
-        }
-    }
-
-    .headerImageContainer {
-        width: 200px;
-        right: 20px;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .circleContainer {
-        top: -15px;
-        left: 90px;
-
-        img {
-            width: 55px;
-        }
-    }
-
-    .image1Mat {
-        width: 200px;
-        height: 280px;
-        right: 10px;
-        top: 100px;
-    }
-
-    /* Blog section */
-    .blogHeaderBody,
-    .contactHeaderBody {
-        margin-bottom: 25px;
-        height: 300px;
-        align-items: center;
-        line-height: 3rem;
-
-        h1 {
             font-size: 2.1rem;
-            text-align: right;
         }
-    }
-
-    nav {
-        margin-top: 20PX;
-        position: relative;
-    }
-
-    .material-symbols-outlined {
-        margin-top: 10px;
-    }
-
-    .navFlexContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 112px;
-        line-height: 5px;
-        padding: 0px;
-        position: absolute;
-        transform: translateX(-140px);
-        transition: transform 0.5s ease-in-out;
-
-        li {
-            h2 {
-                font-size: 1rem;
-                margin: 0px;
+    
+        button {
+            width: 100%;
+        }
+    
+        .indexHeader {
+            height: 380px;
+        }
+    
+        .headingContainer {
+            display: flex;
+            justify-content: left;
+            height: 50px;
+    
+            h1 {
+                font-size: 2.4rem;
+                padding-left: 120px;
             }
         }
-    }
-
-    .mobileNav {
-        transform: translateX(-25px);
-    }
-
-    .whoIsWillow {
-        height: 650px;
-        margin-top: 20px;
-
-        h2 {
-            font-size: 1.4rem;
-            margin: 10px auto;
-        }
-
-        p {
-            margin: 15px auto;
-        }
-    }
-
-    .favouriteBucket {
-        height: auto;
-        padding: 20px;
-    }
-
-    .image2Mat,
-    .image3Mat,
-    .image4Mat {
-        display: none;
-    }
-
-    .image2Container,
-    .image3Container,
-    .favouriteThings,
-    .bucketList {
-        width: 320px;
-    }
-
-    .bridgeImageContainer {
-        position: relative;
-        top: -15px;
-        left: -33px;
-        width: 290px;
-        height: 170px;
-
-        img {
-            position: static;
-            width: 345px;
-            z-index: 10;
-        }
-    }
-
-    .lillyImageContainer {
-        position: relative;
-        top: -10px;
-        left: -33px;
-        width: 290px;
-        height: 170px;
-        z-index: 1;
-
-        img {
-            position: static;
-            width: 345px;
-            z-index: 10;
-        }
-    }
-
-    .image2Container {
-        order: 1;
-    }
-
-    .image3Container {
-        order: 3;
-    }
-
-    .favouriteThings {
-        padding: 0px;
-        margin: 50px auto;
-        order: 2;
-    }
-
-    .bucketList {
-        padding: 0px;
-        text-align: left;
-        margin: 30px auto;
-        order: 4;
-    }
-
-    .journey {
-        height: auto;
-    }
-
-    .journeyContainer {
-        flex-direction: column;
-        margin: 50px 0px;
-    }
-
-    .image4Container {
-        order: 1;
-    }
-
-    .journeyImageContainer {
-        img {
-            position: static;
-            width: 100%;
-        }
-    }
-
-    .journeyText {
-        width: 100%;
-        height: auto;
-        padding: 0px;
-        order: 2;
-
-        p {
-            width: 100%;
-        }
-    }
-
-    .yellowHouse {
-        height: 220px;
-    }
-
-    .threeImages {
-        height: auto;
-        flex-direction: column;
-        padding: 0px;
-        margin: 50px 0px 20px 0px;
-
-        li {
-            margin-bottom: 50px;
-
+    
+        .headerImageContainer {
+            width: 200px;
+            right: 20px;
+    
             img {
-                width: 300px;
-                height: auto;
+                width: 100%;
             }
         }
-    }
-
-    /* Blog Sections */
-    .blogContainer {
-        flex-direction: column;
-        padding-top: 30px;
-    }
-
-    .aside {
-        width: 100%;
-    }
-
-    .aboutAuthor {
-        padding: 0px;
-        margin: 0px;
-
-        img {
-            width: 100%;
+    
+        .circleContainer {
+            top: -15px;
+            left: 90px;
+    
+            img {
+                width: 55px;
+            }
         }
-
-        h4 {
-            margin: 30px 10px 5px 10px;
+    
+        .image1Mat {
+            width: 200px;
+            height: 280px;
+            right: 10px;
+            top: 100px;
         }
-
-        p {
-            padding: 10px;
-            margin: 0px;
+    
+        /* Blog section */
+        .blogHeaderBody,
+        .contactHeaderBody {
+            margin-bottom: 25px;
+            height: 300px;
+            align-items: center;
+            line-height: 3rem;
+    
+            h1 {
+                font-size: 2.1rem;
+                text-align: right;
+            }
         }
-    }
-
-    .recentPosts {
-        padding: 10px;
-        margin: 20px 0px;
-
-        h3 {
-            font-size: 1.1rem;
-            text-align: center;
+    
+        nav {
+            margin-top: 20PX;
+            position: relative;
         }
-    }
-
-    .blogMain {
-        width: 100%;
-
-        .myDestinations {
-            padding: 10px;
-            margin: 0px;
+    
+        .material-symbols-outlined {
+            margin-top: 10px;
         }
-
-        h3 {
-            font-size: 1.1rem;
-            text-align: center;
-        }
-
-        .post1,
-        .post2 {
+    
+        .navFlexContainer {
+            display: flex;
             flex-direction: column;
-            padding: 10px;
-            margin: 20px 0px;
-        }
-    }
-
-    .myDestinations {
-        flex-direction: column;
-
-        .myTravels {
-            height: 600px;
-            overflow: hidden;
-        }
-
-        .expand {
-            visibility: visible;
-            width: 20px;
-            opacity: 0;
-        }
-
-        .expandText {
-            visibility: visible;
-            width: 100%;
-            background-color: $accent;
-            text-align: center;
-        }
-    }
-
-    .expand:checked+.myTravels {
-        height: auto;
-    }
-
-    .blogForm {
-        width: 100%;
-        height: auto;
-
-        .nameEmail {
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-            margin: 20px 0px;
-
-            .nameInput {
-                margin: 20px 0px;
-                width: 100%;
-
-                input {
-                    width: 100%;
-                    padding-left: 10px;
+            justify-content: center;
+            width: 112px;
+            line-height: 5px;
+            padding: 0px;
+            position: absolute;
+            transform: translateX(-140px);
+            transition: transform 0.5s ease-in-out;
+    
+            li {
+                h2 {
+                    font-size: 1rem;
+                    margin: 0px;
                 }
             }
         }
-
-        button {
-            margin: 20px 0px;
-            width: 100%;
+    
+        .mobileNav {
+            transform: translateX(-25px);
         }
-    }
-
-    .commentInput {
-        #commentBox {
-            height: 300px;
-            width: 100%;
-            padding: 20px 10px;
+    
+        .whoIsWillow {
+            height: 650px;
+            margin-top: 20px;
+    
+            h2 {
+                font-size: 1.4rem;
+                margin: 10px auto;
+            }
+    
+            p {
+                margin: 15px auto;
+            }
         }
-    }
-
-    /*---Contact Me Page---*/
-    .bodyContainer {
-        flex-direction: column;
-        margin: 50px 0px;
-
-        .contactInfo {
-            width: 100%;
+    
+        .favouriteBucket {
+            height: auto;
+            padding: 20px;
+        }
+    
+        .image2Mat,
+        .image3Mat,
+        .image4Mat {
+            display: none;
+        }
+    
+        .image2Container,
+        .image3Container,
+        .favouriteThings,
+        .bucketList {
+            width: 320px;
+        }
+    
+        .bridgeImageContainer {
+            position: relative;
+            top: -15px;
+            left: -33px;
+            width: 290px;
+            height: 170px;
+    
+            img {
+                position: static;
+                width: 345px;
+                z-index: 10;
+            }
+        }
+    
+        .lillyImageContainer {
+            position: relative;
+            top: -10px;
+            left: -33px;
+            width: 290px;
+            height: 170px;
+            z-index: 1;
+    
+            img {
+                position: static;
+                width: 345px;
+                z-index: 10;
+            }
+        }
+    
+        .image2Container {
+            order: 1;
+        }
+    
+        .image3Container {
+            order: 3;
+        }
+    
+        .favouriteThings {
             padding: 0px;
-            margin: 0px;
+            margin: 50px auto;
+            order: 2;
+        }
+    
+        .bucketList {
+            padding: 0px;
+            text-align: left;
+            margin: 30px auto;
+            order: 4;
+        }
+    
+        .journey {
             height: auto;
         }
-
-        .socialContainer {
-            justify-content: space-evenly;
+    
+        .journeyContainer {
+            flex-direction: column;
+            margin: 50px 0px;
         }
-
-        .form {
+    
+        .image4Container {
+            order: 1;
+        }
+    
+        .journeyImageContainer {
+            img {
+                position: static;
+                width: 100%;
+            }
+        }
+    
+        .journeyText {
             width: 100%;
-            // order: 1;
+            height: auto;
+            padding: 0px;
+            order: 2;
+    
+            p {
+                width: 100%;
+            }
         }
-    }
-
-    .footerNav {
-        flex-direction: column;
-        height: auto;
-
-        li {
-            width: auto;
+    
+        .yellowHouse {
+            height: 220px;
         }
-    }
-
-    .icon {
-        display: none;
-    }
+    
+        .threeImages {
+            height: auto;
+            flex-direction: column;
+            padding: 0px;
+            margin: 50px 0px 20px 0px;
+    
+            li {
+                margin-bottom: 50px;
+    
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+    
+        /* Blog Sections */
+        .blogContainer {
+            flex-direction: column;
+            padding-top: 30px;
+        }
+    
+        .aside {
+            width: 100%;
+        }
+    
+        .rightSide {
+            width: 100%;
+        }
+    
+        .aboutAuthor {
+            padding: 0px;
+            margin: 0px;
+    
+            img {
+                width: 100%;
+            }
+    
+            h4 {
+                margin: 30px 10px 5px 10px;
+            }
+    
+            p {
+                padding: 10px;
+                margin: 0px;
+            }
+        }
+    
+        .recentPosts {
+            padding: 10px;
+            margin: 20px 0px;
+    
+            h3 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+        }
+    
+        .blogMain {
+            width: 100%;
+    
+            .myDestinations {
+                padding: 10px;
+                margin: 0px;
+            }
+    
+            h3 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+    
+            .post1,
+            .post2 {
+                flex-direction: column;
+                padding: 10px;
+                margin: 20px 0px;
+            }
+        }
+    
+        .myDestinations {
+            flex-direction: column;
+    
+            .myTravels {
+                height: 600px;
+                overflow: hidden;
+            }
+    
+            .expand {
+                visibility: visible;
+                width: 20px;
+                opacity: 0;
+            }
+    
+            .expandText {
+                visibility: visible;
+                width: 100%;
+                background-color: $accent;
+                text-align: center;
+            }
+        }
+    
+        .expand:checked+.myTravels {
+            height: auto;
+        }
+    
+        .blogForm {
+            width: 100%;
+            height: auto;
+    
+            .nameEmail {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                margin: 20px 0px;
+    
+                .nameInput {
+                    margin: 20px 0px;
+                    width: 100%;
+    
+                    input {
+                        width: 100%;
+                        padding-left: 10px;
+                    }
+                }
+            }
+    
+            button {
+                margin: 20px auto;
+            }
+        }
+    
+        .blogForm input[type="submit"] {
+            margin: 20px auto;
+        }
+        .blogForm {
+            // height: 700px;
+    
+            input,
+            #commentBox {
+                width: 100%;
+                // justify-content: center;
+                // border: 0px;
+            }
+    
+    
+            .commentInput {
+                #commentBox {
+                    height: 300px;
+                    width: 100%;
+                    padding: 20px 10px;
+                }
+            }
+    
+            /*---Contact Me Page---*/
+            .bodyContainer {
+                flex-direction: column;
+                margin: 50px 0px;
+    
+                .contactInfo {
+                    width: 100%;
+                    padding: 0px;
+                    margin: 0px;
+                    height: auto;
+                }
+    
+                .socialContainer {
+                    justify-content: space-evenly;
+                }
+    
+                .form {
+                    width: 100%;
+                    // order: 1;
+                }
+            }
+    
+            .footerNav {
+                flex-direction: column;
+                height: auto;
+    
+                li {
+                    width: auto;
+                }
+            }
+    
+            .icon {
+                display: none;
+            }
 }
 
 /*----- Media Query 320px -----*/
 @media (max-width: 320px) {
     button {
-        width: 100%;
-    }
-
-    .indexHeader {
-        height: 360px;
-    }
-
-    .headingContainer {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        position: relative;
-        height: 50px;
-
-        h1 {
-            font-size: 2.4rem;
-            padding-left: 85px;
-        }
-    }
-
-    .headerImageContainer {
-        width: 160px;
-        height: 224px;
-        position: absolute;
-        right: 20px;
-        top: 110px;
-        z-index: 2;
-
-        img {
             width: 100%;
         }
-    }
-
-    .circleContainer {
-        width: 55px;
-        top: -15px;
-        left: 60px;
-
-        img {
-            width: 55px;
+    
+        .indexHeader {
+            height: 360px;
         }
-    }
-
-    .image1Mat {
-        background-color: white;
-        width: 155px;
-        height: 215px;
-        position: absolute;
-        right: 10px;
-        top: 120px;
-        z-index: 1;
-    }
-
-    /* Blog section */
-    .blogHeaderBody,
-    .contactHeaderBody {
-        margin-bottom: 25px;
-        height: 300px;
-        align-items: center;
-        line-height: 3rem;
-
-        h1 {
-            font-size: 2.4rem;
-            text-align: right;
-        }
-    }
-
-    nav {
-        margin-top: 20PX;
-        position: relative;
-    }
-
-    .material-symbols-outlined {
-        left: -5px;
-        top: 0px;
-        z-index: 10;
-        margin-top: 10px;
-    }
-
-    .navFlexContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 112px;
-        line-height: 5px;
-        padding: 0px;
-        position: absolute;
-        transform: translateX(-130px);
-        transition: transform 0.5s ease-in-out;
-
-        li {
-            h2 {
-                font-size: 1rem;
-                margin: 0px;
+    
+        .headingContainer {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+            height: 50px;
+    
+            h1 {
+                font-size: 2.4rem;
+                padding-left: 85px;
             }
         }
-    }
-
-    .mobileNav {
-        transform: translateX(-25px);
-    }
-
-    .wrapper {
-        width: 80%;
-    }
-
-    .whoIsWillow {
-        height: 750px;
-        margin-top: 20px;
-
-        h2 {
-            font-size: 1.4rem;
-            margin: 10px auto;
-        }
-
-        p {
-            margin: 15px auto;
-        }
-    }
-
-    .favouriteBucket {
-        height: auto;
-        padding: 20px;
-    }
-
-    .image2Mat,
-    .image3Mat,
-    .image4Mat {
-        display: none;
-    }
-
-    .image2Container,
-    .image3Container,
-    .favouriteThings,
-    .bucketList {
-        width: 320px;
-    }
-
-    .bridgeImageContainer {
-        position: relative;
-        top: -15px;
-        left: -33px;
-        width: 290px;
-        height: 170px;
-
-        img {
-            position: static;
-            width: 290px;
-            z-index: 10;
-        }
-    }
-
-    .lillyImageContainer {
-        position: relative;
-        top: -10px;
-        left: -33px;
-        width: 290px;
-        height: 170px;
-        z-index: 1;
-
-        img {
-            position: static;
-            width: 290px;
-            z-index: 10;
-        }
-    }
-
-    .image2Container {
-        order: 1;
-    }
-
-    .image3Container {
-        order: 3;
-    }
-
-    .favouriteThings {
-        padding: 0px;
-        margin-bottom: 30px;
-        order: 2;
-    }
-
-    .bucketList {
-        padding: 0px;
-        text-align: left;
-        order: 4;
-    }
-
-    /* MEDIA QUERY Journey Section */
-    .journey {
-        height: auto;
-    }
-
-    .journeyContainer {
-        flex-direction: column;
-        margin: 50px 0px;
-    }
-
-    .image4Container {
-        order: 1;
-    }
-
-    .journeyImageContainer {
-        img {
-            position: static;
-            width: 100%;
-        }
-    }
-
-    .journeyText {
-        width: 100%;
-        height: auto;
-        padding: 0px;
-        order: 2;
-
-        p {
-            width: 100%;
-        }
-    }
-
-    .yellowHouse {
-        height: 220px;
-        background-size: 220%;
-    }
-
-    .threeImages {
-        height: auto;
-        flex-direction: column;
-        padding: 0px;
-
-        li {
-            margin-bottom: 50px;
-
+    
+        .headerImageContainer {
+            width: 160px;
+            height: 224px;
+            position: absolute;
+            right: 20px;
+            top: 110px;
+            z-index: 2;
+    
             img {
-                width: 250px;
-                height: auto;
+                width: 100%;
             }
         }
-    }
-
-    /* Blog Sections */
-    .blogContainer {
-        flex-direction: column;
-        padding-top: 30px;
-    }
-
-    .aside {
-        width: 100%;
-    }
-
-    .aboutAuthor {
-        padding: 0px;
-        margin: 0px;
-
-        img {
-            width: 100%;
+    
+        .circleContainer {
+            width: 55px;
+            top: -15px;
+            left: 60px;
+    
+            img {
+                width: 55px;
+            }
         }
-
-        h4 {
-            margin: 10px;
+    
+        .image1Mat {
+            background-color: white;
+            width: 155px;
+            height: 215px;
+            position: absolute;
+            right: 10px;
+            top: 120px;
+            z-index: 1;
         }
-
-        p {
-            padding: 10px;
+    
+        /* Blog section */
+        .blogHeaderBody,
+        .contactHeaderBody {
+            margin-bottom: 25px;
+            height: 300px;
+            align-items: center;
+            line-height: 3rem;
+    
+            h1 {
+                font-size: 2.4rem;
+                text-align: right;
+            }
         }
-    }
-
-    .recentPosts {
-        padding: 10px;
-        margin: 20px 0px;
-
-        h3 {
-            font-size: 1.1rem;
-            text-align: center;
+    
+        nav {
+            margin-top: 20PX;
+            position: relative;
         }
-    }
-
-    .blogMain {
-        width: 100%;
-
-        .myDestinations {
-            padding: 10px;
-            margin: 0px;
+    
+        .material-symbols-outlined {
+            left: -5px;
+            top: 0px;
+            z-index: 10;
+            margin-top: 10px;
         }
-
-        h3 {
-            font-size: 1.1rem;
-            text-align: center;
-        }
-
-        .post1,
-        .post2 {
+    
+        .navFlexContainer {
+            display: flex;
             flex-direction: column;
-            padding: 10px;
-            margin: 20px 0px;
-        }
-    }
-
-    .myDestinations {
-        flex-direction: column;
-
-        .myTravels {
-            height: 600px;
-            overflow: hidden;
-        }
-
-        .expand {
-            visibility: visible;
-            width: 20px;
-            opacity: 0;
-        }
-
-        .expandText {
-            visibility: visible;
-            width: 100%;
-            background-color: $accent;
-            text-align: center;
-        }
-    }
-
-    .expand:checked+.myTravels {
-        height: auto;
-    }
-
-    .blogForm {
-        height: auto;
-
-        .nameEmail {
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-            margin: 20px 0px;
-
-            .nameInput {
-                margin: 20px 0px;
-                width: 100%;
-
-                input {
-                    width: 100%;
-                    padding-left: 10px;
+            justify-content: center;
+            width: 112px;
+            line-height: 5px;
+            padding: 0px;
+            position: absolute;
+            transform: translateX(-130px);
+            transition: transform 0.5s ease-in-out;
+    
+            li {
+                h2 {
+                    font-size: 1rem;
+                    margin: 0px;
                 }
             }
         }
-
-        button {
-            margin: 20px 0px;
+    
+        .mobileNav {
+            transform: translateX(-25px);
+        }
+    
+        .wrapper {
+            width: 80%;
+        }
+    
+        .whoIsWillow {
+            height: 750px;
+            margin-top: 20px;
+    
+            h2 {
+                font-size: 1.4rem;
+                margin: 10px auto;
+            }
+    
+            p {
+                margin: 15px auto;
+            }
+        }
+    
+        .favouriteBucket {
+            height: auto;
+            padding: 20px;
+        }
+    
+        .image2Mat,
+        .image3Mat,
+        .image4Mat {
+            display: none;
+        }
+    
+        .image2Container,
+        .image3Container,
+        .favouriteThings,
+        .bucketList {
+            width: 320px;
+        }
+    
+        .bridgeImageContainer {
+            position: relative;
+            top: -15px;
+            left: -33px;
+            width: 290px;
+            height: 170px;
+    
+            img {
+                position: static;
+                width: 290px;
+                z-index: 10;
+            }
+        }
+    
+        .lillyImageContainer {
+            position: relative;
+            top: -10px;
+            left: -33px;
+            width: 290px;
+            height: 170px;
+            z-index: 1;
+    
+            img {
+                position: static;
+                width: 290px;
+                z-index: 10;
+            }
+        }
+    
+        .image2Container {
+            order: 1;
+        }
+    
+        .image3Container {
+            order: 3;
+        }
+    
+        .favouriteThings {
+            padding: 0px;
+            margin-bottom: 30px;
+            order: 2;
+        }
+    
+        .bucketList {
+            padding: 0px;
+            text-align: left;
+            order: 4;
+        }
+    
+        /* MEDIA QUERY Journey Section */
+        .journey {
+            height: auto;
+        }
+    
+        .journeyContainer {
+            flex-direction: column;
+            margin: 50px 0px;
+        }
+    
+        .image4Container {
+            order: 1;
+        }
+    
+        .journeyImageContainer {
+            img {
+                position: static;
+                width: 100%;
+            }
+        }
+    
+        .journeyText {
+            width: 100%;
+            height: auto;
+            padding: 0px;
+            order: 2;
+    
+            p {
+                width: 100%;
+            }
+        }
+    
+        .yellowHouse {
+            height: 220px;
+            background-size: 220%;
+        }
+    
+        .threeImages {
+            height: auto;
+            flex-direction: column;
+            padding: 0px;
+    
+            li {
+                margin-bottom: 50px;
+    
+                img {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+    
+        /* Blog Sections */
+        .blogContainer {
+            flex-direction: column;
+            padding-top: 30px;
+        }
+    
+        .aside {
             width: 100%;
         }
-    }
-
-    .commentInput {
-        #commentBox {
-            height: 300px;
-            width: 100%;
-            padding: 20px 10px;
-        }
-    }
-
-    /*---Contact Me Page---*/
-    .bodyContainer {
-        flex-direction: column;
-        margin: 50px 0px;
-
-        .contactInfo {
-            width: 100%;
+    
+        .aboutAuthor {
             padding: 0px;
             margin: 0px;
-            height: auto;
-            // order: 2;
+    
+            img {
+                width: 100%;
+            }
+    
+            h4 {
+                margin: 10px;
+            }
+    
+            p {
+                padding: 10px;
+            }
         }
-
-        .form {
+    
+        .recentPosts {
+            padding: 10px;
+            margin: 20px 0px;
+    
+            h3 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+        }
+    
+        .blogMain {
             width: 100%;
-            // order: 1;
+    
+            .myDestinations {
+                padding: 10px;
+                margin: 0px;
+            }
+    
+            h3 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+    
+            .post1,
+            .post2 {
+                flex-direction: column;
+                padding: 10px;
+                margin: 20px 0px;
+            }
         }
-    }
-
-    .footerNav {
-        flex-direction: column;
-        height: auto;
-
-        li {
-            width: auto;
+    
+        .myDestinations {
+            flex-direction: column;
+    
+            .myTravels {
+                height: 600px;
+                overflow: hidden;
+            }
+    
+            .expand {
+                visibility: visible;
+                width: 20px;
+                opacity: 0;
+            }
+    
+            .expandText {
+                visibility: visible;
+                width: 100%;
+                background-color: $accent;
+                text-align: center;
+            }
         }
-    }
+    
+        .expand:checked+.myTravels {
+            height: auto;
+        }
+    
+        .blogForm {
+            height: auto;
+    
+            .nameEmail {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                margin: 20px 0px;
+    
+                .nameInput {
+                    margin: 20px 0px;
+                    width: 100%;
+    
+                    input {
+                        width: 100%;
+                        padding-left: 10px;
+                    }
+                }
+            }
+    
+            button {
+                margin: 20px 0px;
+                width: 100%;
+            }
+        }
+    
+        .commentInput {
+            #commentBox {
+                height: 300px;
+                width: 100%;
+                padding: 20px 10px;
+            }
+        }
+    
+        
+}
 
-    .icon {
-        display: none;
-    }
 }

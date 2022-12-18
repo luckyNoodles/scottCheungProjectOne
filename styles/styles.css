@@ -303,10 +303,19 @@ li {
 button {
   background-color: #e4a436;
   padding: 10px 20px;
+  margin: 20px;
+}
+
+.blogForm input[type=submit] {
+  background-color: #e4a436;
+  padding: 10px 20px;
+  margin: 20px;
 }
 
 button:hover,
-button:focus {
+button:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
   border: 3px solid #345231;
 }
 
@@ -699,6 +708,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 70%;
 }
 
 .post1,
@@ -1148,6 +1158,9 @@ aside {
   .aside {
     width: 100%;
   }
+  .rightSide {
+    width: 100%;
+  }
   .aboutAuthor {
     padding: 0px;
     margin: 0px;
@@ -1236,52 +1249,60 @@ aside {
     padding-left: 10px;
   }
   .blogForm button {
-    margin: 20px 0px;
+    margin: 20px auto;
+  }
+  .blogForm input[type=submit] {
+    margin: 20px auto;
+  }
+  .blogForm {
+    /*---Contact Me Page---*/
+  }
+  .blogForm input,
+.blogForm #commentBox {
     width: 100%;
   }
-  .commentInput #commentBox {
+  .blogForm .commentInput #commentBox {
     height: 300px;
     width: 100%;
     padding: 20px 10px;
   }
-  /*---Contact Me Page---*/
-  .bodyContainer {
+  .blogForm .bodyContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 50px 0px;
   }
-  .bodyContainer .contactInfo {
+  .blogForm .bodyContainer .contactInfo {
     width: 100%;
     padding: 0px;
     margin: 0px;
     height: auto;
   }
-  .bodyContainer .socialContainer {
+  .blogForm .bodyContainer .socialContainer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .bodyContainer .form {
+  .blogForm .bodyContainer .form {
     width: 100%;
   }
-  .footerNav {
+  .blogForm .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
   }
-  .footerNav li {
+  .blogForm .footerNav li {
     width: auto;
   }
-  .icon {
+  .blogForm .icon {
     display: none;
   }
+  /*----- Media Query 320px -----*/
 }
-/*----- Media Query 320px -----*/
-@media (max-width: 320px) {
+@media (max-width: 390px) and (max-width: 320px) {
   button {
     width: 100%;
   }
@@ -1620,35 +1641,5 @@ aside {
     height: 300px;
     width: 100%;
     padding: 20px 10px;
-  }
-  /*---Contact Me Page---*/
-  .bodyContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 50px 0px;
-  }
-  .bodyContainer .contactInfo {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: auto;
-  }
-  .bodyContainer .form {
-    width: 100%;
-  }
-  .footerNav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .footerNav li {
-    width: auto;
-  }
-  .icon {
-    display: none;
   }
 }

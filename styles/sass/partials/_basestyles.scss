@@ -11,9 +11,21 @@ li {
 button {
     background-color: $accent;
     padding: 10px 20px;
+    margin: 20px;
 }
+
+.blogForm input[type="submit"] {
+    background-color: $accent;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+
+
 button:hover,
-button:focus {
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
     border: 3px solid $pine;
 }
 .matContainer {
