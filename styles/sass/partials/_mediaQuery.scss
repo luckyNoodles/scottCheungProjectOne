@@ -234,7 +234,8 @@
         padding-top: 30px;
     }
 
-    .aside {
+    .aside,
+    .rightSide {
         width: 100%;
     }
 
@@ -347,7 +348,9 @@
             padding: 20px 10px;
         }
     }
-
+    .post1 .imageUserPost {
+        padding: 0px;
+    }
     /*---Contact Me Page---*/
     .bodyContainer {
         flex-direction: column;

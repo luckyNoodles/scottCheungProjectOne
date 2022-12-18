@@ -1145,7 +1145,8 @@ aside {
             flex-direction: column;
     padding-top: 30px;
   }
-  .aside {
+  .aside,
+.rightSide {
     width: 100%;
   }
   .aboutAuthor {
@@ -1243,6 +1244,9 @@ aside {
     height: 300px;
     width: 100%;
     padding: 20px 10px;
+  }
+  .post1 .imageUserPost {
+    padding: 0px;
   }
   /*---Contact Me Page---*/
   .bodyContainer {
