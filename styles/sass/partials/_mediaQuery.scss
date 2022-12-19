@@ -212,21 +212,61 @@
         height: 220px;
     }
 
-    .threeImages {
-        height: auto;
-        flex-direction: column;
-        padding: 0px;
-        margin: 50px 0px 20px 0px;
+    // .threeImages {
+    //     height: auto;
+    //     flex-direction: column;
+    //     padding: 0px;
+    //     margin: 50px 0px 20px 0px;
 
-        li {
-            margin-bottom: 50px;
+    //     li {
+    //         margin-bottom: 50px;
 
-            img {
-                width: 300px;
-                height: auto;
-            }
+    //         img {
+    //             width: 300px;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+
+    .indexCarousel {
+        height: 400px;
+        width: 100%;
+        justify-content: center;
+        .imageSlide {
+            justify-content: center;
+            top: 0%;
+            right: 0%;
+            img{
+            width: 100%;
         }
     }
+    }
+
+        .btn {
+            position: absolute;
+            width: 50px;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            z-index: 10px;
+            cursor: pointer;
+            background-color: $accent;
+        }
+    
+        .btn:active {
+            transform: scale(1.1);
+        }
+    
+        .nextImage {
+            right: 2%;
+            top: 45%;
+        }
+    
+        .prevImage {
+            top: 45%;
+            left: 2%;
+    
+        }
 
     /* Blog Sections */
     .blogContainer {

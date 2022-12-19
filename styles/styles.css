@@ -603,27 +603,31 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 700px;
-  width: 100%;
+  width: 80%;
   position: relative;
   overflow: hidden;
 }
 .indexCarousel .imageSlide {
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .indexCarousel .imageSlide img {
   width: 50%;
+  margin: 30px;
 }
 
 .btn {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px;
   padding: 10px;
   border: none;
   border-radius: 50%;
@@ -638,13 +642,13 @@ footer {
 }
 
 .nextImage {
+  right: 5%;
   top: 45%;
-  right: 2%;
 }
 
 .prevImage {
   top: 45%;
-  left: 2%;
+  left: 25%;
 }
 
 /* ---Blog Sections---*/
@@ -1155,21 +1159,44 @@ aside {
   .yellowHouse {
     height: 220px;
   }
-  .threeImages {
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0px;
-    margin: 50px 0px 20px 0px;
+  .indexCarousel {
+    height: 400px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .threeImages li {
-    margin-bottom: 50px;
+  .indexCarousel .imageSlide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0%;
+    right: 0%;
   }
-  .threeImages li img {
-    width: 300px;
-    height: auto;
+  .indexCarousel .imageSlide img {
+    width: 100%;
+  }
+  .btn {
+    position: absolute;
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #e4a436;
+  }
+  .btn:active {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .nextImage {
+    right: 2%;
+    top: 45%;
+  }
+  .prevImage {
+    top: 45%;
+    left: 2%;
   }
   /* Blog Sections */
   .blogContainer {

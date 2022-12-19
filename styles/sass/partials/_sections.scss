@@ -161,24 +161,26 @@ footer {
 .indexCarousel {
     display: flex;
     height: 700px;
-    width: 100%;
+    width: 80%;
     position: relative;
     overflow: hidden;
     .imageSlide {
+        background-color: $white-shade;
         display: flex;
         width: 100%;
+        justify-content: center;
         position: absolute;
         transition: all 0.5s;
         img {
             width: 50%;
+            margin: 30px;
         }
     }
 }
 
 .btn {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 50px;
     padding: 10px;
     border: none;
     border-radius: 50%;
@@ -190,12 +192,12 @@ footer {
     transform: scale(1.1);
 }
 .nextImage {
+    right: 5%;
     top: 45%;
-    right: 2%;
 }
 .prevImage {
     top:45%;
-    left:2%;
+    left:25%;
 
 }
 
