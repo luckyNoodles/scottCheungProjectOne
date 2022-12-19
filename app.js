@@ -7,8 +7,11 @@ navToggle.addEventListener('click', function() {
 })
 
 //----------add comment function------------
-
-//select form
+const checkPage = () => {
+    if(title !== 'Willow'){
+        return;
+    } else {
+        //select form
 const comment = document.querySelector('.blogForm');
 
 //add eventlistener to form on submit
@@ -37,4 +40,84 @@ const comment = document.querySelector('.blogForm');
         //reset form after submit
         document.querySelector('.blogForm').reset();
 });
+    }
+}
 
+
+// --------- index Slide Show -----------------------
+    //get photos
+    // const slideImg = document.querySelectorAll('.slidePhoto');
+
+    //Loop through the photo's, show one at a time, hide the others
+    // let i = 0;
+
+    // setInterval (function() {
+               
+    // if(i == 0) {
+    //     slideImg[i].style.display = 'block';
+    // }else if (i === slideImg.length){
+    //     slideImg[i - 1].style.display = 'none';
+    //     slideImg[0].style.display = 'block';
+    //     i = 0;
+    // }else {
+    //     slideImg[i - 1].style.display = 'none';
+    //     slideImg[i].style.display = 'block';
+    // };
+
+    //     i++;
+
+    // }, 2000)
+
+    //Use css to transition
+
+// ---------- Carousel -----------------------
+
+//Get the element with nodes that will be used for th carousel
+    const imgList = document.querySelectorAll('.imageSlide');
+    console.log(imgList);
+
+//add the translateX property by looping through the node list and multiplying each index by 100 to assign it's translateX value. This places all the images to the right of each other.
+    imgList.forEach((imageSlide, indx) => {
+        imageSlide.style.transform = `translateX(${indx * 100}%)`;
+    })
+
+    //visible Image counter
+    let visibleImage = 0;
+
+    //use selector for the "next" and "prev" buttons
+    const next = document.querySelector('.nextImage');
+    const prev = document.querySelector('.prevImage');
+
+    //set a max counter
+    let totalImages = imgList.length - 1;
+
+    // write the functionality for the "Next" button
+    next.addEventListener('click', function() {
+        
+        if(visibleImage === totalImages){
+            visibleImage = 0;
+        }else {
+            visibleImage++;
+        };
+
+            imgList.forEach((imageSlide, indx) => {
+            imageSlide.style.transform = `translateX(${100 * (indx - visibleImage)}%)`;
+        });
+        
+    });
+
+    // write the functionality for the "Prev" button
+    prev.addEventListener('click', function () {
+       
+        if(visibleImage === 0) {
+            visibleImage = totalImages;
+        } else {
+            visibleImage--;
+        }
+        
+
+        imgList.forEach((imageSlide, indx) => {
+            imageSlide.style.transform = `translateX(${100 * (indx - visibleImage)}%)`;
+        
+        });
+    });
