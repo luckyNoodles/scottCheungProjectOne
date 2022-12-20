@@ -648,7 +648,7 @@ footer {
 
 #prevImage {
   top: 45%;
-  left: 25%;
+  left: 20%;
 }
 
 /* ---Blog Sections---*/
@@ -1190,11 +1190,11 @@ aside {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  .nextImage {
+  #nextImage {
     right: 2%;
     top: 45%;
   }
-  .prevImage {
+  #prevImage {
     top: 45%;
     left: 2%;
   }
