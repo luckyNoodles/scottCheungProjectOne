@@ -291,8 +291,8 @@ a {
 }
 
 .wrapper {
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1500px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -302,7 +302,7 @@ li {
 
 button {
   background-color: #e4a436;
-  padding: 10px 20px;
+  padding: 1% 2%;
 }
 
 button:hover,
@@ -314,16 +314,19 @@ button:focus {
   position: relative;
 }
 
-header {
-  background-color: #345231;
-  margin: -20px;
-}
-
 .indexHeader {
-  height: 850px;
+  background-color: #345231;
+  height: 56vh;
 }
-
-.headingContainer {
+.indexHeader nav {
+  position: relative;
+}
+.indexHeader nav .hamburger {
+  position: absolute;
+  -webkit-transform: translateY(-1);
+          transform: translateY(-1);
+}
+.indexHeader .headingContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,43 +337,43 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 650px;
+  width: 100%;
 }
-.headingContainer h1 {
-  padding-left: 130px;
+.indexHeader .headingContainer .extra {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
-
-.circleContainer {
-  width: 170px;
-  height: 170px;
+.indexHeader .headingContainer .extra .circleContainer {
+  width: 9%;
   position: absolute;
-  top: 235px;
-  left: 70px;
+  top: 49%;
+  left: 7%;
 }
-.circleContainer img {
-  width: 123px;
+.indexHeader .headingContainer .extra .circleContainer img {
+  width: 100%;
+}
+.indexHeader .headingContainer .extra .blogTitle {
+  margin-left: 11%;
+  margin-top: 13%;
 }
 
 .headerImageContainer {
-  width: 500px;
-  height: 700px;
-  position: absolute;
-  right: 0px;
-  top: 75px;
   z-index: 2;
+  margin-top: 5%;
+  position: absolute;
+  top: -15%;
+  left: 57%;
 }
 .headerImageContainer img {
   width: 100%;
-}
-
-.image1Mat {
-  background-color: white;
-  width: 500px;
-  height: 700px;
-  position: absolute;
-  right: -20px;
-  top: 90px;
-  z-index: 1;
+  -webkit-box-shadow: 25px 20px 0px 0px white;
+          box-shadow: 25px 20px 0px 0px white;
 }
 
 /* Blog and Contact Header Styles */
@@ -410,10 +413,6 @@ nav {
   background-color: #345231;
 }
 
-#expandNav {
-  visibility: hidden;
-}
-
 .navFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,20 +420,19 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px 0px 10px 0px;
+  margin: 0;
+  padding: 2%;
 }
 .navFlexContainer li {
-  margin: 20px 20px;
+  margin: 0 1%;
 }
 .navFlexContainer li a:hover {
   color: #e4a436;
 }
-.navFlexContainer li h2 {
+.navFlexContainer li .willowNav {
   font-size: 1.8rem;
-  color: #f6f6f6;
-  margin: 0px 15px;
 }
-.navFlexContainer li h2:hover {
+.navFlexContainer li .willowNav:hover {
   color: #e4a436;
 }
 
@@ -455,7 +453,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 450px;
+  height: 40vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -466,7 +464,7 @@ footer {
 
 /* favourite things and Bucket List*/
 .favouriteBucket {
-  height: 800px;
+  height: 60vh;
 }
 
 .favouriteBucket,
@@ -496,8 +494,7 @@ footer {
 
 .image2Mat,
 .image3Mat {
-  width: 800px;
-  height: 400px;
+  height: 29vh;
   position: absolute;
   z-index: 1;
 }
@@ -505,13 +502,15 @@ footer {
 .image2Mat {
   background-color: #709b6b;
   top: -20px;
-  left: -160px;
+  left: -12%;
+  width: 62%;
 }
 
 .image3Mat {
   background-color: #345231;
-  top: -250px;
-  right: -160px;
+  bottom: -150px;
+  right: -17%;
+  width: 66%;
 }
 
 .bridgeImageContainer {
@@ -519,8 +518,8 @@ footer {
 }
 .bridgeImageContainer img {
   position: absolute;
-  top: -40px;
-  left: -20px;
+  top: -45px;
+  left: 12%;
   z-index: 1;
 }
 
@@ -530,17 +529,17 @@ footer {
 .lillyImageContainer img {
   position: absolute;
   top: 80px;
-  right: 20px;
+  right: 7%;
   z-index: 2;
 }
 
 .favouriteThings {
-  padding: 70px 10px 5px 90px;
+  padding: 0 1% 4% 10%;
 }
 
 .bucketList {
-  padding-right: 130px;
-  padding-top: 50px;
+  padding-right: 10%;
+  padding-top: 4%;
   text-align: right;
 }
 .bucketList button {
@@ -551,7 +550,7 @@ footer {
 
 /* journey section*/
 .journey {
-  height: 500px;
+  height: 35vh;
   z-index: 0;
 }
 
@@ -566,25 +565,25 @@ footer {
 }
 
 .journeyImageContainer img {
-  width: 260px;
+  width: 17%;
   position: absolute;
-  top: 130px;
-  left: 0px;
+  top: 29%;
+  left: 8%;
 }
 
 .image4Mat {
   background-color: #709b6b;
-  width: 260px;
-  height: 260px;
+  width: 18%;
+  height: 65%;
   position: absolute;
-  top: 150px;
-  left: 20px;
+  top: 33%;
+  left: 9%;
   z-index: 0;
 }
 
 .journeyText {
   width: 75%;
-  padding: 100px 0px 40px 80px;
+  padding: 5% 0 1% 10%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -594,29 +593,66 @@ footer {
 .yellowHouse {
   background-image: url("../assets/home-image-5.jpg");
   background-color: #f6f6f6;
-  border: 0px;
-  height: 400px;
+  border: 0;
+  height: 35vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* Section three picture gallery */
-.threeImages {
+.indexCarousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 400px;
-  margin: 75px 0px 75px 0px;
-  padding: 0px;
+  height: 45vh;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10%;
 }
-.threeImages img {
-  width: 380px;
-  height: 380px;
+.indexCarousel .imageSlide {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.indexCarousel .imageSlide img {
+  width: 50%;
+  margin: 30px;
+}
+
+.btn {
+  position: absolute;
+  width: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #e4a436;
+}
+
+.btn:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#nextImage {
+  right: 15%;
+  top: 45%;
+}
+
+#prevImage {
+  top: 45%;
+  left: 25%;
 }
 
 /* ---Blog Sections---*/
@@ -638,8 +674,9 @@ aside {
   width: 30%;
 }
 
-.blogMain {
-  width: 70%;
+.blogMain,
+.blogForm {
+  width: 100%;
   margin: 0px;
 }
 
@@ -696,6 +733,17 @@ aside {
   width: 100%;
 }
 
+.rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
 .post1,
 .post2 {
   -webkit-box-orient: horizontal;
@@ -707,6 +755,11 @@ aside {
 .post2 .imagePost {
   width: 15%;
   margin-top: 15px;
+}
+.post1 .imageUserPost,
+.post2 .imageUserPost {
+  width: 15%;
+  padding: 25px;
 }
 .post1 article,
 .post2 article {
@@ -760,7 +813,7 @@ aside {
   padding-left: 20px;
 }
 .blogForm button {
-  margin: 25px;
+  margin: 20px;
   width: 95%;
 }
 
@@ -906,7 +959,6 @@ aside {
   margin-bottom: 0px;
 }
 
-/*---media query for 320px width mobile device */
 @media (max-width: 390px) {
   h1 {
     font-size: 2.1rem;
@@ -915,7 +967,7 @@ aside {
     width: 100%;
   }
   .indexHeader {
-    height: 360px;
+    height: 380px;
   }
   .headingContainer {
     display: -webkit-box;
@@ -924,10 +976,6 @@ aside {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
     height: 50px;
   }
   .headingContainer h1 {
@@ -936,16 +984,12 @@ aside {
   }
   .headerImageContainer {
     width: 200px;
-    position: absolute;
     right: 20px;
-    top: 90px;
-    z-index: 2;
   }
   .headerImageContainer img {
     width: 100%;
   }
   .circleContainer {
-    width: 55px;
     top: -15px;
     left: 90px;
   }
@@ -953,17 +997,14 @@ aside {
     width: 55px;
   }
   .image1Mat {
-    background-color: white;
     width: 200px;
     height: 280px;
-    position: absolute;
     right: 10px;
     top: 100px;
-    z-index: 1;
   }
   /* Blog section */
   .blogHeaderBody,
-.contactHeaderBody {
+  .contactHeaderBody {
     margin-bottom: 25px;
     height: 300px;
     -webkit-box-align: center;
@@ -972,7 +1013,7 @@ aside {
     line-height: 3rem;
   }
   .blogHeaderBody h1,
-.contactHeaderBody h1 {
+  .contactHeaderBody h1 {
     font-size: 2.1rem;
     text-align: right;
   }
@@ -980,19 +1021,7 @@ aside {
     margin-top: 20PX;
     position: relative;
   }
-  #expandNav {
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    opacity: 0;
-    width: 30px;
-    height: 30px;
-  }
   .material-symbols-outlined {
-    left: -5px;
-    top: 0px;
-    z-index: 10;
     margin-top: 10px;
   }
   .navFlexContainer {
@@ -1021,20 +1050,13 @@ aside {
     font-size: 1rem;
     margin: 0px;
   }
-  #expandNav:checked + .navFlexContainer {
+  .mobileNav {
     -webkit-transform: translateX(-25px);
             transform: translateX(-25px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-  .wrapper {
-    width: 80%;
   }
   .whoIsWillow {
     height: 650px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .whoIsWillow h2 {
     font-size: 1.4rem;
@@ -1048,14 +1070,14 @@ aside {
     padding: 20px;
   }
   .image2Mat,
-.image3Mat,
-.image4Mat {
+  .image3Mat,
+  .image4Mat {
     display: none;
   }
   .image2Container,
-.image3Container,
-.favouriteThings,
-.bucketList {
+  .image3Container,
+  .favouriteThings,
+  .bucketList {
     width: 320px;
   }
   .bridgeImageContainer {
@@ -1140,23 +1162,45 @@ aside {
   }
   .yellowHouse {
     height: 220px;
-    background-size: 220%;
   }
-  .threeImages {
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0px;
-    margin: 50px 0px 20px 0px;
+  .indexCarousel {
+    height: 400px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .threeImages li {
-    margin-bottom: 50px;
+  .indexCarousel .imageSlide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0%;
+    right: 0%;
   }
-  .threeImages li img {
-    width: 300px;
-    height: auto;
+  .indexCarousel .imageSlide img {
+    width: 100%;
+  }
+  .btn {
+    position: absolute;
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #e4a436;
+  }
+  .btn:active {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #nextImage {
+    right: 2%;
+    top: 45%;
+  }
+  #prevImage {
+    top: 45%;
+    left: 2%;
   }
   /* Blog Sections */
   .blogContainer {
@@ -1166,7 +1210,8 @@ aside {
             flex-direction: column;
     padding-top: 30px;
   }
-  .aside {
+  .aside,
+  .rightSide {
     width: 100%;
   }
   .aboutAuthor {
@@ -1203,7 +1248,7 @@ aside {
     text-align: center;
   }
   .blogMain .post1,
-.blogMain .post2 {
+  .blogMain .post2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1236,6 +1281,7 @@ aside {
     height: auto;
   }
   .blogForm {
+    width: 100%;
     height: auto;
   }
   .blogForm .nameEmail {
@@ -1263,6 +1309,9 @@ aside {
     height: 300px;
     width: 100%;
     padding: 20px 10px;
+  }
+  .post1 .imageUserPost {
+    padding: 0px;
   }
   /*---Contact Me Page---*/
   .bodyContainer {
@@ -1330,7 +1379,7 @@ aside {
     height: 224px;
     position: absolute;
     right: 20px;
-    top: 90px;
+    top: 110px;
     z-index: 2;
   }
   .headerImageContainer img {
@@ -1350,12 +1399,12 @@ aside {
     height: 215px;
     position: absolute;
     right: 10px;
-    top: 100px;
+    top: 120px;
     z-index: 1;
   }
   /* Blog section */
   .blogHeaderBody,
-.contactHeaderBody {
+  .contactHeaderBody {
     margin-bottom: 25px;
     height: 300px;
     -webkit-box-align: center;
@@ -1364,22 +1413,13 @@ aside {
     line-height: 3rem;
   }
   .blogHeaderBody h1,
-.contactHeaderBody h1 {
+  .contactHeaderBody h1 {
     font-size: 2.4rem;
     text-align: right;
   }
   nav {
     margin-top: 20PX;
     position: relative;
-  }
-  #expandNav {
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    opacity: 0;
-    width: 30px;
-    height: 30px;
   }
   .material-symbols-outlined {
     left: -5px;
@@ -1413,19 +1453,16 @@ aside {
     font-size: 1rem;
     margin: 0px;
   }
-  #expandNav:checked + .navFlexContainer {
+  .mobileNav {
     -webkit-transform: translateX(-25px);
             transform: translateX(-25px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .wrapper {
     width: 80%;
   }
   .whoIsWillow {
     height: 750px;
+    margin-top: 20px;
   }
   .whoIsWillow h2 {
     font-size: 1.4rem;
@@ -1439,14 +1476,14 @@ aside {
     padding: 20px;
   }
   .image2Mat,
-.image3Mat,
-.image4Mat {
+  .image3Mat,
+  .image4Mat {
     display: none;
   }
   .image2Container,
-.image3Container,
-.favouriteThings,
-.bucketList {
+  .image3Container,
+  .favouriteThings,
+  .bucketList {
     width: 320px;
   }
   .bridgeImageContainer {
@@ -1592,7 +1629,7 @@ aside {
     text-align: center;
   }
   .blogMain .post1,
-.blogMain .post2 {
+  .blogMain .post2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1682,5 +1719,10 @@ aside {
   }
   .icon {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1500px;
   }
 }
