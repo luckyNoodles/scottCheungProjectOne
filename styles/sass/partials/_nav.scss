@@ -7,22 +7,21 @@ nav {
 .navFlexContainer {
     display: flex;
     justify-content: center;
-    margin: 10px 0px 10px 0px;
+    margin: 0;
+    padding: 2%;
 
     li {
-        margin: 20px 20px;
+        margin: 0 1%;
 
         a:hover {
             color: $accent;
         }
 
-        h2 {
+        .willowNav {
             font-size: 1.8rem;
-            color: $white-shade;
-            margin: 0px 15px;
         }
 
-        h2:hover {
+        .willowNav:hover {
             color: $accent;
         }
     }

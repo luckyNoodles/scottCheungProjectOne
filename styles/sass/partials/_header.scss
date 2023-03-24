@@ -1,61 +1,67 @@
 @use "variables" as *;
 
 //*index Header */
-header {
-    background-color: $pine;
-    margin: -20px;
-}
 
 .indexHeader {
-    height: 750px;
-}
+    background-color: $pine;
+    // margin: -20px;
+    height: 56vh;
+    nav {
+        position: relative;
+        .hamburger {
+         position: absolute;
+         transform: translateY(-1);
+        }
+    }
+    .headingContainer {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        position: relative;
+        // height: 43vh;
+        width: 100%;
+        .extra {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            // .blogTitle {
+            //     padding: 4%;
+            // }
+            .circleContainer {
+                width:9%;
+                // height: 170px;
+                position: absolute;
+                top: 49%;
+                left: 7%;
+            
+                img {
+                    width: 100%;
+                }
+            }
+            .blogTitle {
+                margin-left: 11%;
+                margin-top: 13%;
+            }
 
-.headingContainer {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    position: relative;
-    height: 650px;
-
-    h1 {
-        padding-left: 130px;
+        }
     }
 }
 
-.circleContainer {
-    width: 170px;
-    height: 170px;
-    position: absolute;
-    top: 235px;
-    left: 70px;
-
-    img {
-        width: 123px;
-    }
-}
 
 .headerImageContainer {
-    width: 400px;
-    // height: 700px;
-    position: absolute;
-    right: 0px;
-    top: 90px;
     z-index: 2;
+    margin-top: 5%;
+    position: absolute;
+    top: -15%;
+    left: 57%;
 
     img {
         width: 100%;
+        box-shadow: 25px 20px 0px 0px white;;
     }
 }
 
-.image1Mat {
-    background-color: white;
-    width: 400px;
-    height: 565px;
-    position: absolute;
-    right: -20px;
-    top: 110px;
-    z-index: 1;
-}
 
 /* Blog and Contact Header Styles */
 .blogHeaderBody {
