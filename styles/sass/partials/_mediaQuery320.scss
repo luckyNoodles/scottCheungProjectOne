@@ -1,0 +1,140 @@
+@use "variables" as *;
+
+@media (max-width: 320px) {
+
+.indexHeader {
+    min-height: 40vh;
+}
+.hamburger {
+    top: 5%;
+}
+
+.hide {
+    display: none;
+}
+
+.navFlexContainer {
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    transform: translateX(-5%) translateY(20%);
+    transition-duration: 1s;
+    li {
+        margin-left: 10%;
+        a, 
+        .willowNav {
+            font-size: 1rem;
+            color: black;
+        }
+    }
+}
+
+.hideMobileNav {
+    transform: translateX(-125%) translateY(20%);
+    transition-duration: 1s;
+}
+
+.indexHeader {
+    .headingContainer {
+        height: 35vh;
+        align-items: initial;
+        .extra {
+            align-items: initial;
+            .circleContainer {
+
+                width: 20%;
+                top: -25%;
+                left: 2%;
+            }
+            .blogTitle {
+                margin-top: -30%;
+                .h1Home {
+                    font-size: 3rem;
+                }
+            }
+            .headerImageContainer {
+                width: 70%;
+                top: 10%;
+                left: 30%;
+                img {
+                    box-shadow: 7px 5px 0px 0px white;
+                }
+        
+            }
+
+        }
+    
+    }
+
+}
+
+.whoIsWillow {
+    height: 95vh;
+}
+
+.favouriteBucket {
+    height: 165vh;
+    .matContainer {
+        display: none;
+    }
+    .image2Container {
+        width: 100%;
+        .bridgeImageContainer {
+            width: 100%;
+            position: initial;
+            img {
+                position: initial;
+                width: 95%;
+            }
+        }
+    }
+    .favouriteThings {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bucketList {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .image3Container {
+        width: 100%;
+        .lillyImageContainer {
+            width: 95%;
+            position: initial;
+            margin: 10% 0 2% 0;
+            img {
+                position: initial;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.journey {
+    min-height: 95vh;
+    .image4Container {
+        display: none;
+    }
+    .journeyText {
+        width: 100%;
+    }
+}
+
+.indexCarousel {
+    display: none;
+
+}
+
+.footerNav {
+    flex-direction: column;
+    height: initial;
+    li {
+        width: 100%;
+    }
+}
+
+
+}
