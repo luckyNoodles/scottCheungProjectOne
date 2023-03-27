@@ -6,12 +6,15 @@ const closeNav = document.querySelector('.clickClose');
 const blogTitle = document.querySelector('.blogTitle');
 const blogcircle = document.querySelector('.circleContainer');
 
+const openContactNav = document.querySelector('.navFlexContainer');
+
 openNav.addEventListener('click', function() {
 	openNav.classList.toggle('hide');
 	closeNav.classList.toggle('hide');
  	mainNav.classList.toggle('hideMobileNav');
 	blogTitle.classList.add('hide');
 	blogcircle.classList.add('hide');
+	// openContactNav.classList.toggle('hide');
 })
 
 closeNav.addEventListener('click', function() {
@@ -20,6 +23,7 @@ closeNav.addEventListener('click', function() {
  	mainNav.classList.toggle('hideMobileNav');
 	blogTitle.classList.toggle('hide');
 	blogcircle.classList.toggle('hide');
+	// openContactNav.classList.toggle('hide');
 })
 
 // ---------- Carousel -----------------------

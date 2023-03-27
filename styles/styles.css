@@ -835,6 +835,25 @@ aside {
   background-color: #f6f6f6;
   margin: 0px;
 }
+.contactBody .contactHeaderBody {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contactBody .contactHeaderBody nav {
+  background-color: initial;
+  padding: 2%;
+}
+.contactBody .contactHeaderBody nav .navFlexContainer {
+  padding: 0;
+}
+.contactBody .contactHeaderBody nav .navFlexContainer h2 {
+  margin: 0;
+  color: whitesmoke;
+}
+.contactBody .contactHeaderBody h1 {
+  margin: 10%;
+}
 
 .bodyContainer {
   display: -webkit-box;
@@ -976,22 +995,24 @@ aside {
             flex-direction: column;
     width: 100%;
     background-color: whitesmoke;
-    -webkit-transform: translateX(-5%) translateY(20%);
-            transform: translateX(-5%) translateY(20%);
+    -webkit-transform: translateX(-5%) translateY(25%);
+            transform: translateX(-5%) translateY(25%);
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
   }
   .navFlexContainer li {
     margin-left: 10%;
   }
-  .navFlexContainer li a,
-  .navFlexContainer li .willowNav {
+  .navFlexContainer li a {
     font-size: 1rem;
     color: black;
   }
+  .navFlexContainer .willowNav {
+    display: none;
+  }
   .hideMobileNav {
-    -webkit-transform: translateX(-125%) translateY(20%);
-            transform: translateX(-125%) translateY(20%);
+    -webkit-transform: translateX(-125%) translateY(25%);
+            transform: translateX(-125%) translateY(25%);
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
   }
@@ -1068,13 +1089,14 @@ aside {
     width: 100%;
   }
   .journey {
-    min-height: 95vh;
+    min-height: 85vh;
   }
   .journey .image4Container {
     display: none;
   }
   .journey .journeyText {
     width: 100%;
+    padding: 0;
   }
   .indexCarousel {
     display: none;
@@ -1088,5 +1110,177 @@ aside {
   }
   .footerNav li {
     width: 100%;
+  }
+  .footerNav li .icon {
+    height: 30px;
+  }
+  .contactBody .contactHeaderBody {
+    height: 60vh;
+  }
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
+    display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 3rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+    margin: 2%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 60vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .blogContainer aside {
+    width: 100%;
+  }
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
+  }
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
+    width: 100%;
+  }
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 30%;
+  }
+  .blogForm .nameEmail .nameInput {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 5% 0%;
+  }
+  .blogForm .commentInput #commentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 10%;
+  }
+  .blogForm button {
+    margin: 5% 2%;
+    width: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1500px;
+    width: 90%;
+  }
+  .clickOpen,
+  .clickClose {
+    display: none;
   }
 }

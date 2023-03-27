@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+@media (min-width: 1200px) {
+
+.wrapper {
+    max-width: 1500px;
+    width: 90%;
+}
+
+.clickOpen,
+.clickClose {
+    display: none;
+}
+
+}
