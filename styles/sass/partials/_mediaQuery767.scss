@@ -1,0 +1,368 @@
+@use "variables" as *;
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .indexHeader {
+        min-height: 40vh;
+    }
+
+    .hamburger {
+        top: 5%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .navFlexContainer {
+        flex-direction: column;
+        width: 100%;
+        background-color: whitesmoke;
+        transform: translateX(-10%) translateY(25%);
+        transition-duration: 1s;
+
+        li {
+            margin-left: 10%;
+
+            a {
+                font-size: 1rem;
+                color: black;
+
+            }
+        }
+
+        .willowNav {
+            display: none;
+        }
+    }
+
+    .hideMobileNav {
+        transform: translateX(-125%) translateY(25%);
+        transition-duration: 1s;
+    }
+
+    .indexHeader {
+        height: 65vh;
+
+        .headingContainer {
+            height: 35vh;
+            align-items: initial;
+
+            .extra {
+                align-items: initial;
+
+                .circleContainer {
+
+                    width: 4rem;
+                    top: -9%;
+                    left: 5%;
+                }
+
+                .blogTitle {
+                    margin-top: -5vh;
+
+                    .h1Home {
+                        font-size: 5rem;
+                    }
+                }
+
+                .headerImageContainer {
+                    width: 65%;
+                    top: 25%;
+                    left: 30%;
+
+                    img {
+                        box-shadow: 7px 5px 0px 0px white;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .whoIsWillow {
+        min-height: 65vh;
+    }
+
+    .favouriteBucket {
+        height: 130vh;
+
+        .matContainer {
+            display: none;
+        }
+
+        .image2Container {
+            width: 100%;
+
+            .bridgeImageContainer {
+                width: 100%;
+                position: initial;
+
+                img {
+                    position: initial;
+                    width: 95%;
+                }
+            }
+        }
+
+        .favouriteThings {
+            width: 100%;
+            padding: 0;
+        }
+
+        .bucketList {
+            width: 100%;
+            padding: 0;
+            text-align: left;
+        }
+
+        .image3Container {
+            width: 100%;
+
+            .lillyImageContainer {
+                width: 95%;
+                position: initial;
+                margin: 10% 0 2% 0;
+
+                img {
+                    position: initial;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .journey {
+        height: 40vh;
+
+        .image4Container {
+            display: none;
+        }
+
+        .journeyText {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .indexCarousel {
+        display: none;
+
+    }
+
+    .footerNav {
+        flex-direction: column;
+        height: initial;
+
+        li {
+            width: 100%;
+
+            .icon {
+                height: 30px;
+            }
+        }
+    }
+
+
+    // Contact page
+    .contactBody {
+        .contactHeaderBody {
+            height: 60vh;
+
+            nav {
+                background-color: initial;
+
+                .navFlexContainer {
+                    transform: translateX(-10%) translateY(0%);
+
+                    li {
+                        h2 {
+                            font-size: 1.1rem;
+                            margin: 0;
+                            color: black;
+                        }
+
+                    }
+
+                    .willowNav {
+                        display: none;
+                    }
+                }
+
+                .hideMobileNav {
+                    transform: translateX(-125%) translateY(0%);
+                    transition-duration: 1s;
+                }
+
+            }
+
+            h1 {
+                font-size: 4rem;
+                line-height: 135%;
+                margin: 0;
+            }
+        }
+
+        .contactMain {
+            .wrapper {
+                width: 95%;
+            }
+
+            .bodyContainer {
+                flex-direction: column;
+                margin: 0;
+
+                .contactInfo {
+                    width: 100%;
+                    margin: 0% 0% 10% 0%;
+                }
+
+                .form {
+                    width: 100%;
+
+                    .blogForm {
+                        height: initial;
+
+                        .nameEmail {
+                            flex-direction: column;
+                            height: initial;
+                            margin: 0%;
+
+                            .nameInput {
+                                height: initial;
+                                width: 100%;
+                                padding: 0;
+                                // border: 1px solid grey;
+                                margin-top: 0%;
+                                justify-content: left;
+
+                                #name,
+                                #email {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .commentInput {
+                            #commentBox {
+                                width: 100%;
+                                margin-top: 0%;
+                            }
+                        }
+
+                        button {
+                            width: 35%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    //Blog page
+
+    .blogHeaderBody {
+        height: 60vh;
+        align-items: start;
+
+        nav {
+            background-color: initial;
+            padding-top: 5%;
+
+            .blogNav {
+                transform: translateX(-15px) translateY(0px);
+
+                li {
+                    h2 {
+                        font-size: 1.1rem;
+                        margin: 0;
+                        color: black;
+                    }
+
+                }
+            }
+
+            .hideMobileNav {
+                transform: translateX(-125%) translateY(0%);
+                transition-duration: 1s;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: initial;
+        }
+    }
+
+    .blogContainer {
+        flex-direction: column;
+        padding-top: 0;
+
+        aside {
+            width: 100%;
+
+            .aboutAuthor {
+                padding: 0;
+                margin: 0;
+            }
+
+            .recentPosts {
+                display: none;
+            }
+        }
+
+        .rightSide {
+            width: 100%;
+
+            .myDestinations,
+            .post1,
+            .post2 {
+                padding: 2%;
+                margin: 5% 0%;
+                flex-direction: column;
+            }
+        }
+
+    }
+
+    .blogForm {
+        height: auto;
+
+        .nameEmail {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 30%;
+
+            .nameInput {
+                width: 100%;
+                justify-content: left;
+                margin: 5% 0%;
+
+            }
+        }
+
+        .commentInput {
+            #commentBox {
+                display: flex;
+                justify-content: left;
+                margin-top: 0%;
+            }
+
+        }
+
+        button {
+            margin: 5% 2%;
+            width: 65%;
+        }
+    }
+
+    .copyrite {
+        margin-top: 0%;
+    }
+
+
+}

@@ -2,9 +2,6 @@
 
 @media (max-width: 320px) {
 
-.indexHeader {
-    min-height: 40vh;
-}
 .hamburger {
     top: 5%;
 }
@@ -39,6 +36,7 @@
 }
 
 .indexHeader {
+    height: 38vh;
     .headingContainer {
         height: 35vh;
         align-items: initial;
@@ -73,11 +71,11 @@
 }
 
 .whoIsWillow {
-    height: 95vh;
+    height: 70vh;
 }
 
 .favouriteBucket {
-    height: 165vh;
+    height: 110vh;
     .matContainer {
         display: none;
     }
@@ -118,7 +116,7 @@
 }
 
 .journey {
-    min-height: 85vh;
+    height: 60vh;
     .image4Container {
         display: none;
     }
