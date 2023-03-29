@@ -2503,6 +2503,97 @@ aside {
     margin-top: 0%;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .clickOpen,
+  .clickClose {
+    display: none;
+  }
+  .navFlexContainer li {
+    margin: 2% 4%;
+  }
+  .indexHeader .headingContainer {
+    height: 45vh;
+  }
+  .indexHeader .headingContainer .extra .circleContainer {
+    top: 12%;
+    left: 6%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: initial;
+    margin-left: 10%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle h1 {
+    font-size: 5rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 40%;
+    top: -110%;
+    left: 60%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 20px 20px 0px 0px whitesmoke;
+            box-shadow: 20px 20px 0px 0px whitesmoke;
+  }
+  .bridgeImageContainer img {
+    top: -50px;
+    left: -8%;
+    width: 47vw;
+  }
+  .favouriteBucket {
+    height: 75vh;
+  }
+  .image2Mat,
+  .image3Mat {
+    height: 27vh;
+  }
+  .lillyImageContainer img {
+    top: 200px;
+    left: -2%;
+    width: 50vw;
+  }
+  .journey {
+    height: 40vh;
+  }
+  .image4Mat {
+    width: 30%;
+    top: 25%;
+    left: 2%;
+  }
+  .journeyImageContainer img {
+    width: 30%;
+    top: 20%;
+    left: 0%;
+  }
+  #prevImage {
+    left: 20%;
+  }
+  #nextImage {
+    right: 10%;
+  }
+  .blogHeaderBody {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 55vh;
+  }
+  .blogHeaderBody h1 {
+    margin-top: 20vh;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+  }
+  .blogHeaderBody nav .navFlexContainer .willowNav a h2 {
+    margin: 0;
+    color: white;
+  }
+  .post1 .imagePost img,
+  .post2 .imagePost img {
+    width: 85%;
+  }
+  .contactHeaderBody {
+    height: 60vh;
+  }
+}
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 1500px;
@@ -2511,5 +2602,29 @@ aside {
   .clickOpen,
   .clickClose {
     display: none;
+  }
+  .indexHeader {
+    max-height: 60vh;
+    height: 45vh;
+  }
+  .headerImageContainer {
+    top: -5%;
+    left: 68%;
+  }
+  .blogHeaderBody {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 55vh;
+  }
+  .blogHeaderBody h1 {
+    margin-top: 20vh;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+  }
+  .blogHeaderBody nav .navFlexContainer .willowNav a h2 {
+    margin: 0;
+    color: white;
   }
 }
