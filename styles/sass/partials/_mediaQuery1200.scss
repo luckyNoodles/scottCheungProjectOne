@@ -1,0 +1,51 @@
+@use "variables" as *;
+
+@media (min-width: 1200px) {
+
+.wrapper {
+    max-width: 1500px;
+    width: 90%;
+}
+
+.clickOpen,
+.clickClose {
+    display: none;
+}
+
+.indexHeader {
+    max-height: 60vh;
+    height: 45vh;
+}
+
+.headerImageContainer {
+    top:  -5%;
+    left: 68%;
+}
+
+.blogHeaderBody {
+    align-items: start;
+    height: 55vh;
+
+    h1 {
+        margin-top: 20vh;
+    }
+
+    nav {
+        background-color: initial;
+
+        .navFlexContainer {
+            .willowNav {
+                a {
+                    h2 {
+                        margin: 0;
+                        color: white;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+}

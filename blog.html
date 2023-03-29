@@ -13,34 +13,37 @@
 
 <body>
     <header class="blogHeader">
-        <div class="wrapper">
-            <nav>
-                <span class="material-symbols-outlined">menu</span>
-                <ul class="navFlexContainer">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li class="willowNav">
-                        <a href="index.html">
-                            <h2>Willow</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="blogHeaderBody">
-            <div class="wrapper">
-                <h1>Blog & News</h1>
-            </div>
+       
+            <div class="blogHeaderBody">
+                <div class="wrapper">
+                    <nav>
+                        <span class="material-symbols-outlined clickOpen">menu</span>
+                        <span class="material-symbols-outlined clickClose hide">close</span>
+                        <ul class="navFlexContainer blogNav hideMobileNav">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li class="willowNav">
+                                <a href="index.html">
+                                    <h2>Willow</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1>Blog & News</h1>
+
+                </div>
+            
+           
         </div>
     </header>
     <main>
@@ -142,7 +145,7 @@
                                 <img src="./assets/blog-image-3.jpg" alt="picture of author">
                             </div>
                             <article>
-                                <p>Tuesday October 9th, 2018 by Barb
+                                <p class="comment">Tuesday October 9th, 2018 by Barb
                                     <br>
                                     <br>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, odit libero
@@ -158,7 +161,7 @@
                                 <img src="./assets/blog-image-4.jpg" alt="picture of author">
                             </div>
                             <article>
-                                <p>Wednesday October 10th, 2018 by Daisy
+                                <p class="comment">Wednesday October 10th, 2018 by Daisy
                                     <br>
                                     <br>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, odit libero

@@ -1,9 +1,29 @@
 //---------Toggle Nav---------------
-const navToggle = document.querySelector('.material-symbols-outlined');
+// const navToggle = document.querySelector('.material-symbols-outlined');
 const mainNav = document.querySelector('.navFlexContainer');
+const openNav = document.querySelector('.clickOpen');
+const closeNav = document.querySelector('.clickClose');
+const blogTitle = document.querySelector('.blogTitle');
+const blogcircle = document.querySelector('.circleContainer');
 
-navToggle.addEventListener('click', function() {
- mainNav.classList.toggle('mobileNav')
+const openContactNav = document.querySelector('.navFlexContainer');
+
+openNav.addEventListener('click', function() {
+	openNav.classList.toggle('hide');
+	closeNav.classList.toggle('hide');
+ 	mainNav.classList.toggle('hideMobileNav');
+	blogTitle.classList.add('hide');
+	blogcircle.classList.add('hide');
+	// openContactNav.classList.toggle('hide');
+})
+
+closeNav.addEventListener('click', function() {
+	openNav.classList.toggle('hide');
+	closeNav.classList.toggle('hide');
+ 	mainNav.classList.toggle('hideMobileNav');
+	blogTitle.classList.toggle('hide');
+	blogcircle.classList.toggle('hide');
+	// openContactNav.classList.toggle('hide');
 })
 
 // ---------- Carousel -----------------------

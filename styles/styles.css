@@ -835,6 +835,25 @@ aside {
   background-color: #f6f6f6;
   margin: 0px;
 }
+.contactBody .contactHeaderBody {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contactBody .contactHeaderBody nav {
+  background-color: initial;
+  padding: 2%;
+}
+.contactBody .contactHeaderBody nav .navFlexContainer {
+  padding: 0;
+}
+.contactBody .contactHeaderBody nav .navFlexContainer h2 {
+  margin: 0;
+  color: whitesmoke;
+}
+.contactBody .contactHeaderBody h1 {
+  margin: 10%;
+}
 
 .bodyContainer {
   display: -webkit-box;
@@ -959,330 +978,272 @@ aside {
   margin-bottom: 0px;
 }
 
-@media (max-width: 390px) {
-  h1 {
-    font-size: 2.1rem;
+@media (max-width: 320px) {
+  .hamburger {
+    top: 5%;
   }
-  button {
-    width: 100%;
-  }
-  .indexHeader {
-    height: 380px;
-  }
-  .headingContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    height: 50px;
-  }
-  .headingContainer h1 {
-    font-size: 2.4rem;
-    padding-left: 120px;
-  }
-  .headerImageContainer {
-    width: 200px;
-    right: 20px;
-  }
-  .headerImageContainer img {
-    width: 100%;
-  }
-  .circleContainer {
-    top: -15px;
-    left: 90px;
-  }
-  .circleContainer img {
-    width: 55px;
-  }
-  .image1Mat {
-    width: 200px;
-    height: 280px;
-    right: 10px;
-    top: 100px;
-  }
-  /* Blog section */
-  .blogHeaderBody,
-  .contactHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 3rem;
-  }
-  .blogHeaderBody h1,
-  .contactHeaderBody h1 {
-    font-size: 2.1rem;
-    text-align: right;
-  }
-  nav {
-    margin-top: 20PX;
-    position: relative;
-  }
-  .material-symbols-outlined {
-    margin-top: 10px;
-  }
-  .navFlexContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 112px;
-    line-height: 5px;
-    padding: 0px;
-    position: absolute;
-    -webkit-transform: translateX(-140px);
-            transform: translateX(-140px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-  .navFlexContainer li h2 {
-    font-size: 1rem;
-    margin: 0px;
-  }
-  .mobileNav {
-    -webkit-transform: translateX(-25px);
-            transform: translateX(-25px);
-  }
-  .whoIsWillow {
-    height: 650px;
-    margin-top: 20px;
-  }
-  .whoIsWillow h2 {
-    font-size: 1.4rem;
-    margin: 10px auto;
-  }
-  .whoIsWillow p {
-    margin: 15px auto;
-  }
-  .favouriteBucket {
-    height: auto;
-    padding: 20px;
-  }
-  .image2Mat,
-  .image3Mat,
-  .image4Mat {
+  .hide {
     display: none;
   }
-  .image2Container,
-  .image3Container,
-  .favouriteThings,
-  .bucketList {
-    width: 320px;
-  }
-  .bridgeImageContainer {
-    position: relative;
-    top: -15px;
-    left: -33px;
-    width: 290px;
-    height: 170px;
-  }
-  .bridgeImageContainer img {
-    position: static;
-    width: 345px;
-    z-index: 10;
-  }
-  .lillyImageContainer {
-    position: relative;
-    top: -10px;
-    left: -33px;
-    width: 290px;
-    height: 170px;
-    z-index: 1;
-  }
-  .lillyImageContainer img {
-    position: static;
-    width: 345px;
-    z-index: 10;
-  }
-  .image2Container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .image3Container {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .favouriteThings {
-    padding: 0px;
-    margin: 50px auto;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .bucketList {
-    padding: 0px;
-    text-align: left;
-    margin: 30px auto;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  .journey {
-    height: auto;
-  }
-  .journeyContainer {
+  .navFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 50px 0px;
-  }
-  .image4Container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .journeyImageContainer img {
-    position: static;
     width: 100%;
+    background-color: whitesmoke;
+    -webkit-transform: translateX(-5%) translateY(25%);
+            transform: translateX(-5%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
-  .journeyText {
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .navFlexContainer li {
+    margin-left: 10%;
   }
-  .journeyText p {
-    width: 100%;
+  .navFlexContainer li a {
+    font-size: 1rem;
+    color: black;
   }
-  .yellowHouse {
-    height: 220px;
+  .navFlexContainer .willowNav {
+    display: none;
   }
-  .indexCarousel {
-    height: 400px;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(25%);
+            transform: translateX(-125%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
-  .indexCarousel .imageSlide {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    top: 0%;
-    right: 0%;
+  .indexHeader {
+    height: 38vh;
   }
-  .indexCarousel .imageSlide img {
-    width: 100%;
+  .indexHeader .headingContainer {
+    height: 35vh;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
-  .btn {
-    position: absolute;
-    width: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #e4a436;
+  .indexHeader .headingContainer .extra {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
-  .btn:active {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  #nextImage {
-    right: 2%;
-    top: 45%;
-  }
-  #prevImage {
-    top: 45%;
+  .indexHeader .headingContainer .extra .circleContainer {
+    width: 20%;
+    top: -25%;
     left: 2%;
   }
-  /* Blog Sections */
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: -30%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle .h1Home {
+    font-size: 3rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 70%;
+    top: 10%;
+    left: 30%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 7px 5px 0px 0px white;
+            box-shadow: 7px 5px 0px 0px white;
+  }
+  .whoIsWillow {
+    height: 70vh;
+  }
+  .favouriteBucket {
+    height: 110vh;
+  }
+  .favouriteBucket .matContainer {
+    display: none;
+  }
+  .favouriteBucket .image2Container {
+    width: 100%;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer {
+    width: 100%;
+    position: initial;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer img {
+    position: initial;
+    width: 95%;
+  }
+  .favouriteBucket .favouriteThings {
+    width: 100%;
+    padding: 0;
+  }
+  .favouriteBucket .bucketList {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .favouriteBucket .image3Container {
+    width: 100%;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer {
+    width: 95%;
+    position: initial;
+    margin: 10% 0 2% 0;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer img {
+    position: initial;
+    width: 100%;
+  }
+  .journey {
+    height: 60vh;
+  }
+  .journey .image4Container {
+    display: none;
+  }
+  .journey .journeyText {
+    width: 100%;
+    padding: 0;
+  }
+  .indexCarousel {
+    display: none;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+  }
+  .footerNav li {
+    width: 100%;
+  }
+  .footerNav li .icon {
+    height: 30px;
+  }
+  .contactBody .contactHeaderBody {
+    height: 60vh;
+  }
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
+    display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 3rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+    margin: 2%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 60vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
   .blogContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 30px;
+    padding-top: 0;
   }
-  .aside,
-  .rightSide {
+  .blogContainer aside {
     width: 100%;
   }
-  .aboutAuthor {
-    padding: 0px;
-    margin: 0px;
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
   }
-  .aboutAuthor img {
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
     width: 100%;
   }
-  .aboutAuthor h4 {
-    margin: 30px 10px 5px 10px;
-  }
-  .aboutAuthor p {
-    padding: 10px;
-    margin: 0px;
-  }
-  .recentPosts {
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .recentPosts h3 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  .blogMain {
-    width: 100%;
-  }
-  .blogMain .myDestinations {
-    padding: 10px;
-    margin: 0px;
-  }
-  .blogMain h3 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  .blogMain .post1,
-  .blogMain .post2 {
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .myDestinations {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .myDestinations .myTravels {
-    height: 600px;
-    overflow: hidden;
-  }
-  .myDestinations .expand {
-    visibility: visible;
-    width: 20px;
-    opacity: 0;
-  }
-  .myDestinations .expandText {
-    visibility: visible;
-    width: 100%;
-    background-color: #e4a436;
-    text-align: center;
-  }
-  .expand:checked + .myTravels {
-    height: auto;
-  }
-  .blogForm {
-    width: 100%;
-    height: auto;
   }
   .blogForm .nameEmail {
     -webkit-box-orient: vertical;
@@ -1290,376 +1251,596 @@ aside {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: auto;
-    margin: 20px 0px;
+    margin-bottom: 30%;
   }
   .blogForm .nameEmail .nameInput {
-    margin: 20px 0px;
     width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 5% 0%;
   }
-  .blogForm .nameEmail .nameInput input {
-    width: 100%;
-    padding-left: 10px;
-  }
-  .blogForm button {
-    margin: 20px 0px;
-    width: 100%;
-  }
-  .commentInput #commentBox {
-    height: 300px;
-    width: 100%;
-    padding: 20px 10px;
-  }
-  .post1 .imageUserPost {
-    padding: 0px;
-  }
-  /*---Contact Me Page---*/
-  .bodyContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 50px 0px;
-  }
-  .bodyContainer .contactInfo {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: auto;
-  }
-  .bodyContainer .socialContainer {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .bodyContainer .form {
-    width: 100%;
-  }
-  .footerNav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .footerNav li {
-    width: auto;
-  }
-  .icon {
-    display: none;
-  }
-}
-/*----- Media Query 320px -----*/
-@media (max-width: 320px) {
-  button {
-    width: 100%;
-  }
-  .indexHeader {
-    height: 360px;
-  }
-  .headingContainer {
+  .blogForm .commentInput #commentBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    height: 50px;
+    margin-top: 10%;
   }
-  .headingContainer h1 {
-    font-size: 2.4rem;
-    padding-left: 85px;
+  .blogForm button {
+    margin: 5% 2%;
+    width: 65%;
   }
-  .headerImageContainer {
-    width: 160px;
-    height: 224px;
-    position: absolute;
-    right: 20px;
-    top: 110px;
-    z-index: 2;
+}
+@media (min-width: 321px) and (max-width: 428px) {
+  .hamburger {
+    top: 5%;
   }
-  .headerImageContainer img {
-    width: 100%;
-  }
-  .circleContainer {
-    width: 55px;
-    top: -15px;
-    left: 60px;
-  }
-  .circleContainer img {
-    width: 55px;
-  }
-  .image1Mat {
-    background-color: white;
-    width: 155px;
-    height: 215px;
-    position: absolute;
-    right: 10px;
-    top: 120px;
-    z-index: 1;
-  }
-  /* Blog section */
-  .blogHeaderBody,
-  .contactHeaderBody {
-    margin-bottom: 25px;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 3rem;
-  }
-  .blogHeaderBody h1,
-  .contactHeaderBody h1 {
-    font-size: 2.4rem;
-    text-align: right;
-  }
-  nav {
-    margin-top: 20PX;
-    position: relative;
-  }
-  .material-symbols-outlined {
-    left: -5px;
-    top: 0px;
-    z-index: 10;
-    margin-top: 10px;
-  }
-  .navFlexContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 112px;
-    line-height: 5px;
-    padding: 0px;
-    position: absolute;
-    -webkit-transform: translateX(-130px);
-            transform: translateX(-130px);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  }
-  .navFlexContainer li h2 {
-    font-size: 1rem;
-    margin: 0px;
-  }
-  .mobileNav {
-    -webkit-transform: translateX(-25px);
-            transform: translateX(-25px);
-  }
-  .wrapper {
-    width: 80%;
-  }
-  .whoIsWillow {
-    height: 750px;
-    margin-top: 20px;
-  }
-  .whoIsWillow h2 {
-    font-size: 1.4rem;
-    margin: 10px auto;
-  }
-  .whoIsWillow p {
-    margin: 15px auto;
-  }
-  .favouriteBucket {
-    height: auto;
-    padding: 20px;
-  }
-  .image2Mat,
-  .image3Mat,
-  .image4Mat {
+  .hide {
     display: none;
   }
-  .image2Container,
-  .image3Container,
-  .favouriteThings,
-  .bucketList {
-    width: 320px;
+  .navFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    -webkit-transform: translateX(-5%) translateY(25%);
+            transform: translateX(-5%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
-  .bridgeImageContainer {
-    position: relative;
-    top: -15px;
-    left: -33px;
-    width: 290px;
-    height: 170px;
+  .navFlexContainer li {
+    margin-left: 10%;
   }
-  .bridgeImageContainer img {
-    position: static;
-    width: 290px;
-    z-index: 10;
+  .navFlexContainer li a {
+    font-size: 1rem;
+    color: black;
   }
-  .lillyImageContainer {
-    position: relative;
-    top: -10px;
-    left: -33px;
-    width: 290px;
-    height: 170px;
-    z-index: 1;
+  .navFlexContainer .willowNav {
+    display: none;
   }
-  .lillyImageContainer img {
-    position: static;
-    width: 290px;
-    z-index: 10;
+  .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(25%);
+            transform: translateX(-125%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
-  .image2Container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .indexHeader {
+    height: 40vh;
   }
-  .image3Container {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  .indexHeader .headingContainer {
+    height: 35vh;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
-  .favouriteThings {
-    padding: 0px;
-    margin-bottom: 30px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .indexHeader .headingContainer .extra {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
-  .bucketList {
-    padding: 0px;
+  .indexHeader .headingContainer .extra .circleContainer {
+    width: 2.8rem;
+    top: -14%;
+    left: 2%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: -6vh;
+  }
+  .indexHeader .headingContainer .extra .blogTitle .h1Home {
+    font-size: 3rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 70%;
+    top: 10%;
+    left: 30%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 7px 5px 0px 0px white;
+            box-shadow: 7px 5px 0px 0px white;
+  }
+  .whoIsWillow {
+    height: 70vh;
+  }
+  .favouriteBucket {
+    height: 110vh;
+  }
+  .favouriteBucket .matContainer {
+    display: none;
+  }
+  .favouriteBucket .image2Container {
+    width: 100%;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer {
+    width: 100%;
+    position: initial;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer img {
+    position: initial;
+    width: 95%;
+  }
+  .favouriteBucket .favouriteThings {
+    width: 100%;
+    padding: 0;
+  }
+  .favouriteBucket .bucketList {
+    width: 100%;
+    padding: 0;
     text-align: left;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
   }
-  /* MEDIA QUERY Journey Section */
+  .favouriteBucket .image3Container {
+    width: 100%;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer {
+    width: 95%;
+    position: initial;
+    margin: 10% 0 2% 0;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer img {
+    position: initial;
+    width: 100%;
+  }
   .journey {
-    height: auto;
+    height: 60vh;
   }
-  .journeyContainer {
+  .journey .image4Container {
+    display: none;
+  }
+  .journey .journeyText {
+    width: 100%;
+    padding: 0;
+  }
+  .indexCarousel {
+    display: none;
+  }
+  .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 50px 0px;
+    height: initial;
   }
-  .image4Container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .journeyImageContainer img {
-    position: static;
+  .footerNav li {
     width: 100%;
   }
-  .journeyText {
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .footerNav li .icon {
+    height: 30px;
   }
-  .journeyText p {
-    width: 100%;
+  .contactBody .contactHeaderBody {
+    height: 35vh;
   }
-  .yellowHouse {
-    height: 220px;
-    background-size: 220%;
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
   }
-  .threeImages {
-    height: auto;
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
+    display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 3rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0px;
+    margin: 0;
   }
-  .threeImages li {
-    margin-bottom: 50px;
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
   }
-  .threeImages li img {
-    width: 250px;
-    height: auto;
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
   }
-  /* Blog Sections */
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+    margin: 2%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 35vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
   .blogContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 30px;
+    padding-top: 0;
   }
-  .aside {
+  .blogContainer aside {
     width: 100%;
   }
-  .aboutAuthor {
-    padding: 0px;
-    margin: 0px;
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
   }
-  .aboutAuthor img {
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
     width: 100%;
   }
-  .aboutAuthor h4 {
-    margin: 10px;
-  }
-  .aboutAuthor p {
-    padding: 10px;
-  }
-  .recentPosts {
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .recentPosts h3 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  .blogMain {
-    width: 100%;
-  }
-  .blogMain .myDestinations {
-    padding: 10px;
-    margin: 0px;
-  }
-  .blogMain h3 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  .blogMain .post1,
-  .blogMain .post2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .myDestinations {
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .myDestinations .myTravels {
-    height: 600px;
-    overflow: hidden;
-  }
-  .myDestinations .expand {
-    visibility: visible;
-    width: 20px;
-    opacity: 0;
-  }
-  .myDestinations .expandText {
-    visibility: visible;
+  .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    background-color: #e4a436;
-    text-align: center;
+    margin-bottom: 30%;
   }
-  .expand:checked + .myTravels {
-    height: auto;
+  .blogForm .nameEmail .nameInput {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 5% 0%;
+  }
+  .blogForm .commentInput #commentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 10%;
+  }
+  .blogForm button {
+    margin: 5% 2%;
+    width: 65%;
+  }
+}
+@media (min-width: 429px) and (max-width: 575px) {
+  .hamburger {
+    top: 5%;
+  }
+  .hide {
+    display: none;
+  }
+  .navFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    -webkit-transform: translateX(-10%) translateY(25%);
+            transform: translateX(-10%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .navFlexContainer li {
+    margin-left: 10%;
+  }
+  .navFlexContainer li a {
+    font-size: 1rem;
+    color: black;
+  }
+  .navFlexContainer .willowNav {
+    display: none;
+  }
+  .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(25%);
+            transform: translateX(-125%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .indexHeader {
+    height: 45vh;
+  }
+  .indexHeader .headingContainer {
+    height: 35vh;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra .circleContainer {
+    width: 3.6rem;
+    top: -10%;
+    left: 5%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: -5vh;
+  }
+  .indexHeader .headingContainer .extra .blogTitle .h1Home {
+    font-size: 4rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 55%;
+    top: 25%;
+    left: 40%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 7px 5px 0px 0px white;
+            box-shadow: 7px 5px 0px 0px white;
+  }
+  .whoIsWillow {
+    height: 65vh;
+  }
+  .favouriteBucket {
+    height: 110vh;
+  }
+  .favouriteBucket .matContainer {
+    display: none;
+  }
+  .favouriteBucket .image2Container {
+    width: 100%;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer {
+    width: 100%;
+    position: initial;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer img {
+    position: initial;
+    width: 95%;
+  }
+  .favouriteBucket .favouriteThings {
+    width: 100%;
+    padding: 0;
+  }
+  .favouriteBucket .bucketList {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .favouriteBucket .image3Container {
+    width: 100%;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer {
+    width: 95%;
+    position: initial;
+    margin: 10% 0 2% 0;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer img {
+    position: initial;
+    width: 100%;
+  }
+  .journey {
+    min-height: 50vh;
+  }
+  .journey .image4Container {
+    display: none;
+  }
+  .journey .journeyText {
+    width: 100%;
+    padding: 0;
+  }
+  .indexCarousel {
+    display: none;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+  }
+  .footerNav li {
+    width: 100%;
+  }
+  .footerNav li .icon {
+    height: 30px;
+  }
+  .contactBody .contactHeaderBody {
+    height: 40vh;
+  }
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
+    display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 3rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+    margin: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 0%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #name,
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #email {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    width: 100%;
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 40vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .blogContainer aside {
+    width: 100%;
+  }
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
+  }
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
+    width: 100%;
+  }
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .blogForm {
     height: auto;
@@ -1670,59 +1851,780 @@ aside {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: auto;
-    margin: 20px 0px;
+    margin-bottom: 30%;
   }
   .blogForm .nameEmail .nameInput {
-    margin: 20px 0px;
     width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 5% 0%;
   }
-  .blogForm .nameEmail .nameInput input {
-    width: 100%;
-    padding-left: 10px;
+  .blogForm .commentInput #commentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 0%;
   }
   .blogForm button {
-    margin: 20px 0px;
-    width: 100%;
+    margin: 5% 2%;
+    width: 65%;
   }
-  .commentInput #commentBox {
-    height: 300px;
-    width: 100%;
-    padding: 20px 10px;
+  .copyrite {
+    margin-top: 20%;
   }
-  /*---Contact Me Page---*/
-  .bodyContainer {
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .indexHeader {
+    min-height: 40vh;
+  }
+  .hamburger {
+    top: 5%;
+  }
+  .hide {
+    display: none;
+  }
+  .navFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 50px 0px;
-  }
-  .bodyContainer .contactInfo {
     width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: auto;
+    background-color: whitesmoke;
+    -webkit-transform: translateX(-10%) translateY(25%);
+            transform: translateX(-10%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
-  .bodyContainer .form {
+  .navFlexContainer li {
+    margin-left: 10%;
+  }
+  .navFlexContainer li a {
+    font-size: 1rem;
+    color: black;
+  }
+  .navFlexContainer .willowNav {
+    display: none;
+  }
+  .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(25%);
+            transform: translateX(-125%) translateY(25%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .indexHeader {
+    height: 65vh;
+  }
+  .indexHeader .headingContainer {
+    height: 35vh;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra .circleContainer {
+    width: 4rem;
+    top: -9%;
+    left: 5%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: -5vh;
+  }
+  .indexHeader .headingContainer .extra .blogTitle .h1Home {
+    font-size: 5rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 65%;
+    top: 25%;
+    left: 30%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 7px 5px 0px 0px white;
+            box-shadow: 7px 5px 0px 0px white;
+  }
+  .whoIsWillow {
+    min-height: 65vh;
+  }
+  .favouriteBucket {
+    height: 130vh;
+  }
+  .favouriteBucket .matContainer {
+    display: none;
+  }
+  .favouriteBucket .image2Container {
     width: 100%;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer {
+    width: 100%;
+    position: initial;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer img {
+    position: initial;
+    width: 95%;
+  }
+  .favouriteBucket .favouriteThings {
+    width: 100%;
+    padding: 0;
+  }
+  .favouriteBucket .bucketList {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .favouriteBucket .image3Container {
+    width: 100%;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer {
+    width: 95%;
+    position: initial;
+    margin: 10% 0 2% 0;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer img {
+    position: initial;
+    width: 100%;
+  }
+  .journey {
+    height: 40vh;
+  }
+  .journey .image4Container {
+    display: none;
+  }
+  .journey .journeyText {
+    width: 100%;
+    padding: 0;
+  }
+  .indexCarousel {
+    display: none;
   }
   .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
+    height: initial;
   }
   .footerNav li {
-    width: auto;
+    width: 100%;
   }
-  .icon {
+  .footerNav li .icon {
+    height: 30px;
+  }
+  .contactBody .contactHeaderBody {
+    height: 60vh;
+  }
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
     display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 4rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+    margin: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 0%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #name,
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #email {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    width: 100%;
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 60vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .blogContainer aside {
+    width: 100%;
+  }
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
+  }
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
+    width: 100%;
+  }
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogForm {
+    height: auto;
+  }
+  .blogForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 30%;
+  }
+  .blogForm .nameEmail .nameInput {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 5% 0%;
+  }
+  .blogForm .commentInput #commentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 0%;
+  }
+  .blogForm button {
+    margin: 5% 2%;
+    width: 65%;
+  }
+  .copyrite {
+    margin-top: 0%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .indexHeader {
+    min-height: 40vh;
+  }
+  .hamburger {
+    top: 10%;
+  }
+  .hide {
+    display: none;
+  }
+  .navFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    -webkit-transform: translateX(-10%) translateY(40%);
+            transform: translateX(-10%) translateY(40%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .navFlexContainer li {
+    margin-left: 10%;
+  }
+  .navFlexContainer li a {
+    font-size: 1rem;
+    color: black;
+  }
+  .navFlexContainer .willowNav {
+    display: none;
+  }
+  .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(40%);
+            transform: translateX(-125%) translateY(40%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .indexHeader {
+    height: 65vh;
+  }
+  .indexHeader .headingContainer {
+    height: 35vh;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .indexHeader .headingContainer .extra .circleContainer {
+    width: 4rem;
+    top: -9%;
+    left: 5%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: -5vh;
+  }
+  .indexHeader .headingContainer .extra .blogTitle .h1Home {
+    font-size: 4.5rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 50%;
+    top: 30%;
+    left: 50%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 7px 5px 0px 0px white;
+            box-shadow: 7px 5px 0px 0px white;
+  }
+  .whoIsWillow {
+    min-height: 65vh;
+  }
+  .favouriteBucket {
+    height: 130vh;
+  }
+  .favouriteBucket .matContainer {
+    display: none;
+  }
+  .favouriteBucket .image2Container {
+    width: 100%;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer {
+    width: 100%;
+    position: initial;
+  }
+  .favouriteBucket .image2Container .bridgeImageContainer img {
+    position: initial;
+    width: 95%;
+  }
+  .favouriteBucket .favouriteThings {
+    width: 100%;
+    padding: 0;
+  }
+  .favouriteBucket .bucketList {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .favouriteBucket .image3Container {
+    width: 100%;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer {
+    width: 95%;
+    position: initial;
+    margin: 10% 0 2% 0;
+  }
+  .favouriteBucket .image3Container .lillyImageContainer img {
+    position: initial;
+    width: 100%;
+  }
+  .journey {
+    height: 40vh;
+  }
+  .journey .image4Container {
+    display: none;
+  }
+  .journey .journeyText {
+    width: 100%;
+    padding: 0;
+  }
+  .indexCarousel {
+    display: none;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+  }
+  .footerNav li {
+    width: 100%;
+  }
+  .footerNav li .icon {
+    height: 30px;
+    width: 60px;
+  }
+  .contactBody .contactHeaderBody {
+    height: 60vh;
+  }
+  .contactBody .contactHeaderBody nav {
+    background-color: initial;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer {
+    -webkit-transform: translateX(-10%) translateY(0%);
+            transform: translateX(-10%) translateY(0%);
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .contactBody .contactHeaderBody nav .navFlexContainer .willowNav {
+    display: none;
+  }
+  .contactBody .contactHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .contactBody .contactHeaderBody h1 {
+    font-size: 4rem;
+    line-height: 135%;
+    margin: 0;
+  }
+  .contactBody .contactMain .wrapper {
+    width: 95%;
+  }
+  .contactBody .contactMain .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactBody .contactMain .bodyContainer .contactInfo {
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form {
+    width: 100%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm {
+    height: initial;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail {
+    height: initial;
+    margin: 1%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput {
+    height: initial;
+    width: 100%;
+    padding: 0;
+    margin-top: 0%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #name,
+  .contactBody .contactMain .bodyContainer .form .blogForm .nameEmail .nameInput #email {
+    width: 97%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm .commentInput #commentBox {
+    width: 97%;
+    margin-top: 0%;
+  }
+  .contactBody .contactMain .bodyContainer .form .blogForm button {
+    width: 35%;
+  }
+  .blogHeaderBody {
+    height: 60vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+    padding-top: 5%;
+  }
+  .blogHeaderBody nav .blogNav {
+    -webkit-transform: translateX(-15px) translateY(0px);
+            transform: translateX(-15px) translateY(0px);
+  }
+  .blogHeaderBody nav .blogNav li h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: black;
+  }
+  .blogHeaderBody nav .hideMobileNav {
+    -webkit-transform: translateX(-125%) translateY(0%);
+            transform: translateX(-125%) translateY(0%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .blogHeaderBody h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .blogContainer aside {
+    width: 100%;
+  }
+  .blogContainer aside .aboutAuthor {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .blogContainer aside .aboutAuthor h4 {
+    display: none;
+  }
+  .blogContainer aside .aboutAuthor img {
+    margin-right: 5%;
+  }
+  .blogContainer aside .recentPosts {
+    display: none;
+  }
+  .blogContainer .rightSide {
+    width: 100%;
+  }
+  .blogContainer .rightSide .myDestinations,
+  .blogContainer .rightSide .post1,
+  .blogContainer .rightSide .post2 {
+    padding: 2%;
+    margin: 5% 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogForm {
+    height: auto;
+  }
+  .blogForm .nameEmail {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .blogForm .nameEmail .nameInput {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 2% 0%;
+  }
+  .blogForm .commentInput #commentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 0%;
+    width: 97%;
+  }
+  .blogForm button {
+    margin: 5% 2%;
+    width: 25%;
+  }
+  .copyrite {
+    margin-top: 0%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .clickOpen,
+  .clickClose {
+    display: none;
+  }
+  .navFlexContainer li {
+    margin: 2% 4%;
+  }
+  .indexHeader .headingContainer {
+    height: 45vh;
+  }
+  .indexHeader .headingContainer .extra .circleContainer {
+    top: 12%;
+    left: 6%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle {
+    margin-top: initial;
+    margin-left: 10%;
+  }
+  .indexHeader .headingContainer .extra .blogTitle h1 {
+    font-size: 5rem;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer {
+    width: 40%;
+    top: -110%;
+    left: 60%;
+  }
+  .indexHeader .headingContainer .extra .headerImageContainer img {
+    -webkit-box-shadow: 20px 20px 0px 0px whitesmoke;
+            box-shadow: 20px 20px 0px 0px whitesmoke;
+  }
+  .bridgeImageContainer img {
+    top: -50px;
+    left: -8%;
+    width: 47vw;
+  }
+  .favouriteBucket {
+    height: 75vh;
+  }
+  .image2Mat,
+  .image3Mat {
+    height: 27vh;
+  }
+  .lillyImageContainer img {
+    top: 200px;
+    left: -2%;
+    width: 50vw;
+  }
+  .journey {
+    height: 40vh;
+  }
+  .image4Mat {
+    width: 30%;
+    top: 25%;
+    left: 2%;
+  }
+  .journeyImageContainer img {
+    width: 30%;
+    top: 20%;
+    left: 0%;
+  }
+  #prevImage {
+    left: 20%;
+  }
+  #nextImage {
+    right: 10%;
+  }
+  .blogHeaderBody {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 55vh;
+  }
+  .blogHeaderBody h1 {
+    margin-top: 20vh;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+  }
+  .blogHeaderBody nav .navFlexContainer .willowNav a h2 {
+    margin: 0;
+    color: white;
+  }
+  .post1 .imagePost img,
+  .post2 .imagePost img {
+    width: 85%;
+  }
+  .contactHeaderBody {
+    height: 60vh;
   }
 }
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 1500px;
+    width: 90%;
+  }
+  .clickOpen,
+  .clickClose {
+    display: none;
+  }
+  .indexHeader {
+    max-height: 60vh;
+    height: 45vh;
+  }
+  .headerImageContainer {
+    top: -5%;
+    left: 68%;
+  }
+  .blogHeaderBody {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 55vh;
+  }
+  .blogHeaderBody h1 {
+    margin-top: 20vh;
+  }
+  .blogHeaderBody nav {
+    background-color: initial;
+  }
+  .blogHeaderBody nav .navFlexContainer .willowNav a h2 {
+    margin: 0;
+    color: white;
   }
 }

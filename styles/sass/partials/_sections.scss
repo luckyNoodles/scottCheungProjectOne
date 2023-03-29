@@ -330,9 +330,28 @@ aside {
 }
 
 /* ----------------Contact Sections---------------*/
+
+
 .contactBody {
     background-color: $white-shade;
     margin: 0px;
+    .contactHeaderBody {
+        align-items: flex-start;
+        nav {
+            background-color: initial;
+            padding: 2%;
+            .navFlexContainer {
+                padding: 0;
+                h2 {
+                    margin: 0;
+                    color: whitesmoke;
+                }
+            }
+        }
+        h1 {
+            margin:10%;
+        }
+    }
 }
 
 .bodyContainer {
