@@ -4,7 +4,6 @@
 
 .indexHeader {
     background-color: $pine;
-    // margin: -20px;
     height: 56vh;
     nav {
         position: relative;
@@ -18,23 +17,17 @@
         justify-content: left;
         align-items: center;
         position: relative;
-        // height: 43vh;
         width: 100%;
         .extra {
             position: relative;
             display: flex;
             align-items: center;
             width: 100%;
-            // .blogTitle {
-            //     padding: 4%;
-            // }
             .circleContainer {
                 width:9%;
-                // height: 170px;
                 position: absolute;
                 top: 49%;
                 left: 7%;
-            
                 img {
                     width: 100%;
                 }
@@ -48,7 +41,6 @@
     }
 }
 
-
 .headerImageContainer {
     z-index: 2;
     margin-top: 5%;
@@ -61,7 +53,6 @@
         box-shadow: 25px 20px 0px 0px white;;
     }
 }
-
 
 /* Blog and Contact Header Styles */
 .blogHeaderBody {
