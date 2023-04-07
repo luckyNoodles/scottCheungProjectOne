@@ -3,6 +3,7 @@
 .copyrite {
     background-color: $black;
 }
+
 .footerNav {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +32,7 @@
         }
     }
 }
+
 .icon {
     display: flex;
     align-items: center;
@@ -45,6 +47,7 @@
         margin-top: 10px;
     }
 }
+
 .copyrite { 
     p {
         color: $white-shade;
