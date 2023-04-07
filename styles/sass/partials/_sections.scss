@@ -331,12 +331,16 @@ aside {
 
 /* ----------------Contact Sections---------------*/
 
+.contactMain {
+    height: 80vh;
+}
 
 .contactBody {
     background-color: $white-shade;
     margin: 0px;
     .contactHeaderBody {
         align-items: flex-start;
+        height: 26vh;
         nav {
             background-color: initial;
             padding: 2%;

@@ -831,6 +831,10 @@ aside {
 }
 
 /* ----------------Contact Sections---------------*/
+.contactMain {
+  height: 80vh;
+}
+
 .contactBody {
   background-color: #f6f6f6;
   margin: 0px;
@@ -839,6 +843,7 @@ aside {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 26vh;
 }
 .contactBody .contactHeaderBody nav {
   background-color: initial;
