@@ -2,9 +2,9 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
 
-    .indexHeader {
-        min-height: 40vh;
-    }
+    // .indexHeader {
+    //     min-height: 40vh;
+    // }
 
     .hamburger {
         top: 5%;
@@ -42,7 +42,7 @@
     }
 
     .indexHeader {
-        height: 65vh;
+        height: 48vh;
 
         .headingContainer {
             height: 35vh;
@@ -54,7 +54,7 @@
                 .circleContainer {
 
                     width: 4rem;
-                    top: -9%;
+                    top: -10%;
                     left: 5%;
                 }
 
@@ -170,7 +170,7 @@
     // Contact page
     .contactBody {
         .contactHeaderBody {
-            height: 60vh;
+            height: 20.5vh;
 
             nav {
                 background-color: initial;
@@ -202,7 +202,7 @@
             h1 {
                 font-size: 4rem;
                 line-height: 135%;
-                margin: 0;
+                margin-top: 4vh;
             }
         }
 
@@ -266,7 +266,7 @@
     //Blog page
 
     .blogHeaderBody {
-        height: 60vh;
+        height: 20.5vh;
         align-items: start;
 
         nav {
